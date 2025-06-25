@@ -249,6 +249,15 @@ _editables:
     snippet: true
 
 _inputs:
+  heading:
+    type: object
+    options:
+      preview:
+        text:
+          - key: heading_text
+  heading.heading_text:
+    type: text
+    comment: The main heading for the page.
   content_blocks:
     type: array
     options:
