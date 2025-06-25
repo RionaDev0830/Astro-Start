@@ -1,0 +1,41 @@
+---
+import Wrapper from '../../Common/Wrapper.astro';
+import RequirementCard, { RequirementCardProps } from '../../Common/RequirementCard/RequirementCard.astro';
+
+interface Props {
+  req_title: string;
+  requirements: [RequirementCardProps];
+}
+
+const { req_title, requirements } = Astro.props;
+
+---
+<Wrapper>
+  <div class={"requirement_section"}>
+    <h2 style={"font-size: '32px' "}>{req_title}</h2>
+    <div class={"recard_container"}>
+      {requirements.map((item) => {
+        return <RequirementCard {...item} />;
+      })}
+    </div>
+  </div>
+</Wrapper>
+<style>
+.requirement_section {
+  padding: 5rem 0;
+  font-family: var(--font-clash-display);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45.76px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.recard_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+</style>

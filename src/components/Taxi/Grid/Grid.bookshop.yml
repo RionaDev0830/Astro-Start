@@ -1,0 +1,185 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Taxi Grid
+  description: Taxi Grid
+  icon: 'cottage'
+  tags:
+    - Image
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: "BPT 121: Erfolgreich zur Taxiprüfung!"
+  text: >
+      Nach erfolgreicher theoretischer Prüfung folgt eine zusätzliche Fahrprüfung, bei der deine <br /> praktischen Fähigkeiten geprüft werden. Die Anforderungen sind natürlich auch hier höher als bei <br /> der Autoprüfung. Hier geht es neben korrektem Fahren auch darum, wie routiniert, ruhig und <br /> angenehm du das Fahrzeug im Verkehr bewegst.
+  hideimg: false
+  gridtitle: "BPT 121: Erfolgreich zur Taxiprüfung!"
+  grid_subheading: >
+      Nach erfolgreicher theoretischer Prüfung folgt eine zusätzliche Fahrprüfung, bei der deine <br /> praktischen Fähigkeiten geprüft werden. Die Anforderungen sind natürlich auch hier höher als bei <br /> der Autoprüfung. Hier geht es neben korrektem Fahren auch darum, wie routiniert, ruhig und <br /> angenehm du das Fahrzeug im Verkehr bewegst.
+  grid_img1: /tg0_shrink.webp
+  grid_img2: /tg0_shrink.webp
+  grid_img3: /tg1_shrink.webp
+  grid_img4: /tg2.png
+  grid_img5: /tg3_shrink.webp
+  grid_img6: /tg6_shrink.webp
+  grid_img7: /tg4_shrink.webp
+  grid_img8: /tg5_shrink.webp
+  grid_img9: /tg6_shrink.webp
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  title:
+    type: text
+    label: title
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: title
+        subtext:
+          - 'title Text'
+  text:
+    type: textarea
+    label: text 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: text
+        subtext:
+          - 'text'
+  hideimg:
+    type: boolean
+    label: hideimg 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: hideimg
+        subtext:
+          - 'hideimg'
+  gridtitle:
+    type: text
+    label: gridtitle 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: gridtitle
+        subtext:
+          - 'text'
+  grid_subheading:
+    type: textarea
+    label: grid_subheading 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: grid_subheading
+        subtext:
+          - 'text'
+  grid_img1:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Grid Image 1'
+        subtext:
+          - key: grid_img1
+          - 'Update Image'
+        image:
+          - key: grid_img1
+  grid_img2:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Grid Image 2'
+        subtext:
+          - key: grid_img2
+          - 'Update Image'
+        image:
+          - key: grid_img2
+  grid_img3:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Grid Image 3'
+        subtext:
+          - key: grid_img3
+          - 'Update Image'
+        image:
+          - key: grid_img3
+  grid_img4:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Grid Image 4'
+        subtext:
+          - key: grid_img4
+          - 'Update Image'
+        image:
+          - key: grid_img4
+  grid_img5:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Grid Image 5'
+        subtext:
+          - key: grid_img5
+          - 'Update Image'
+        image:
+          - key: grid_img5
+  grid_img6:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Grid Image 6'
+        subtext:
+          - key: grid_img6
+          - 'Update Image'
+        image:
+          - key: grid_img6
+  grid_img7:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Grid Image 7'
+        subtext:
+          - key: grid_img7
+          - 'Update Image'
+        image:
+          - key: grid_img7
+  grid_img8:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Grid Image 8'
+        subtext:
+          - key: grid_img8
+          - 'Update Image'
+        image:
+          - key: grid_img8
+  grid_img9:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Grid Image 9'
+        subtext:
+          - key: grid_img9
+          - 'Update Image'
+        image:
+          - key: grid_img9
+  

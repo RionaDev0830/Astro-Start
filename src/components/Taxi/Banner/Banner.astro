@@ -1,0 +1,229 @@
+---
+import { Image } from 'astro:assets';
+interface Props {
+  h1: string;
+  data: {
+    upperparagraph: string;
+    lowerparagraph: string;
+    image: {
+      image_path: string;
+      alt_text: string;
+    }
+  }
+}
+const { h1, data } = Astro.props;
+---
+<div class={"taxibanner"}>
+  <div class={"banner_left"}>
+    <h1 style="font-size:40px;" set:html={h1}></h1>
+    <p class={"lower_body_text"}>{data.upperparagraph}</p>
+    {data.lowerparagraph && (
+      <p class={"lower_body_text"}>{data.lowerparagraph}</p>
+    )}
+  </div>
+  <div class={"banner_right"}>
+    <Image
+      src={data.image.image_path}
+      alt={data.image.alt_text}
+      width={672}
+      height={448}
+      class={"taxi_banner_image"}
+    />
+  </div>
+</div>
+<style>
+.taxibanner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 2rem 8rem;
+  align-items: center;
+  font-family: var(--font-clash-display);
+  font-size: 43px;
+  font-weight: 600;
+  line-height: 45.76px;
+  letter-spacing: 0.01em;
+}
+
+.banner_left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.banner_right {
+  width: 50%;
+}
+
+.taxi_banner_image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.lower_body_text {
+  font-family: var(--font-dm-Sans);
+  font-size: 18.03px;
+  font-weight: 400;
+  line-height: 27.04px;
+}
+
+/* -------requirement section -----------*/
+
+.requirement_section {
+  padding: 5rem 0;
+  font-family: var(--font-clash-display);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45.76px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.recard_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* -------------- Taxi Price -------------  */
+
+.taxi_price_section {
+  background-color: #f6f6f6;
+  padding: 5rem 0;
+}
+
+.taxi_price_inner_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taxi_price_left {
+  font-family: var(--font-clash-display);
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 46px;
+}
+
+.taxi_price_body_text {
+  font-family: var(--font-dm-Sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #242424;
+}
+
+.taxi_price_right {
+  background-color: #0959a3;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 16px;
+  font-family: var(--font-clash-display);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 49.2px;
+  color: #fff;
+}
+
+.taxi_price_span_text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.68px;
+}
+
+.taxi_price_btn_text {
+  font-family: var(--font-dm-Sans);
+  font-size: 16.31px;
+  font-weight: 700;
+  line-height: 23.83px;
+}
+
+@media (max-width: 1350px) {
+  .taxibanner {
+    padding: 1rem 0 1rem 5rem;
+    font-size: 30px;
+    line-height: 32.76px;
+  }
+  .lower_body_text {
+    font-size: 16.03px;
+    line-height: 22.04px;
+  }
+  .requirement_section {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .taxibanner {
+    padding: 1rem 0 1rem 3rem;
+  }
+  .banner_left {
+    width: 60%;
+  }
+  .banner_right {
+    width: 40%;
+  }
+  .taxi_price_right {
+    font-size: 30px;
+    line-height: 36.2px;
+  }
+
+  .taxi_price_span_text {
+    font-size: 13px;
+    line-height: 15.68px;
+  }
+  .taxi_price_btn_text {
+    font-size: 14.31px;
+    line-height: 18.83px;
+  }
+  .taxi_price_section {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 820px) {
+  .taxibanner {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 1rem 0;
+  }
+  .banner_left {
+    padding: 0 1rem;
+    width: 98%;
+  }
+  .banner_right {
+    width: 70%;
+  }
+  .recard_container {
+    gap: 12px;
+  }
+  .requirement_section {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 728px) {
+  .recard_container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .taxi_price_inner_cont {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .taxi_price_section {
+    padding: 2rem 0;
+  }
+  .requirement_section {
+    padding: 1rem 0;
+  }
+}
+</style>

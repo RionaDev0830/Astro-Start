@@ -1,0 +1,75 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - requirements
+  label: Reqirements Card
+  description: Requirement Card
+  icon: 'cottage'
+  tags:
+    - Image
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  src: /ra1.png
+  imgwidth: 48
+  imgheight: 48
+  heading: Das brauchst Du für ein Gesuch
+  body_text: >
+          Zu allererst musst du ein Gesuch um Erteilung eines Lernfahr- bzw. Führerausweises mit einem aktuellen Farbfoto (Portrait) im Format 35 x 45mm und dein Führerausweis einreichen.
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  src:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Card Image'
+        subtext:
+          - key: src
+          - 'Update Card Image'
+        image:
+          - key: src
+  imgwidth:
+    type: number
+    label: Header
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: imgwidth
+        subtext:
+          - 'Update image width'
+  imgheight:
+    type: number
+    label: Header
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: imgheight
+        subtext:
+          - 'Update image height'
+  heading:
+    type: text
+    label: heading 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: heading
+        subtext:
+          - 'heading Text'
+  body_text:
+    type: text
+    label: Body Text 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: body_text
+        subtext:
+          - 'Body Text'

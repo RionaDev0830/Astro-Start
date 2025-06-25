@@ -1,0 +1,86 @@
+---
+import { Image } from 'astro:assets';
+interface Props {
+  src: string;
+  imgwidth: number;
+  imgheight: number;
+  heading: string;
+  body_text: string;
+}
+export { Props as RequirementCardProps };
+const { src, imgheight, imgwidth, heading, body_text } = Astro.props;
+---
+<div class={"re_card"}>
+  <div class={"image_container"}>
+    <Image
+      src={src}
+      alt="icon voraussetzungen"
+      width={imgwidth ? imgwidth : 80}
+      height={imgheight ? imgheight : 80}
+      class={`taxi_image h-[${imgheight ? imgheight : 80}px] w-[${imgwidth ? imgwidth : 80}px]`}
+    />
+  </div>
+  <p class={"rc_heading"}>{heading}</p>
+  <p class={"card_body_text"}>{body_text}</p>
+</div>
+<style>
+.re_card {
+  width: 33%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card_body_text {
+  font-family: var(--font-dm-Sans);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+.rc_heading {
+  font-family: var(--font-clash-display);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24.6px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.image_container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #0697db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 1536px) {
+  .rc_heading {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .rc_heading {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 728px) {
+  .re_card {
+    width: 100%;
+  }
+}
+
+</style>
