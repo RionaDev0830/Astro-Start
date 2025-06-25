@@ -1,0 +1,24 @@
+---
+import impressumdata from '../../../../data/impressum.json';
+interface Props {
+  kontaktAddress: string;
+  Schweiz: string;
+  eMail: string;
+  Telefon: string;
+}
+const { kontaktAddress, Schweiz, eMail, Telefon } = Astro.props;
+
+---
+<div>
+  <h6 class={"privacytitle"}>{kontaktAddress}</h6>
+  <p class={"privacyparagraph"}>
+    {impressumdata.companyname} <br /> {impressumdata.address} <br />{" "}
+    {impressumdata.place}
+    <br />
+    {Schweiz} <br /> {eMail}: {impressumdata.mail} <br />
+    {Telefon}: {impressumdata.phone}
+  </p>
+</div>
+<style>
+
+</style>

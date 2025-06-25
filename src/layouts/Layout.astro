@@ -7,23 +7,29 @@ import Footer from "../components/navigation/footer.astro";
 import { SEO } from "astro-seo";
 
 export interface SEOProps {
-  page_description: string | null;
-  featured_image: string | null;
-  featured_image_alt: string | null;
-  canonical_url: string | null;
-  no_index: boolean | null;
-  open_graph_type: string | null;
-  author_twitter_handle: string | null;
+  description: string;
+  title: string;
+  openGraph: {
+    title: string;
+    description: string;
+    url: string;
+    type: string;
+    images: {
+      url: string;
+    };
+  };
+  canonical: string;
+  metadatabase: string;
+  keywords: [string];
 }
 
 export interface Props {
   title: string;
-  hero_block?: any;
   content_blocks?: any;
   seo?: SEOProps;
 }
 
-const { seo, hero_block, title } = Astro.props;
+const { seo, title } = Astro.props;
 const baseUrl = Astro.site?.toString() ?? "";
 
 // Find the title either at the top level of frontmatter, or nested in post_hero for a blog post
@@ -41,12 +47,8 @@ if (!title) {
   }
 }
 
-const description = seo?.page_description ?? site.description;
-const image = seo?.featured_image ?? site.image; // Image should be a static image (coming from public not src/assets)
-const imagePath = path.join(baseUrl, image);
-const imageAlt = seo?.featured_image_alt ?? site.image_alt;
-const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
-const headerStyleOverrides = hero_block?.header_style_overrides ?? {};
+const canonicalURL = new URL(seo?.canonical ?? Astro.url.pathname, baseUrl);
+const headerStyleOverrides = {};
 ---
 
 <!doctype html>
@@ -87,29 +89,28 @@ const headerStyleOverrides = hero_block?.header_style_overrides ?? {};
     <link rel="stylesheet" href="/css/editor.css" />
 
     <SEO
-      noindex={seo?.no_index || false}
-      title={pageTitle}
-      description={description}
+      title={seo?.title}
+      description={seo?.description}
       canonical={canonicalURL.toString()}
       openGraph={{
         basic: {
-          title: pageTitle,
-          url: baseUrl?.toString(),
-          type: seo?.open_graph_type || "website",
-          image: imagePath,
+          title: seo?.openGraph.title || "",
+          url: seo?.openGraph.url,
+          type: "website",
+          image: seo?.openGraph.images.url || ""
         },
         optional: {
-          description: description,
-        },
-        image: {
-          url: imagePath,
-          alt: imageAlt,
+          description: seo?.openGraph.description,
         },
       }}
-      twitter={{
-        creator: `${seo?.author_twitter_handle || site.twitter_site}`,
-        site: `${site.twitter_site}`,
-        card: "summary_large_image",
+      extend={{
+        meta: [{
+          name: 'base',
+          content: seo?.metadatabase
+        }, {
+          name: 'keywords',
+          content: seo?.keywords.join(', ')
+        }]
       }}
     />
   </head>
@@ -120,6 +121,9 @@ const headerStyleOverrides = hero_block?.header_style_overrides ?? {};
     </main>
     <Footer />
     <style is:global>
+      .layout-container {
+        padding-top: 88px;
+      }
       :root {
         /* Max width and inline padding of the page */
         --pageContainer: 1280px;

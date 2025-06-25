@@ -1,0 +1,15 @@
+---
+import Markdown from "../../utility/markdown.astro";
+
+interface Props {
+  header: string;
+  description: string;
+}
+const { header, description } = Astro.props;
+---
+<div>
+  <h6 class={"privacytitle"}>{header}</h6>
+  <p class={"privacyparagraph"}>
+    <Markdown content={description} />
+  </p>
+</div>

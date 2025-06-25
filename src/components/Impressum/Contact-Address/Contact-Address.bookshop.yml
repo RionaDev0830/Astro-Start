@@ -1,0 +1,62 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Impressum Contact Address
+  description: Impressum Contact Address
+  icon: 'cottage'
+  tags:
+    - Image
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  kontaktAddress: Über Fahrschule Loyal
+  Schweiz: Schweiz
+  eMail: E-Mail
+  Telefon: Telefon
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  kontaktAddress:
+    type: text
+    label: kontaktAddress
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: kontaktAddress
+        subtext:
+          - 'kontaktAddress Text'
+  Schweiz:
+    type: text
+    label: Schweiz 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: Schweiz
+        subtext:
+          - 'Schweiz Text'
+  eMail:
+    type: text
+    label: eMail 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: eMail
+        subtext:
+          - 'eMail Text'
+  Telefon:
+    type: text
+    label: Telefon 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: Telefon
+        subtext:
+          - 'eMail Text'

@@ -26,7 +26,7 @@ collections_config:
     schemas:
       default:
         name: New Page
-        path: '.cloudcannon/schemas/page.md'
+        path: '.cloudcannon/schemas/defaultPage.md'
         remove_extra_inputs: false
       paginated:
         name: Paginated collection
