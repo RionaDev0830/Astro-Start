@@ -13,9 +13,39 @@ type Props = {
 };
 
 const props = Astro.props.frontmatter;
+const getContainerClass = () => {
+  if (props.title == "Impressum Page") {
+    return "privacycontainer";
+  }
+};
 ---
 
 <Layout {...props}>
   <!-- <HeroBlock bookshop:live heroBlock={props.hero_block} /> -->
-  <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+  <div class=`${getContainerClass()}`>
+    <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+  </div>
 </Layout>
+<style>
+  .privacycontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 17rem 3rem 3rem 3rem;
+    margin-top: -100px;
+    color: #3d3d3d;
+  }
+  .privacycontainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  @media screen and (max-width: 1024px) {
+    .privacycontainer {
+      margin: 4rem 0 1rem 0;
+      padding: 0 0.8rem;
+    }
+  }
+</style>

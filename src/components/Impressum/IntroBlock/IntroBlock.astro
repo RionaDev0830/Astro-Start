@@ -9,7 +9,28 @@ const { header, description } = Astro.props;
 ---
 <div>
   <h6 class={"privacytitle"}>{header}</h6>
-  <p class={"privacyparagraph"}>
+  <div class={"privacyparagraph"}>
     <Markdown content={description} />
-  </p>
+  </div>
 </div>
+<style>
+.privacytitle {
+	 font-size: 20px;
+	 font-weight: bold;
+	 margin-bottom: 1rem;
+	 text-align: center;
+}
+.privacyparagraph {
+	 margin-bottom: 1rem;
+	 font-size: 18px;
+	 line-height: 1.8rem;
+}
+ @media screen and (max-width: 1024px) {
+	 .privacyparagraph {
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
+		 flex-direction: column;
+	}
+}
+</style>
