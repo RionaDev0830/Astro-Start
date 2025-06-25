@@ -30,7 +30,7 @@ _inputs:
         subtext:
           - 'Header Text'
   description:
-    type: textarea
+    type: markdown
     label: Body 
     options:
       preview:
