@@ -7,6 +7,7 @@ interface Props {
     heading_text: string;
     color: string;
   };
+  test_text: string;
   text: {
     text_content: string;
     color: string;
@@ -22,7 +23,7 @@ interface Props {
   };
 }
 
-const { heading, text, button, key } = Astro.props;
+const { heading, test_text, text, button, key } = Astro.props;
 
 const buttons = import.meta.glob("/src/components/buttons/**/*.astro", {
   eager: true,
@@ -38,6 +39,7 @@ const ButtonComponent = (buttons[buttonFilePath] as any)?.default;
   style={`color: ${heading.color};`}>
   {heading.heading_text}
 </h2>
+<h2>{test_text}</h2>
 <div style={`color: ${text.color};`}>
   <Markdown content={text.text_content} />
 </div>

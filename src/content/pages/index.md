@@ -48,6 +48,7 @@ hero_block:
       background_color: '#034ad8'
 content_blocks:
   - _bookshop_name: left-right
+    test_text: ttest test
     background_color: '#ffffff'
     heading:
       heading_text: Keep what you need. Delete the rest.
