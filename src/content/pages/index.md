@@ -14,6 +14,7 @@ seo:
 hero_block:
   _bookshop_name: heroes/hero
   background_color: '#ffffff'
+  test_text: 'test text'
   heading:
     heading_text: CloudCannon Astro Starter
     heading_gradient_color: '#A0A2FF'
