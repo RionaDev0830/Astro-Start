@@ -38,7 +38,8 @@ const ButtonComponent = (buttons[buttonFilePath] as any)?.default;
   style={`color: ${heading.color};`}
   data-cms-edit="heading.heading_text"
   >
-  {heading.heading_text}
+  <!-- {heading.heading_text} -->
+   <Markdown content={heading.heading_text} />
 </h2>
 <div style={`color: ${text.color};`}>
   <p>test:{text.text_content}</p>
