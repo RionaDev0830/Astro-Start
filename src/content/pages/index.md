@@ -2,15 +2,23 @@
 _schema: default
 title: CloudCannon Astro Starter
 seo:
-  page_description: >-
-    A starting point for developers looking to build a website with Astro, using
-    Bookshop components in CloudCannon.
-  canonical_url:
-  featured_image:
-  featured_image_alt:
-  author_twitter_handle:
-  open_graph_type:
-  no_index: false
+  description: Du hast Fragen oder möchtest dich für einen Kurs anmelden? Kontaktiere uns jetzt! ✓ Telefonisch ✓ Per E-Mail ✓ Vor Ort in Schlieren – Wir freuen uns auf dich!
+  title: Kontaktiere die Fahrschule Loyal - Wir sind für dich da!
+  keywords:
+    - kontakt fahrschule loyal
+    - fahrschule kontakt
+    - fahrlehrer kontakt
+    - fahrschule schlieren
+    - kontaktformular fahrschule
+  openGraph:
+    title: Kontaktiere die Fahrschule Loyal - Wir sind für dich da!
+    description: Du hast Fragen oder möchtest dich für einen Kurs anmelden? Kontaktiere uns jetzt! ✓ Telefonisch ✓ Per E-Mail ✓ Vor Ort in Schlieren – Wir freuen uns auf dich!
+    url: https://www.fahrschuleloyal.ch/kontakt
+    type: website
+    images:
+      url: https://www.fahrschuleloyal.ch/loyal.logo.cdr.svg
+  canonical: https://www.fahrschuleloyal.ch/kontakt
+  metadatabase: https://www.fahrschuleloyal.ch/kontakt
 hero_block:
   _bookshop_name: heroes/hero
   background_color: '#ffffff'

@@ -28,18 +28,32 @@ const blogCollection = defineCollection({
     seo: seoSchema,
   }),
 });
-
+const pageSeo = z.object({
+  title: z.string(),
+  description: z.string(),
+  keywords: z.array(z.string()),
+  openGraph: z.object({
+    title: z.string(),
+    description: z.string(),
+    url: z.string().url(),
+    type: z.string(),
+    images: z.object({
+      url: z.string().url(),
+    }),
+  }),
+  canonical: z.string().url(),
+  metadatabase: z.string().url(),
+})
 const pageSchema = z.object({
   title: z.string(),
-  hero_block: z.any(),
   content_blocks: z.array(z.any()),
-  seo: seoSchema,
+  seo: pageSeo,
 });
 
 const paginatedCollectionSchema = z.object({
   title: z.string(),
   page_size: z.number().positive(),
-  seo: seoSchema,
+  seo: pageSeo,
 });
 
 const pagesCollection = defineCollection({
