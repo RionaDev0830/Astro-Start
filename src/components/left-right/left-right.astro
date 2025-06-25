@@ -13,7 +13,6 @@ interface Props {
     heading_text: string;
     color: string;
   };
-  test_text: string;
   text: {
     text_content: string;
     color: string;
@@ -37,7 +36,6 @@ const {
   key,
   content_blocks_length,
   background_color,
-  test_text,
   flipped,
   heading,
   text,
@@ -78,7 +76,6 @@ const componentBottomPaddingMultiplier = findComponentPaddingMultiplier(
         <div class="left-right__text left-right__text-flipped">
           <LeftRightText
             heading={heading}
-            test_text={test_text}
             button={button}
             text={text}
             key={key}

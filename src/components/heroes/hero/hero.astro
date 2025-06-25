@@ -5,7 +5,6 @@ import Markdown from "../../utility/markdown.astro";
 
 interface Props {
   background_color: string;
-  test_text: string;
   heading: {
     heading_text: string;
     heading_gradient_color: string;
@@ -31,7 +30,7 @@ interface Props {
   ];
 }
 
-const { background_color, test_text, heading, subheading, image, buttons } = Astro.props;
+const { background_color, heading, subheading, image, buttons } = Astro.props;
 
 const allButtons = import.meta.glob("/src/components/buttons/**/*.astro", {
   eager: true,
@@ -51,7 +50,6 @@ const headingGradientColor = heading.heading_gradient_color;
   aria-labelledby="hero-heading-text">
   <div class="hero-container">
     <div class="content">
-      <p>{test_text}</p>
       <h1 id="hero-heading-text" class="heading">
         {heading.heading_text}
       </h1>

@@ -269,13 +269,6 @@ _inputs:
     options:
       values: collections.blog
       value_key: title
-  heading_text:
-    type: text
-    options:
-      italic: true
-      strike: true
-      underline: true
-      copyformatting: true
   text_content:
     type: markdown
     options:
