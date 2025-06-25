@@ -17,7 +17,7 @@ const { questionText, welcomeText, phone, mail} = Astro.props;
     <ContactComponent client:load/>
   </div>
   <div class={"rightcontainer"}>
-    <p>{questionText}</p>
+    <p class="editable" data-cms-bind="questionText" data-cms-edit="questionText">{questionText}</p>
     <p>{welcomeText}</p>
     <div class={"contactdetails"}>
       <p class={"name"}>Mehr Details</p>
