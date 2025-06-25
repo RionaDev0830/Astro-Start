@@ -1,0 +1,33 @@
+---
+interface Props {
+  className?: string;
+}
+
+const { className = '' } = Astro.props;
+---
+<div class=`wrapper ${className}`>
+  <slot />
+</div>
+<style>
+  .wrapper {
+    padding: 0 8rem;
+  }
+
+  @media (max-width: 1350px) {
+    .wrapper {
+      padding: 0 5rem;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .wrapper {
+      padding: 0 3rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .wrapper {
+      padding: 0 1rem;
+    }
+  }
+</style>

@@ -1,0 +1,115 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: About Team
+  description: About Team of This Site
+  icon: 'cottage'
+  tags:
+    - Image
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  header: Unser Team
+  members:
+    - name: Besnik Aslani
+      role: Fahrlehrer & Gründer
+      description: >
+        Besnik Aslani ist der Gründer der Fahrschule Loyal und verfügt über jahrelange Erfahrung in der Fahrausbildung. Mit Geduld und Fachwissen begleitet er seine Schüler auf dem Weg zum Führerschein und legt grossen Wert auf eine sichere und stressfreie Ausbildung.
+      image: 
+        image_path: /Besnik_original-modified.png
+        alt_text: Besnik Aslani
+      width: 150
+      height: 150        
+    - name: Blerta Aslani
+      role: Organisation & Instruktorin
+      description: >
+        Blerta Aslani sorgt im Hintergrund für einen reibungslosen Ablauf in der Fahrschule Loyal. Sie ist für die Terminplanung und das Rechnungswesen verantwortlich und zudem als Nothelferkurs-Instruktorin tätig. Mit ihrem Fachwissen trägt sie dazu bei, dass Fahrschüler optimal auf ihre Ausbildung vorbereitet werden.
+      image: 
+        image_path: /blerta-modified.png
+        alt_text: Blerta Aslani
+      width: 150
+      height: 150
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  header:
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: header
+          - 'Header Text'
+        subtext:
+          - 'Update Header text'
+  members:
+    type: list
+    label: Members list
+    item:
+      type: group
+      label: Team Member
+      fields:
+        name:
+          type: text
+          label: Name
+          options:
+            preview:
+              icon: 'text'
+              text:
+                - key: name
+              subtext:
+                - 'name Text'
+        role:
+          type: text
+          label: Role
+          options:
+            preview:
+              icon: 'text'
+              text:
+                - key: role
+              subtext:
+                - 'Member Role'
+        description:
+          type: textarea
+          label: Description
+          options:
+            preview:
+              icon: 'textarea'
+              text:
+                - key: description
+              subtext:
+                - 'Member description'
+        width:
+          type: number
+          label: Image width
+          options:
+            preview:
+              text:
+                - key: width
+              subtext:
+                - 'Member image width'
+        height:
+          type: number
+          label: Image height
+          options:
+            preview:
+              text:
+                - key: height
+              subtext:
+                - 'Member image height'
+        image:
+          options:
+            preview:
+              icon: 'image'
+              text:
+                - key: alt_text
+                - 'Member Image'
+              subtext:
+                - key: image_path
+                - 'Update Member Image'
+              image:
+                - key: image_path

@@ -1,0 +1,372 @@
+---
+import Wrapper from '../../Common/Wrapper.astro';
+import { Staggeranimstylethree } from '../../Common/Transition/Cardsanim.jsx';
+import { Image } from 'astro:assets';
+interface Props {
+  left_text: string;
+  button_text: string;
+  button_link: string;
+  address: string;
+  opening_days: string;
+  opening_hours: string;
+}
+const { left_text, button_link, button_text, address, opening_days, opening_hours} = Astro.props;
+---
+<Wrapper>
+  <Staggeranimstylethree klass={"contact-form-container"} client:visible>
+    {/* Upper div */}
+    <div class={"upperDiv"}>
+      {/* Upper left */}
+      <div class={"upperLeft"}>
+        {left_text.split("\\n").map((line, idx) => (
+          <p>{line}</p>
+        ))}
+        <a
+          href={button_link}
+          class={"btnsubmitButton btnfitbtn"}
+        >
+          {button_text}
+      </a>
+      </div>
+
+      {/* Upper right */}
+      <div class={"upperRight"}>
+        <div class={"location"}>
+          <div>
+            <Image
+              src={"/location_icon_black.svg"}
+              alt="location"
+              width={30}
+              height={30}
+              class={"icon"}
+            />
+          </div>
+          <div>
+            {address.split("\\n").map((line, idx) => (
+              <p class={"number"}>
+                {line}
+              </p>
+            ))}
+          </div>
+        </div>
+        <div class={"clock"}>
+          <div>
+            <Image
+              src={"/clock_icon.svg"}
+              alt="clock"
+              width={30}
+              height={30}
+              class={"icon"}
+            />
+          </div>
+          <div>
+            <p class={"text"}>{opening_days}</p>
+            <p class={"number"}>{opening_hours}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+  </Staggeranimstylethree>
+</Wrapper>
+<style is:global>
+.contact-form-container {
+  background-image: url("/background1_shrink.webp");
+  background-size: cover;
+  color: white;
+  padding: 2rem;
+  border-radius: 24px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+</style>
+<style>
+.upperDiv,
+.lowerDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.upperDiv {
+  height: auto;
+}
+
+.lowerDiv {
+  height: auto;
+}
+
+/* Upper Left & Right split equally */
+.upperLeft,
+.upperRight {
+  width: 48%;
+}
+
+.upperLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upperLeft p {
+  font-size: 33px;
+  font-weight: 600;
+  font-family: var(--font-clash-display);
+}
+
+.upperLeft p:nth-child(2) {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: normal;
+  font-family: var(--font-dm-Sans);
+}
+
+.upperRight {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 2rem;
+  /* margin-bottom: 1rem; */
+  margin-top: 8px;
+  display: flex;
+  border-radius: 20px 0;
+}
+
+.location {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.location div:last-child,
+.clock div:last-child {
+  font-size: 20px;
+}
+
+.clock {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon {
+  color: #0959a3;
+  font-size: 20px;
+}
+
+.text {
+  font-size: 20px;
+  font-family: var(--font-dm-Sans);
+  color: #242424;
+}
+
+.number {
+  font-size: 20px;
+  font-family: var(--font-dm-Sans);
+  color: #242424;
+}
+
+.lowerLeft,
+.lowerRight {
+  width: 48%;
+}
+
+/* Contact Info */
+.name {
+  font-size: 30px;
+  font-family: var(--font-dm-Sans);
+  padding-bottom: 20px;
+}
+
+.phone,
+.mail {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--font-dm-Sans);
+  display: flex;
+  align-items: center;
+}
+
+.lowicon {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.inputText {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.inputText::placeholder {
+  font-size: 16px;
+  font-family: var(--font-dm-Sans);
+  color: #6c757d;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  height: 150px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.textarea::placeholder {
+  font-family: var(--font-dm-Sans);
+}
+
+/* Media Queries for responsive adjustments */
+@media (max-width: 1024px) {
+  .container {
+    margin-top: 3rem;
+  }
+
+  .upperLeft,
+  .upperRight,
+  .lowerLeft,
+  .lowerRight {
+    width: 100%;
+  }
+
+  .lowerRight {
+    margin-top: 20px;
+  }
+
+  .upperRight {
+    display: flex;
+    padding: 15px;
+    gap: 5px;
+  }
+
+  .location,
+  .clock {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 2rem;
+  }
+  .upperRight {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .location {
+    border: none;
+  }
+
+  .upperLeft p {
+    font-size: 28px;
+  }
+
+  .upperLeft p:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+  .location div:last-child {
+    font-size: 16px;
+  }
+
+  .clock .text {
+    font-size: 16px;
+  }
+
+  .clock div:last-child {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 2rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .upperLeft p {
+    font-size: 24px;
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+
+  .clock .text {
+    font-size: 16px;
+  }
+
+  .form {
+    padding: 1rem;
+  }
+}
+.submitButton {
+  background-color: #0697db;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--font-dm-Sans);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 26.04px;
+}
+
+.submitButton:hover {
+  background-color: #407fbb;
+}
+
+.fitbtn {
+  width: fit-content;
+  height: fit-content;
+}
+
+@media (max-width: 600px) {
+  .submitButton {
+    padding: 8px;
+    font-size: 18px;
+    line-height: 23.04px;
+  }
+}
+
+</style>

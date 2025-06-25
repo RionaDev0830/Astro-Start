@@ -1,0 +1,312 @@
+---
+import Wrapper from '../../Common/Wrapper.astro';
+import { Staggeranimstylethree } from '../../Common/Transition/Cardsanim.jsx';
+import { Image } from 'astro:assets';
+
+interface Props {
+  header: string;
+  body: string;
+  main_image: {
+    image_path: string;
+    alt_text: string;
+  };
+  right_images: [{
+    image_path: string;
+    alt_text: string;
+  }];
+}
+
+const { header, body, main_image, right_images } = Astro.props;
+---
+<Wrapper>
+  <Staggeranimstylethree klass={"about_driving_school"} client:visible>
+    <div class={"text_sub_div"}>
+      <h1 class={"sub_div_header"}>{header}</h1>
+      <p class={"sub_div_body"}>
+        {body.split("\\n").map((line, index) => <>
+          {line}<br/><br/>
+        </>)}
+      </p>
+    </div>
+    <div class={"image_container_section"}>
+      <div class={"sub_div1"}>
+        <Image
+          src={main_image.image_path}
+          alt={main_image.alt_text}
+          class={"about_images chamfered_image"}
+          width={300}
+          height={300}
+        />
+      </div>
+      <div class={"right_sub_div"}>
+        {right_images.map((img, idx) => (
+          <Image
+            key={idx}
+            src={img.image_path}
+            alt={img.alt_text}
+            class={"right_images"}
+            width={300}
+            height={200}
+          />
+        ))}
+      </div>
+    </div>
+  </Staggeranimstylethree>
+</Wrapper>
+<style is:global>
+.about_driving_school {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 5rem 0;
+}
+</style>
+<style>
+.text_sub_div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-right: 40px;
+  justify-content: center;
+}
+
+.sub_div_header {
+  font-family: var(--font-clash-display);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 55.08px;
+}
+
+.sub_div_body {
+  font-family: var(--font-dm-Sans);
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 27.04px;
+}
+
+.sub_div {
+  width: 30%;
+}
+
+.about_images {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.chamfered_image {
+  border-radius: 0.5rem;
+}
+
+.about_team_section {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px; */
+  padding: 2rem 0;
+  margin: 2rem 0;
+  background-color: #f3f4f6;
+}
+
+.about_team_container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 18px;
+  padding: 5rem 0;
+  flex-wrap: wrap;
+}
+
+.about_team_header {
+  font-family: var(--font-clash-display);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 55.08px;
+  text-align: center;
+  color: #1a446c;
+}
+
+.about_team_member_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  gap: 1rem;
+  /* border: #0697db solid 2px; */
+  border-radius: 2rem;
+  box-shadow: #002435 0px 1px 2px;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.about_team_member_image {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about_team_member_name {
+  font-family: var(--font-clash-display);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36.06px;
+}
+
+.about_team_member_role {
+  font-family: var(--font-dm-Sans);
+  color: #0697db;
+  line-height: 27.04px;
+}
+
+.about_team_member_description {
+  font-family: var(--font-dm-Sans);
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 27.04px;
+}
+
+.right_sub_div {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.right_images {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.details_icon {
+  width: 71px;
+}
+
+.contact_details {
+  margin: 5rem 0;
+  background-color: #0697db;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.single_contact {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+  align-items: center;
+  font-family: var(--font-dm-Sans);
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+}
+
+.sub_details_text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.image_container_section {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.sub_div1 {
+  width: 50%;
+}
+
+@media (max-width: 1375px) {
+  .sub_div_header {
+    font-size: 29px;
+    line-height: 43.08px;
+  }
+  .about_driving_school {
+    gap: 10px;
+  }
+  .right_sub_div {
+    gap: 10px;
+  }
+  .image_container_section {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1026px) {
+  .sub_div_body {
+    font-size: 18px;
+    line-height: unset;
+  }
+  .text_sub_div {
+    padding-right: 20px;
+  }
+  .about_driving_school {
+    padding: 3rem 0;
+  }
+  .contact_details {
+    margin: 3rem 0;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 810px) {
+  .text_sub_div {
+    gap: 20px;
+  }
+  .contact_details {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 790px) {
+  .about_driving_school {
+    flex-direction: column;
+    padding: 2rem 0;
+    row-gap: 20px;
+  }
+  .text_sub_div {
+    width: 100%;
+    padding-right: unset;
+  }
+  .image_container_section {
+    width: 100%;
+  }
+  .right_sub_div {
+    width: 48%;
+  }
+  .contact_details {
+    margin: 2rem 0;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 550px) {
+  .details_icon {
+    width: 45px;
+  }
+  .single_contact {
+    font-size: 21px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 500px) {
+  .image_container_section {
+    flex-direction: column;
+  }
+  .sub_div1 {
+    width: 100%;
+  }
+  .right_sub_div {
+    width: 100%;
+  }
+}
+
+</style>

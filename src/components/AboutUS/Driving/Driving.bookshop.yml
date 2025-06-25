@@ -1,0 +1,86 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: About Driving
+  description: About Driving of This Site
+  icon: 'cottage'
+  tags:
+    - Image
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  main_image:
+    image_path: /WhatsApp%20Image.jpeg
+    alt_text: ueber mich1
+  header: Über Fahrschule Loyal
+  body: |
+      Seit 2018 bin ich Fahrlehrer der Kategorie B und begleite angehende Autofahrer:innen sicher und kompetent auf ihrem Weg zum Führerschein. Mein Ziel ist es, den Fahrunterricht praxisnah, verständlich und entspannt zu gestalten, damit meine Fahrschüler:innen mit Vertrauen und Können auf die Strasse gehen können.\n
+
+      Im Jahr 2024 habe ich meine Ausbildung zum Lastwagenfahrlehrer erfolgreich abgeschlossen und meine Abschlussprüfung bestanden. Damit bringe ich nicht nur fundierte Fachkenntnisse, sondern auch die aktuellsten Standards im Fahrunterricht mit. Bevor ich Fahrlehrer wurde, habe ich wertvolle Erfahrungen als Bus- und Lastwagenfahrer gesammelt. Diese Zeit hat mir geholfen, ein umfassendes Verständnis für den Strassenverkehr, professionelle Fahrtechniken und den sicheren Umgang mit unterschiedlichen Fahrzeugen zu entwickeln.\n
+
+      Warum Du bei mir richtig bist:\n
+
+      • Erfahrung: Über sechs Jahre als Fahrlehrer und ein Jahrzehnt Erfahrung im professionellen Strassenverkehr.\n
+      • Praxisnähe: Fundiertes Wissen aus der Praxis, das ich in den Unterricht einbringe.\n
+      • Geduld und Engagement: Ich nehme mir die Zeit, auf individuelle Bedürfnisse einzugehen, und sorge für ein angenehmes Lernumfeld.\n
+  right_images:
+    - image_path: /uber1.webp
+      alt_text: ueber mich2
+    - image_path: /uber3_shrink.webp
+      alt_text: ueber mich3
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  header:
+    type: text
+    label: Header
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: header
+        subtext:
+          - 'Header Text'
+  body:
+    type: textarea
+    label: Body 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: body
+        subtext:
+          - 'Body Text'
+  main_image:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - key: alt_text
+          - 'Main Image'
+        subtext:
+          - key: image_path
+          - 'Update Main Image'
+        image:
+          - key: image_path
+  right_images:
+    type: list
+    label: About Right Images
+    item:
+      type: group
+      options:
+        preview:
+          icon: 'image'
+          text:
+            - key: alt_text
+            - 'Right Image Item'
+          subtext:
+            - key: image_path
+            - 'Update Right Image Item'
+          image:
+            - key: image_path
