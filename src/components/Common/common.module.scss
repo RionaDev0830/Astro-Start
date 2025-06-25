@@ -1,0 +1,165 @@
+.btnstyleone {
+  cursor: pointer;
+  color: white;
+  // margin-top: 12px;
+  width: fit-content;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 25px;
+  background: linear-gradient(to left, transparent 50%, white 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+
+  &:hover {
+    background-position: left;
+    color: #172636;
+  }
+}
+
+.hasarrow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &::after {
+    content: "";
+    display: block;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    clip-path: path(
+      "M11.9546 1.05226V9.53757C11.9546 9.66937 11.9286 9.79997 11.8782 9.92177C11.8277 10.0436 11.7537 10.1543 11.6605 10.2476C11.5673 10.3408 11.4566 10.4148 11.3347 10.4652C11.2129 10.5157 11.0824 10.5416 10.9505 10.5416C10.8186 10.5416 10.6881 10.5157 10.5662 10.4652C10.4444 10.4148 10.3337 10.3408 10.2405 10.2476C10.1473 10.1543 10.0733 10.0436 10.0228 9.92177C9.97242 9.79997 9.94641 9.66937 9.94641 9.53757L9.95352 3.46348L1.75813 11.6589C1.57059 11.8464 1.31624 11.9518 1.05102 11.9518C0.785805 11.9518 0.531445 11.8464 0.343915 11.6589C0.156375 11.4713 0.0510254 11.217 0.0510254 10.9518C0.0510254 10.6866 0.156375 10.4322 0.343915 10.2447L8.53932 2.04928L2.46524 2.05634C2.19894 2.05634 1.94354 1.95056 1.75524 1.76226C1.56693 1.57395 1.46115 1.31856 1.46115 1.05226C1.46115 0.785955 1.56693 0.530555 1.75524 0.342255C1.94354 0.153945 2.19894 0.0481654 2.46524 0.0481654H10.9505C11.0825 0.0476154 11.2133 0.0732252 11.3354 0.123485C11.4575 0.173755 11.5684 0.247695 11.6617 0.341045C11.7551 0.434395 11.829 0.545295 11.8793 0.667365C11.9295 0.789425 11.9551 0.920245 11.9546 1.05226Z"
+    );
+    background-color: white;
+  }
+
+  &:hover:after {
+    background-color: black;
+  }
+}
+
+.darkarrow {
+  &::after {
+    background-color: black;
+  }
+  &:hover:after {
+    background-color: white;
+  }
+}
+
+.btnstyletwo {
+  cursor: pointer;
+  color: white;
+  // margin-top: 12px;
+  width: fit-content;
+  padding: 10px 30px;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to left, #6b2884 50%, white 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+
+  &:hover {
+    background-position: left;
+    color: #172636;
+  }
+}
+
+.btnstylethree {
+  cursor: pointer;
+  color: black;
+  // margin-top: 12px;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 20px;
+  width: fit-content;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 25px;
+  background: linear-gradient(to left, transparent 50%, white 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+
+  &:hover {
+    background-position: left;
+    color: #172636;
+    border: 1px solid white;
+  }
+}
+
+.btnstylefour {
+  cursor: pointer;
+  color: white;
+  // margin-top: 12px;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 20px;
+  width: fit-content;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #0697db;
+  border-radius: 25px;
+  background: linear-gradient(to left, #0697db 0%, #0697db 50%, transparent 50%)
+    right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+
+  &:hover {
+    background-position: left;
+    color: #0697db;
+    border: 1px solid #0697db;
+  }
+}
+
+.gradientbackground {
+  color: black;
+  font-weight: 500;
+  padding: 7px 20px;
+  background: linear-gradient(
+      to left,
+      rgba(107, 40, 132, 1) 0%,
+      rgb(255 150 145) 50%,
+      black 50%
+    )
+    right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+
+  &:hover {
+    background-position: left;
+    color: white;
+    border: 1px solid white;
+  }
+}
+
+.floatingpopup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.smaller {
+  font-size: 15px;
+  padding: 5px 15px;
+}
+
+@media screen and (max-width: 450px) {
+  .btnstyleone,
+  .btnstyletwo,
+  .btnstylethree,
+  .btnstylefour {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
