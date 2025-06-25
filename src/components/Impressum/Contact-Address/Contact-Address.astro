@@ -1,5 +1,5 @@
 ---
-import impressumdata from '../../../../data/impressum.json';
+import impressumdata from "../../../../data/impressum.json";
 interface Props {
   kontaktAddress: string;
   Schweiz: string;
@@ -7,36 +7,48 @@ interface Props {
   Telefon: string;
 }
 const { kontaktAddress, Schweiz, eMail, Telefon } = Astro.props;
-
 ---
+
 <div>
   <h6 class={"privacytitle"}>{kontaktAddress}</h6>
   <p class={"privacyparagraph"}>
-    {impressumdata.companyname} <br /> {impressumdata.address} <br />{" "}
+    {impressumdata.companyname}
+    <br />
+    {impressumdata.address}
+    <br />{" "}
     {impressumdata.place}
     <br />
-    {Schweiz} <br /> {eMail}: {impressumdata.mail} <br />
+    {Schweiz}
+    <br />
+    {eMail}: {impressumdata.mail}
+    <br />
     {Telefon}: {impressumdata.phone}
   </p>
 </div>
 <style>
-.privacytitle {
-	 font-size: 20px;
-	 font-weight: bold;
-	 margin-bottom: 1rem;
-	 text-align: center;
-}
-.privacyparagraph {
-	 margin-bottom: 1rem;
-	 font-size: 18px;
-	 line-height: 1.8rem;
-}
- @media screen and (max-width: 1024px) {
-	 .privacyparagraph {
-		 display: flex;
-		 justify-content: center;
-		 align-items: center;
-		 flex-direction: column;
-	}
-}
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .privacytitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .privacyparagraph {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 1.8rem;
+  }
+  @media screen and (max-width: 1024px) {
+    .privacyparagraph {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
 </style>
