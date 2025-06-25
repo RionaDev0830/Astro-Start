@@ -1,0 +1,188 @@
+.contactmaincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.contactcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  & > div,
+  form > p {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+  & > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  progress[value] {
+    --color: #0697db;
+    --background: #e4e3e3;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 80%;
+    margin: 0 10px;
+    border-radius: 10em;
+    background: var(--background);
+  }
+  progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    background: var(--background);
+  }
+  progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: var(--color);
+  }
+  progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--color);
+  }
+}
+
+.containertitle {
+  width: 80%;
+  text-align: center;
+}
+
+.optionscontainer {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.itemcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+  box-shadow: 5px 5px 12px #dbdbdb;
+  padding: 1rem;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: inset 2px 2px 2px #d7d7d7;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  img,
+  p {
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 14px;
+  }
+  .redelem {
+    color: red;
+  }
+  input {
+    width: 1.2rem;
+    height: 1.2rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  input[type="radio"] {
+    display: none;
+  }
+}
+
+.contactformwrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & > input,
+  & > textarea {
+    background-color: rgb(231, 230, 230);
+    padding: 15px 10px 15px 20px;
+    border: none;
+    border-radius: 25px;
+    resize: vertical;
+    color: black;
+    font-size: 17px;
+
+    &::placeholder {
+      font-family: "Poppins", sans-serif;
+      font-size: 17px;
+      color: black;
+      opacity: 0.7;
+    }
+    &:focus {
+      color: black;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .contactcontainer {
+    & > div,
+    form > p {
+      font-size: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contactformwrap {
+    width: 88%;
+    & > input,
+    & > textarea {
+      width: 100%;
+    }
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .itemcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    img,
+    p {
+      margin: 0;
+      font-weight: 300;
+      font-size: 14px;
+    }
+  }
+
+  .optionscontainer {
+    grid-template-columns: 2fr;
+    width: 100%;
+    height: auto;
+    overflow-y: scroll;
+    margin-top: 2rem;
+  }
+
+  .contactcontainer {
+    & > div,
+    form > p {
+      font-size: 24px;
+      width: 80%;
+    }
+  }
+}

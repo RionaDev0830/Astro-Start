@@ -1,5 +1,7 @@
 ---
 import { Image } from 'astro:assets';
+
+import ContactComponent from '../ContactComponent/index.tsx';
 interface Props {
   questionText: string;
   welcomeText: string;
@@ -11,6 +13,9 @@ const { questionText, welcomeText, phone, mail} = Astro.props;
 
 ---
 <div class={"contact_section"}>
+	<div class={"contact_form_conatiner"}>
+    <ContactComponent client:load/>
+  </div>
   <div class={"rightcontainer"}>
     <p>{questionText}</p>
     <p>{welcomeText}</p>
