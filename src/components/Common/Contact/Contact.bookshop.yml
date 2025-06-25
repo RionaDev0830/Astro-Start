@@ -1,0 +1,59 @@
+spec:
+  structures:
+    - content_blocks
+  label: Contact Container
+  description: Main call-to-action section with image, heading, description, and button
+  icon: 'vertical_split'
+  tags:
+    - Text
+    - Button
+
+blueprint:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
+preview:
+
+_inputs:
+  questionText:
+    type: text
+    label: Question Text
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: questionText
+        subtext:
+          - 'Question Text'
+  welcomeText:
+    type: text
+    label: Welcome Text
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: welcomeText
+        subtext:
+          - 'Welcome text'
+  phone:
+    type: text
+    label: Phone Number
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: phone
+        subtext:
+          - 'Phone Number'
+  mail:
+    type: text
+    label: Mail Address
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: mail
+        subtext:
+          - 'Mail Address'
+

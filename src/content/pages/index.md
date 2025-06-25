@@ -46,6 +46,11 @@ hero_block:
       button_aria_label:
       background_color: '#034ad8'
 content_blocks:
+  - _bookshop_name: Common/Contact
+    questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+    welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+    phone: "+41 78 800 90 91"
+    mail: "info@fahrschuleloyal.ch"
   - _bookshop_name: left-right
     background_color: '#ffffff'
     heading:
