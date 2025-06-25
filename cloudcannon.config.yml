@@ -249,6 +249,8 @@ _editables:
     snippet: true
 
 _inputs:
+  questionText:
+    type: text
   heading:
     type: object
     options:
