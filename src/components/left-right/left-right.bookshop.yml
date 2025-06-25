@@ -41,6 +41,9 @@ preview:
 _inputs:
   heading_text1:
     type: text
+    text:
+      - key: heading_text1
+      - 'Heading Text 1'
   heading:
     options:
       preview:
