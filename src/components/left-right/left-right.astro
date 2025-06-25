@@ -8,6 +8,7 @@ interface Props {
   key: number;
   content_blocks_length: number;
   background_color: string;
+  heading_text: string;
   flipped: boolean;
   heading: {
     heading_text: string;
@@ -41,6 +42,7 @@ const {
   text,
   image,
   button,
+  heading_text
 } = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -73,7 +75,7 @@ const componentBottomPaddingMultiplier = findComponentPaddingMultiplier(
           formats={["avif", "webp"]}
           loading="lazy"
         />
-        <h2 data-cms-edit="heading.heading_text">{heading.heading_text}</h2>
+        <h2 data-cms-edit="heading_text">{heading_text}</h2>
         <div class="left-right__text left-right__text-flipped">
           <LeftRightText
             heading={heading}

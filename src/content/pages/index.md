@@ -53,6 +53,7 @@ content_blocks:
     mail: "info@fahrschuleloyal.ch"
   - _bookshop_name: left-right
     background_color: '#ffffff'
+    heading_text: "test test"
     heading:
       heading_text: Keep what you need. Delete the rest.
       color: '#393939'
@@ -97,6 +98,7 @@ content_blocks:
     button:
   - _bookshop_name: left-right
     background_color: '#ffffff'
+    heading_text: "test test"
     heading:
       heading_text: You choose your editing experience.
       color: '#393939'
