@@ -255,12 +255,8 @@ _inputs:
       preview:
         text:
           - key: heading_text
-  heading_text1:
+  heading.heading_text:
     type: text
-    comment: The main heading for the page.
-    text:
-      - key: heading_text1
-      - 'Heading Text 1'
   content_blocks:
     type: array
     options:

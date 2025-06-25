@@ -41,6 +41,8 @@ _inputs:
         subtext:
           - key: heading_gradient_color
           - 'Update heading gradient color and text content.'
+  heading.heading_text:
+    type: text
   subheading:
     options:
       preview:

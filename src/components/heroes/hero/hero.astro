@@ -50,9 +50,9 @@ const headingGradientColor = heading.heading_gradient_color;
   aria-labelledby="hero-heading-text">
   <div class="hero-container">
     <div class="content">
-      <div id="hero-heading-text" class="heading">
+      <h1 id="hero-heading-text" class="heading" data-cms-edit="heading.heading_text">
         {heading.heading_text}
-      </div>
+      </h1>
       <div class="subheading-text" style={`color: ${subheading.color};`}>
         <Markdown content={subheading.text_content} />
       </div>
