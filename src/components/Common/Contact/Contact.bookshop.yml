@@ -7,25 +7,16 @@ spec:
   tags:
     - Text
     - Button
-
 blueprint:
   questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
   welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
   phone: "+41 78 800 90 91"
   mail: "info@fahrschuleloyal.ch"
 preview:
-
 _inputs:
   questionText:
     type: text
     label: Question Text
-    options:
-      preview:
-        icon: 'short_text'
-        text:
-          - key: questionText
-        subtext:
-          - 'Question Text'
   welcomeText:
     type: text
     label: Welcome Text
