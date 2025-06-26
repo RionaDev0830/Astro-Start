@@ -24,7 +24,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch
   metadatabase: https://www.fahrschuleloyal.ch
 content_blocks:
-  - _bookshop_name: Banner
+  - _bookshop_name: Home/Banner
     image:
       image_path: /heroimg.jpg
       alt_text: Banner Image
@@ -143,4 +143,9 @@ content_blocks:
     title: "Google Rezensionen"
     subtitle: "Was unsere Fahrschüler über Fahrschule Loyal sagen"
     button_text: "Rezension schreiben"
+  - _bookshop_name: Common/Contact
+    questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+    welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+    phone: "+41 78 800 90 91"
+    mail: "info@fahrschuleloyal.ch"
 ---

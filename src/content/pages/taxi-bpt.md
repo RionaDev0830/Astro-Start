@@ -68,4 +68,9 @@ content_blocks:
         heading: Verkehrsmedizinische Eignungsuntersuchung
         body_text: >
           Wenn das Strassenverkehrsamt das Gesuch um Erteilung eines Lernfahrausweises geprüft hat, erhältst du eine Aufforderung für eine verkehrsmedizinische Eignungsuntersuchung. Diese Untersuchung ist kostenpflichtig.
+  - _bookshop_name: Common/Contact
+    questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+    welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+    phone: "+41 78 800 90 91"
+    mail: "info@fahrschuleloyal.ch"
 ---

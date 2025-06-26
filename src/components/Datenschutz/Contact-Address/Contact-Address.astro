@@ -1,13 +1,13 @@
 ---
+import privacydata from '../../../../data/privacyData.json';
 interface Props {
   title: string;
   paragraph: string;
   Telefon: string;
   eMail: string;
   WebSite: string;
-  privacydata: any;
 }
-const { title, paragraph, eMail, Telefon, privacydata, WebSite } = Astro.props;
+const { title, paragraph, eMail, Telefon, WebSite } = Astro.props;
 ---
 <h6 class={"privacytitle"}>{title}</h6>
 <br />

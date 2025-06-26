@@ -68,4 +68,9 @@ content_blocks:
         heading: Ausländischen Führerausweis umschreiben
         body: >
           Inhaber eines ausländischen Führerausweises der Kat. A, B dürfen bis 12 Monate nach Einreise in die Schweiz ein entsprechendes Fahrzeug lenken. Nach Ablauf dieser Frist ist der ausländische Ausweis ungültig. Personen, die berufsmässig Fahrzeuge der Kat. C, C1, D, D1 oder für den Personentransport führen möchten, müssen vor der ersten beruflichen Fahrt den Schweizer Führerausweis erwerben.
+  - _bookshop_name: Common/Contact
+    questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+    welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+    phone: "+41 78 800 90 91"
+    mail: "info@fahrschuleloyal.ch"
 ---
