@@ -1,0 +1,56 @@
+spec:
+  structures:
+    - leftdata
+    - middledata
+    - rightdata
+  label: Tailored Container
+  description: Main call-to-action section with image, heading, description, and button
+  icon: 'vertical_split'
+  tags:
+    - Hero
+    - Image
+    - Button
+blueprint:
+  image:
+    image_path: "/i1.png"
+    alt_text: "image"
+  heading: "Kompetent"
+  body_text: >
+    "Ich bin ein erfahrener und qualifizierter Fahrlehrer und gebe mein Wissen gezielt weiter. Dabei lege ich grossen Wert auf eine fundierte Ausbildung und individuelle Betreuung."
+preview:
+
+_inputs:
+  heading:
+    type: text
+    label: Heading
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: heading
+        subtext:
+          - 'Heading'
+  body_text:
+    type: textarea
+    label: Description
+    options:
+      preview:
+        icon: 'description'
+        text:
+          - key: body_text
+        subtext:
+          - 'Brief description'
+  image:
+    type: image
+    label: Image
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - key: alt_text
+          - 'Image'
+        subtext:
+          - key: image_path
+          - 'Upload or select an image for the section'
+        image:
+          - key: image_path

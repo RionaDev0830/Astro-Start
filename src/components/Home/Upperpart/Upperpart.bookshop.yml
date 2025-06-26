@@ -1,0 +1,74 @@
+spec:
+  structures:
+    - content_blocks
+  label: Upperpart Component
+  description: Main call-to-action section with image, heading, description, and button
+  icon: 'vertical_split'
+  tags:
+    - Image
+    - Button
+blueprint:
+  heading: "Die ersten fünf Fahrstunden für CHF 59.-/Lektion"
+  description: "Du erhältst die ersten 5 Fahrstunden für nur CHF 59.- pro Lektion! Melde dich jetzt an und spare dadurch CHF 135.- (Aktion gültig bis [Datum])"
+  button_text: "Jetzt anmelden"
+  button_link: "/kontakt"
+  image: 
+    image_path: "/balloon_shrink.webp"
+    alt_text: "Upper Image"
+preview:
+
+_inputs:
+  heading:
+    type: text
+    label: Heading
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: heading
+        subtext:
+          - 'Main heading for the section'
+  description:
+    type: textarea
+    label: Description
+    options:
+      preview:
+        icon: 'description'
+        text:
+          - key: description
+        subtext:
+          - 'Brief description or subtitle'
+  button_text:
+    type: text
+    label: Button Text
+    options:
+      preview:
+        icon: 'smart_button'
+        text:
+          - key: button_text
+        subtext:
+          - 'Text displayed on the button'
+  button_link:
+    type: text
+    label: Button Link
+    options:
+      preview:
+        icon: 'link'
+        text:
+          - key: button_link
+        subtext:
+          - 'URL or path where the button should link'
+  image:
+    type: image
+    label: Image
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - key: alt_text
+          - 'Image'
+        subtext:
+          - key: image_path
+          - 'Upload or select an image for the section'
+        image:
+          - key: image_path

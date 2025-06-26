@@ -1,0 +1,34 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Banner
+  description: Banner of This Site
+  icon: 'cottage'
+  tags:
+    - Image
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  image:
+    image_path: /heroimg.jpg
+    alt_text: Banner Image
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  image:
+    type: object
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - key: alt_text
+          - 'Banner'
+        subtext:
+          - key: image_path
+          - 'Update banner'
+        image:
+          - key: image_path

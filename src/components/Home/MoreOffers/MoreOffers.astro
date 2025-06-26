@@ -1,0 +1,58 @@
+---
+import Wrapper from '../../Common/Wrapper.astro';
+import { Cardsanim } from '../../Common/Transition/Cardsanim.jsx';
+import MoreOffersCard, { MoreOffersCardProps } from '../../Common/MoreOffersCard/MoreOffersCard.astro';
+interface Props {
+  offer_title: string;
+  more_offers: [MoreOffersCardProps];
+}
+const { offer_title, more_offers } = Astro.props;
+---
+<div class={"sub_section"} style={{ backgroundColor: "#F3F4F6" }}>
+  <div class={"header_area"}>
+    <div class={"heading_bar"}></div>
+    <h2 class={"section_heading"}>
+      {offer_title}
+    </h2>
+  </div>
+  <Wrapper>
+    <Cardsanim klass={"offercard_container"} staggerspeed={0.4} client:visible>
+      {more_offers.map((item, index) => {
+        return <MoreOffersCard key={index} {...item} />;
+      })}
+    </Cardsanim>
+  </Wrapper>
+</div>
+<style>
+.sub_section {
+  padding: 5rem 0;
+}
+
+.header_area {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.heading_bar {
+  border: 2px solid #0697db;
+  width: 48px;
+  margin-left: 2rem;
+}
+
+.section_heading {
+  font-family: var(--font-clash-display);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 46px;
+}
+
+.offercard_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  row-gap: 35px;
+}
+</style>

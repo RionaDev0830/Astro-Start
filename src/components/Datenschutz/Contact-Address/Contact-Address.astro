@@ -1,0 +1,30 @@
+---
+interface Props {
+  title: string;
+  paragraph: string;
+  Telefon: string;
+  eMail: string;
+  WebSite: string;
+  privacydata: any;
+}
+const { title, paragraph, eMail, Telefon, privacydata, WebSite } = Astro.props;
+---
+<h6 class={"privacytitle"}>{title}</h6>
+<br />
+<p class={"privacyparagraph"}>
+  {paragraph}:
+</p>
+<p class={"privacyparagraph"}>
+  {privacydata.companyname} <br /> {privacydata.companyowner} <br />
+  {}
+  {privacydata.address} <br />
+  {privacydata.place}
+  <br />
+  {Telefon}: {privacydata.phone} <br />
+  {eMail}: {privacydata.mail}
+  <br />
+  {WebSite}: {privacydata.website}
+</p>
+<style>
+
+</style>

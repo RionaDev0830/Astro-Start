@@ -1,0 +1,188 @@
+---
+import { Image } from 'astro:assets';
+interface Props {
+  image: {
+    image_path: string;
+    alt_text: string;
+  },
+  heading_top: string,
+  heading_bottom: string,
+  description: string,
+  button_text: string,
+  button_link: string,
+}
+const { image, heading_top, heading_bottom, description, button_text, button_link} = Astro.props;
+---
+<div class="component-container">
+  {/* Left div */}
+  <div class="image">
+    <svg width="0" height="0" viewBox="0 0 100 100">
+      <defs>
+        <clipPath id="clipPathtwo" clipPathUnits="objectBoundingBox">
+          <path d="M -0.002,-0.004 L 0.45,0 Q 0.684,0.7 0.612,1.002 L 0,1 L 0,-0.004 Z"></path>
+        </clipPath>
+      </defs>
+    </svg>
+    <Image
+      src={image.image_path}
+      alt={image.alt_text}
+      class="img"
+      width={1100}
+      height={650}
+    />
+  </div>
+  {/* Right div */}
+  <div class="leftdiv">
+    <div class="heading">
+      <p class="headingp">{heading_top}</p>
+      {heading_bottom}
+    </div>
+    <p class={"description"}>{description}</p>
+    <a href={button_link} class={"button"}>
+      {button_text}
+    </a>
+  </div>
+</div>
+<style>
+.component-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  background-color: #0697db;
+  position: relative;
+}
+
+.leftdiv {
+  width: 37%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 30px;
+  position: absolute;
+  z-index: 1;
+}
+
+.heading {
+  font-size: 52px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: white;
+  font-family: var(--font-clash-display);
+}
+
+.headingp {
+  color: #1a446c;
+  font-family: var(--font-clash-display);
+  font-weight: 600;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: var(--font-dm-Sans);
+}
+
+.button {
+  padding: 15px 20px;
+  background-color: #1a446c;
+  color: white;
+  font-size: 18px;
+  font-family: var(--font-dm-Sans);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.button:hover {
+  background-color: #244c72;
+  color: white;
+}
+
+.image {
+  /* width: 64%; */
+  /* height: 50rem; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  clip-path: url(#clipPathtwo);
+}
+
+.img {
+  width: 70%;
+  height: 550px;
+  object-fit: cover;
+}
+
+/* Media query for 768px breakpoint */
+@media screen and (max-width: 768px) {
+  .component-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftdiv {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+  .headingp {
+    color: #0697db;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+
+  .img {
+    content: url("/jumping_guy.jpg");
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .heading {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .heading {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 916px) {
+  .heading {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+}
+</style>

@@ -1,0 +1,328 @@
+---
+import GoogleReview from './component.jsx';
+import { reviews } from '../../../../data/reviews.json';
+interface Props {
+  title: string;
+  subtitle: string;
+  button_text: string;
+}
+
+const { title, subtitle, button_text } = Astro.props;
+---
+<div class={"carouselContainer"}>
+  {/* Header section */}
+  <div class={"header"}>
+    <div>
+      <h2 class={"carouselHeader"}>{title}</h2>
+      <p class={"carouselSubtitle"}>
+        {subtitle}
+      </p>
+    </div>
+    <div class={"headerbutton"}>
+      <a
+        href="https://www.google.ch/search?q=fahrschule+loyal&rlz=1C1SQJL_enXK914XK914&oq=fahrschule+loyal+&aqs=chrome.0.69i59j69i65j69i60l2.3792j0j1&sourceid=chrome&ie=UTF-8#lrd=0x47900bc0ad9fbe15:0x7a65d13993c9204c,1,,,"
+        target="_blank"
+        class={"button"}
+      >
+        {button_text}
+      </a>
+    </div>
+  </div>
+  <GoogleReview reviews={reviews} client:visible/>
+</div>
+<style>
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 30px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 87%;
+  flex-wrap: wrap;
+}
+
+.carouselHeader {
+  font-size: 35px;
+  font-family: var(--font-clash-display);
+  font-weight: bold;
+  color: #333;
+}
+
+.button {
+  background-color: #0959a3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: var(--font-dm-Sans);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: white;
+  border: 2px solid #0959a3;
+  color: #0959a3;
+}
+
+.carouselSubtitle {
+  font-size: 16px;
+  font-family: var(--font-dm-Sans);
+  color: #666;
+}
+
+.carouselWrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+}
+
+.leftbutton {
+  width: 10%;
+}
+
+.rightbutton {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.arrowBtn {
+  background-color: transparent;
+  border: 1px solid gray;
+  cursor: pointer;
+  color: #333;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowBtn:hover {
+  background-color: #e0e0e0;
+  color: #007bff;
+}
+
+.arrowBtn:disabled {
+  color: #bbb;
+  cursor: not-allowed;
+}
+
+.carouselContent {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.reviewCard {
+  width: 100%;
+  height: 320px;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.reviewCard::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 7px;
+}
+
+.reviewCard::-webkit-scrollbar-thumb {
+  background-color: rgb(171, 171, 171);
+  border-radius: 10px;
+}
+
+.reviewCard::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.reviewCard {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(171, 171, 171) white;
+}
+
+.textimg {
+  display: flex;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.reviewImage {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.googleimg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.reviewName {
+  font-weight: bold;
+  color: #333;
+}
+
+.reviewDate {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.reviewStars {
+  color: gold;
+  font-size: 1.2rem;
+}
+
+.reviewText {
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1140px) {
+  .reviewCard {
+    /* width: 33%; */
+    padding: 15px;
+    overflow-y: auto;
+  }
+
+  .carouselContent {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1056px) {
+  .carouselContainer {
+    padding: 1px;
+    margin-top: 3rem;
+  }
+
+  .reviewCard {
+    /* width: 33%; */
+    padding: 15px;
+    overflow-y: auto;
+  }
+
+  .carouselContent {
+    justify-content: space-between;
+  }
+
+  .googleimg {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .reviewCard {
+    /* width: 33%; */
+    padding: 15px;
+    overflow-y: auto;
+  }
+
+  .carouselHeader {
+    font-size: 28px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .carouselWrapper {
+    padding: 10px;
+    display: flex;
+  }
+
+  .carouselContent {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .carouselWrapper {
+    display: flex;
+  }
+
+  .headerbutton {
+    padding-top: 20px;
+  }
+  .reviewCard {
+    /* width: 100%; */
+    margin-bottom: 20px;
+  }
+
+  .arrowBtn {
+    font-size: 1.5rem;
+    height: 35px;
+    width: 35px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .carouselContent {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .carouselHeader {
+    font-size: 24px;
+  }
+
+  .button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .arrowBtn {
+    margin-left: -10px;
+    margin-right: -10px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+  }
+
+  .arrowBtn:hover {
+    background-color: transparent;
+    color: #007bff;
+  }
+
+  .reviewCard {
+    /* width: 100%; */
+    margin: 0 0 10px 0;
+  }
+}
+
+</style>

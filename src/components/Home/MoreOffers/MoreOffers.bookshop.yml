@@ -1,0 +1,27 @@
+spec:
+  structures:
+    - content_blocks
+  label: More Offers Component
+  description: Nothelferkurse
+  icon: 'vertical_split'
+  tags:
+    - Hero
+    - Image
+    - Button
+
+blueprint:
+  offer_title: "Fahrstunden & Kurse in Schlieren – Jetzt entdecken"
+  more_offers: [bookshop:structure:MoreOffersCard]
+preview:
+
+_inputs:
+  offer_title:
+    type: text
+    label: Title
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: offer_title
+        subtext:
+          - 'More Offer Title'

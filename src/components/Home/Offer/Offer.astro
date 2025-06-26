@@ -1,0 +1,72 @@
+---
+import Wrapper from '../../Common/Wrapper.astro';
+import { Cardsanim } from '../../Common/Transition/Cardsanim.jsx';
+import OfferCard from '../../Common/OfferCard/OfferCard.astro';
+interface Props {
+  offer_title: string;
+  offer_card: [{
+    fahrschule: boolean;
+    image: {
+      image_path: string;
+      alt_text: string;
+    };
+    category: string;
+    link: string;
+    about: string;
+    span1: string;
+  }]
+}
+
+const { offer_title, offer_card } = Astro.props;
+---
+<div class="sub_section">
+  <div class="header_area">
+    <div class="heading_bar"></div>
+    <h1 class="section_heading">
+      {offer_title}
+      <!-- {offer_title.split('\\n').map((line) => <p>{line}<br/></p>)} -->
+    </h1>
+  </div>
+  <Wrapper>
+    <!-- <div class="offercard_container"> -->
+    <Cardsanim klass="offercard_container" staggerspeed={0.4} client:visible>
+      {offer_card.map((item, index) => {
+        return <OfferCard key={index} {...item} />;
+      })}
+    </Cardsanim>
+  <!-- </div> -->
+  </Wrapper>
+</div>
+<style is:global>
+.sub_section {
+  padding: 5rem 0;
+}
+
+.header_area {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.heading_bar {
+  border: 2px solid #0697db;
+  width: 48px;
+  margin-left: 2rem;
+}
+
+.section_heading {
+  font-family: var(--font-clash-display);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 46px;
+}
+
+.offercard_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  row-gap: 35px;
+}
+</style>

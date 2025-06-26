@@ -1,7 +1,10 @@
 ---
 import PageHelper from "../shared/astro/page.astro";
-import PreisePage from '../shared/astro/preise.astro';
-import ImpressumPage from '../shared/astro/impressum.astro';
+import PreisePage from "../shared/astro/preise.astro";
+import ImpressumPage from "../shared/astro/impressum.astro";
+import DatenSchutzPage from "../shared/astro/datenschutz.astro";
+
+import FloatBtn from "../components/Common/Floaterbtn/index.jsx";
 // import HeroBlock from "src/shared/astro/hero-block.astro";
 import Layout, { type SEOProps } from "./Layout.astro";
 
@@ -19,14 +22,47 @@ const props = Astro.props.frontmatter;
 
 <Layout {...props}>
   <!-- <HeroBlock bookshop:live heroBlock={props.hero_block} /> -->
-   {
-     props.title == "Preise Page" && <PreisePage bookshop:live contentBlocks={props.content_blocks} />
-   }
-   {
-     props.title == "ueber-uns" && <PageHelper bookshop:live contentBlocks={props.content_blocks} />
-   }
-   { props.title == "Taxi Bpt" && <PageHelper bookshop:live contentBlocks={props.content_blocks} /> }
-   { props.title == "Kontrolfahrt" && <PageHelper bookshop:live contentBlocks={props.content_blocks} /> }
-   { props.title == "Contact Form" && <PageHelper bookshop:live contentBlocks={props.content_blocks} /> }
-   { props.title == "Impressum Page" && <ImpressumPage bookshop:live contentBlocks={props.content_blocks} /> }
+  {
+    props.title == "Home Page" && (
+      <>
+        <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+        <FloatBtn />
+      </>
+    )
+  }
+  {
+    props.title == "Preise Page" && (
+      <PreisePage bookshop:live contentBlocks={props.content_blocks} />
+    )
+  }
+  {
+    props.title == "ueber-uns" && (
+      <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+    )
+  }
+  {
+    props.title == "Taxi Bpt" && (
+      <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+    )
+  }
+  {
+    props.title == "Kontrolfahrt" && (
+      <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+    )
+  }
+  {
+    props.title == "Contact Form" && (
+      <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+    )
+  }
+  {
+    props.title == "Impressum Page" && (
+      <ImpressumPage bookshop:live contentBlocks={props.content_blocks} />
+    )
+  }
+  {
+    props.title == "Datenschutz Page" && (
+      <DatenSchutzPage bookshop:live contentBlocks={props.content_blocks} />
+    )
+  }
 </Layout>

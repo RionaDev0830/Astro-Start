@@ -1,0 +1,223 @@
+---
+import { Image } from 'astro:assets';
+interface Props {
+  heading: string;
+  description: string;
+  button_text: string;
+  button_link: string;
+  image: {
+    image_path: string;
+    alt_text: string;
+  }
+}
+function getLastDayInTwoMonths() {
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = today.getMonth() + 2;
+  const lastDay = new Date(year, month + 1, 0);
+  const monthNames = [
+    'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
+    'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'
+  ];
+  const day = lastDay.getDate();
+  const monthName = monthNames[lastDay.getMonth()];
+  const lastYear = lastDay.getFullYear();
+  return `${day}. ${monthName} ${lastYear}`;
+}
+
+const { heading, description, button_text, button_link, image } = Astro.props;
+console.log('description', description);
+const descriptionWithDate = description.replace(
+  "[Datum]",
+  getLastDayInTwoMonths()
+);
+---
+<div class="component-container">
+  {/* Left text */}
+  <div class="leftdiv">
+    <div class="heading">
+      {heading}
+    </div>
+    <p class="description">
+      {descriptionWithDate}
+    </p>
+    <a href={button_link} class="button">
+      {button_text}
+    </a>
+  </div>
+  <div class="image">
+    <svg width="0" height="0" viewBox="0 0 100 100">
+      <defs>
+        <clipPath id="clipPath" clipPathUnits="objectBoundingBox">
+          <path d="M 0.672,0 L 1,0 L 1,1 L 0.45,1 Q 0.32,0.75 0.48,0.4 Z"></path>
+        </clipPath>
+      </defs>
+    </svg>
+    <Image
+      src={image.image_path}
+      alt={image.alt_text}
+      class="img"
+      width={1100}
+      height={650}
+    />
+  </div>
+</div>
+<style>
+.component-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background-color: #0697db;
+}
+
+.leftdiv {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 40px;
+  position: absolute;
+  z-index: 1;
+}
+
+.heading {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: white;
+  font-family: var(--font-clash-display);
+}
+
+.headingp {
+  color: #1a446c;
+  font-family: var(--font-clash-display);
+  font-weight: 600;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: var(--font-dm-Sans);
+}
+
+.button {
+  padding: 15px 20px;
+  background-color: #1a446c;
+  color: white;
+  font-size: 18px;
+  font-family: var(--font-dm-Sans);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.button:hover {
+  background-color: #244c72;
+  color: white;
+}
+
+.styledlottie {
+  position: absolute;
+  left: 250px;
+  bottom: -60px;
+  width: 150px;
+  height: 150px;
+}
+
+.image {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  clip-path: url(#clipPath);
+}
+
+.img {
+  width: 62%;
+  height: 550px;
+  object-fit: cover;
+}
+
+/* Media query for 768px breakpoint */
+@media screen and (max-width: 768px) {
+  .component-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftdiv {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .headingp {
+    color: #0697db;
+  }
+
+  /* .button {
+    height: 40px;
+    width: 200px;
+  } */
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+
+  .img {
+    content: url("/balloon_shrink.webp");
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .heading {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .heading {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 916px) {
+  .heading {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+  .styledlottie {
+    position: initial;
+  }
+}
+
+</style>

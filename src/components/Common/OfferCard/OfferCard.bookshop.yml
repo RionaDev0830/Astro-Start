@@ -1,0 +1,88 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - offer_card
+  label: Offer Card
+  description: Offer Card Information
+  icon: 'cottage'
+  tags:
+    - Image
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  fahrschule: true
+  image: 
+    image_path: "/carbus-removebg-preview.png"
+    alt_text: "Auto"
+  category: B
+  link: /kategorie-b
+  about: "Fahrzeuge mit einem maximalen Gesamtgewicht von 3500 kg, acht Sitzplätzen, abgesehen vom Fahrersitz."
+  span1: "CHF 82"
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  fahrschule:
+    type: boolean
+    label: Fahrschule
+    options:
+      preview:
+        icon: 'toggle_on'
+        text:
+          - key: fahrschule
+        subtext:
+          - 'Ist dies ein Fahrschul-Angebot?'
+  image:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - key: alt_text
+          - 'Image'
+        subtext:
+          - key: image_path
+          - 'Update image'
+        image:
+          - key: image_path
+  category:
+    type: text
+    label: Kategorie
+    options:
+      preview:
+        icon: 'category'
+        text:
+          - key: category
+        subtext:
+          - 'Angebotskategorie'
+  link:
+    type: text
+    label: Link URL
+    options:
+      preview:
+        icon: 'link'
+        text:
+          - key: link
+        subtext:
+          - 'Ziel-Link für das Angebot'
+  about:
+    type: textarea
+    label: Beschreibung
+    options:
+      preview:
+        icon: 'description'
+        text:
+          - key: about
+        subtext:
+          - 'Kurze Beschreibung des Angebots'
+  span1:
+    type: text
+    label: Preis/Highlight
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: span1
+        subtext:
+          - 'Hervorgehobener Text, z.B. Preis'

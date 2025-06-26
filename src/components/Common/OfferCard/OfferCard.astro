@@ -1,0 +1,267 @@
+---
+import { Staggeranim } from "../Transition/Cardsanim.jsx";
+import { Image, Picture } from 'astro:assets'
+interface Props {
+  fahrschule: boolean;
+  image: {
+    image_path: string;
+    alt_text: string;
+  };
+  category: string;
+  link: string;
+  about: string;
+  span1: string;
+}
+const { fahrschule, image, category, link, about, span1 } = Astro.props;
+---
+<div class="offercard">
+  <Staggeranim client:visible staggerspeed={0.4}>
+  <div
+    class={
+      fahrschule
+        ? "image_container fahrschule"
+        : "image_container"
+    }
+  >
+    <Image
+      src={image.image_path}
+      alt={image.image_path.split(".")[0]}
+      class={
+        fahrschule
+          ? "card_image "
+          : "card_image card_cover"
+      }
+      width="150"
+      height="200"
+    />
+    {image.image_path.alt_text && (
+      <h3
+        class={
+          fahrschule
+            ? "image_title fahrschule_title"
+            : "image_title"
+        }
+      >
+        {image.image_path.alt_text}
+        {fahrschule && (
+          <span class="card_category">
+            <br></br>
+            {category}
+          </span>
+        )}
+      </h3>
+    )}
+  </div>
+  <p class="about_offer" title={about}>
+    {about}
+  </p>
+  <div class="lower_container">
+    <div class="lower_text_container">
+      <div class="card_lower_text">
+        {/* Ab <span style={{ fontWeight: "800" }}>{item.span1}</span> */}
+      </div>
+      <div class="card_lower_text">
+        {/* Dauer <span style={{ fontWeight: "800" }}>1,5-2 Monate</span> */}
+      </div>
+    </div>
+    <a href={link} class="card_button">
+      Mehr Erfahren
+    </a>
+  </div>
+  </Staggeranim>
+</div>
+<style is:global>
+.offercard {
+  width: 32%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.offercard:first-child img {
+  object-position: -50px -20px;
+}
+.offercard:last-child img {
+  height: 300px;
+
+  object-position: 15px 50px;
+}
+
+.image_container {
+  width: 100%;
+  position: relative;
+}
+
+.fahrschule {
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(to right, #0697db 50%, white 50%);
+}
+
+.image_title {
+  position: absolute;
+  font-family: var(--font-dm-Sans);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.44px;
+  width: 100%;
+  /* top: 20px; */
+  /* left: 10px; */
+  bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fahrschule_title {
+  bottom: unset;
+  text-align: unset;
+  top: 20px;
+  left: 10px;
+}
+
+.flipped {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.card_category {
+  text-transform: none;
+  font-weight: 400;
+}
+
+.card_image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  font-family: var(--font-dm-Sans);
+}
+
+.card_cover {
+  object-fit: cover;
+}
+
+.about_offer {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  padding: 14px 14px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lower_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 0.5rem;
+}
+
+.lower_text_container {
+  padding: 14px;
+}
+
+.card_lower_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.card_button {
+  background-color: #0697db;
+  padding: 10px 20px;
+  border-radius: 20px 0 12px 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.44px;
+  cursor: pointer;
+}
+
+.card_button:hover {
+  background-color: #326fa9;
+}
+
+@media (max-width: 970px) {
+  .card_button {
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.44px;
+  }
+
+  .lower_text_container {
+    padding: 10px;
+  }
+
+  .about_offer {
+    /* font-size: 13px;
+        line-height: 20px; */
+    padding: 10px 10px 0;
+  }
+  /* 
+    .card_lower_text {
+        font-size: 12px;
+        line-height: 16px;
+    } */
+}
+
+@media (max-width: 720px) {
+  .card_button {
+    font-size: 12px;
+    line-height: 12.44px;
+  }
+
+  .about_offer {
+    padding: 5px 5px 0;
+  }
+
+  .lower_text_container {
+    padding: 5px;
+  }
+  .image_title {
+    font-size: 16px;
+    line-height: 21.44px;
+  }
+}
+
+@media (max-width: 640px) {
+  .offercard {
+    width: 100%;
+  }
+  .about_offer {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 12px 12px 0 12px;
+  }
+  .card_lower_text {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .lower_text_container {
+    padding: 12px;
+  }
+  .card_button {
+    font-size: 20px;
+    line-height: 22.44px;
+    padding: 10px 20px;
+  }
+  .about_offer {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 14px 14px 0;
+    display: block;
+    /* -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis; */
+  }
+}
+
+</style>

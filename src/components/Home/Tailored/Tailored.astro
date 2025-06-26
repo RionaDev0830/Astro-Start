@@ -1,0 +1,87 @@
+---
+import Wrapper from '../../Common/Wrapper.astro';
+import { Cardsanim } from '../../Common/Transition/Cardsanim.jsx';
+import TailoredCard, { TailoredCardProps} from '../../Common/TailoredCard/TailoredCard.astro';
+interface Props {
+  section_heading: string;
+  tailored_subheading: string;
+  leftdata: [TailoredCardProps];
+  middledata: [TailoredCardProps];
+  rightdata: [TailoredCardProps];
+}
+
+const { section_heading, tailored_subheading, leftdata, middledata, rightdata} = Astro.props;
+---
+<Wrapper>
+  <div class={"tailored_section"}>
+    <p class={"section_heading"}>
+      {
+        section_heading.split('\n').map((line, index) =>
+        <>
+        {line}<br/>
+        </>)
+      }
+    </p>
+    <p class={"tailored_subheading"}>
+      {tailored_subheading}
+    </p>
+    <Cardsanim klass={"tailored_cards_section"} staggerspeed={0.4} client:visible>
+      <div class={"tailored_left"}>
+        {leftdata.map((item, index) => {
+          return <TailoredCard key={index} {...item} />;
+        })}
+      </div>
+      <div class={"tailored_middle"}>
+        {middledata.map((item, index) => {
+          return <TailoredCard key={index} {...item} />;
+        })}
+      </div>
+      <div class={"tailored_left"}>
+        {rightdata.map((item, index) => {
+          return <TailoredCard key={index} {...item} />;
+        })}
+      </div>
+    </Cardsanim>
+  </div>
+</Wrapper>
+<style>
+.tailored_section {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.tailored_subheading {
+  font-family: var(--font-dm-Sans);
+  font-size: 18.03px;
+  font-weight: 400;
+  line-height: 27.04px;
+  color: #242424;
+  padding: 12px 12px 20px 12px;
+}
+</style>
+<style is:global>
+.tailored_cards_section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+</style>
+<style>
+.tailored_left {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 770px;
+  justify-content: flex-end;
+}
+
+.tailored_middle {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 770px;
+}
+
+</style>

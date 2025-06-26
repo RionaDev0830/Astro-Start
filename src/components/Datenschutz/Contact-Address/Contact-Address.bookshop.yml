@@ -1,0 +1,72 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Datenschutz Contact Address
+  description: Datenschutz Contact Address
+  icon: 'cottage'
+  tags:
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: Datenschutzerklärung
+  paragraph: Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist
+  eMail: E-Mail
+  Telefon: Telefon
+  WebSite: webSite
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  title:
+    type: text
+    label: title
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: title
+        subtext:
+          - 'title Text'
+  paragraph:
+    type: textarea
+    label: Schweiz 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: paragraph
+        subtext:
+          - 'paragraph Text'
+  eMail:
+    type: text
+    label: eMail 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: eMail
+        subtext:
+          - 'eMail Text'
+  Telefon:
+    type: text
+    label: Telefon 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: Telefon
+        subtext:
+          - 'Telefon Text'
+  WebSite:
+    type: text
+    label: WebSite 
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: WebSite
+        subtext:
+          - 'WebSite Text'

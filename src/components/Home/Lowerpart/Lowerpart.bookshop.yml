@@ -1,0 +1,88 @@
+spec:
+  structures:
+    - content_blocks
+  label: Upperpart Component
+  description: Main call-to-action section with image, heading, description, and button
+  icon: 'vertical_split'
+  tags:
+    - Hero
+    - Call to Action
+    - Image
+    - Button
+
+blueprint:
+  heading_top: "Sichere dir"
+  heading_bottom: "die Gewinnchance!"
+  description: "In unserem Gewinnspiel wartet ein mega Preis auf dich!"
+  button_text: "Mehr Infos zum Gewinnspiel"
+  button_link: "/gewinnspiel"
+  image: 
+    image_path: "/jumping_guy.jpg"
+    alt_text: "Lower Image"
+preview:
+
+_inputs:
+  heading_top:
+    type: text
+    label: Heading
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: heading_top
+        subtext:
+          - 'Main heading top for the section'
+  heading_bottom:
+    type: text
+    label: Heading
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: heading_bottom
+        subtext:
+          - 'Main heading top for the section'
+  description:
+    type: textarea
+    label: Description
+    options:
+      preview:
+        icon: 'description'
+        text:
+          - key: description
+        subtext:
+          - 'Brief description or subtitle'
+  button_text:
+    type: text
+    label: Button Text
+    options:
+      preview:
+        icon: 'smart_button'
+        text:
+          - key: button_text
+        subtext:
+          - 'Text displayed on the button'
+  button_link:
+    type: text
+    label: Button Link
+    options:
+      preview:
+        icon: 'link'
+        text:
+          - key: button_link
+        subtext:
+          - 'URL or path where the button should link'
+  image:
+    type: image
+    label: Image
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - key: alt_text
+          - 'Image'
+        subtext:
+          - key: image_path
+          - 'Upload or select an image for the section'
+        image:
+          - key: image_path

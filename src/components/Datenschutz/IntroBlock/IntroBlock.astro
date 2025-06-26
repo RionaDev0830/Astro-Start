@@ -1,0 +1,29 @@
+---
+interface Props {
+  header?: string;
+  description: string;
+  items?: [
+    {
+      title?: string;
+      description: string;
+    },
+  ];
+}
+const { header, description, items } = Astro.props;
+---
+
+<h6 class={"privacytitle"}>{header}</h6>
+{
+  description
+    .split("\\n")
+    .map((line) => <p class={"privacyparagraph"}>{line}</p>)
+}
+<ul class={"privacyitems"}>
+  {
+    items?.map((item) => (
+      <li class={"privacyitem"}>
+        <strong>{item.title}</strong> {item.title ? '-' : ''} {item.description}
+      </li>
+    ))
+  }
+</ul>

@@ -1,0 +1,40 @@
+spec:
+  structures:
+    - content_blocks
+  label: Tailored Container
+  description: Main call-to-action section with image, heading, description, and button
+  icon: 'vertical_split'
+  tags:
+    - Hero
+    - Image
+    - Button
+
+blueprint:
+  section_heading: "Kompetent. Kundengerecht.\n Perfekt abgestimmt auf Ihre\nBedürfnisse"
+  tailored_subheading: "Erleben Sie massgeschneiderte Fahrstunden, die Ihre Erwartungen übertreffen."
+  leftdata: [bookshop:structure:TailoredCard]
+  middledata: [bookshop:structure:TailoredCard]
+  rightdata: [bookshop:structure:TailoredCard]
+preview:
+
+_inputs:
+  section_heading:
+    type: text
+    label: Heading
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: section_heading
+        subtext:
+          - 'Main heading top for the section'
+  tailored_subheading:
+    type: text
+    label: Sub Heading
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: tailored_subheading
+        subtext:
+          - 'Sub heading top for the section'

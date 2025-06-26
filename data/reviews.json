@@ -1,0 +1,272 @@
+{
+  "reviews": [
+  {
+    "name": "ardit nuredini",
+    "date": "März 17, 2025",
+    "text": "Super Fahrlehrer, Besnik hat mich sehr gut auf Fahrprüfung vorbereitet, die Erklärungen sind sehr hilfreich wie er unterrichtet, so dass man einfach versteht. Er ist kompetent, korrekt und sympatisch. Vielen Dank für die Unterstützung und Vorbereitung",
+    "stars": 5,
+    "image": "/profile1.png",
+    "googleimg": "/google.png"
+  },
+  {
+    "name": "Henok Ezra",
+    "date": "Dezember 12, 2024",
+    "text": "Der beste Fahrlehrer, den man haben kann, ist bestimmt Besnik. Er motiviert die Fahrschüler, sodass das man die Fahrprüfung einfach bestehen können. Die e Erklärung sind sehr einfach zu verstehen, wie er die Themen unterrichtet. Er arbeitet sehr strukturiert und weist man immer wo man steht, auch wenn was nicht gut läuft, nimmt er immer zeit noch mal genauer zu erklären. Er ist immer pünktlich und sehr zuverlässig, dank ihm könnte ich die Prüfung sicher bestehen. Ich empfehle ihm sehr gerne als Fahrlehrer",
+    "stars": 5,
+    "image": "/profile12.png",
+    "googleimg": "/google.png"
+  },
+  {
+    "name": "Adan Abdi",
+    "date": "November 29, 2024",
+    "text": "Besnik ist ein super Fahrlehrer. Dank seiner flexiblen, zuverlässigen und freundlichen Art habe ich die Prüfung bestanden. Seine Erklärungen sind leicht verständlich, und er sorgt dafür, dass man bestens für die Prüfung vorbereitet ist. Ich kann ihm jedem weiterempfehlen. Vielen Dank für alles, Besnik.",
+    "stars": 5,
+    "image": "/profile13.png",
+    "googleimg": "/google.png"
+  },
+  {
+    "name": "Shwan Hasan",
+    "date": "November 27, 2024",
+    "text": "Ich möchte meinem Fahrlehrer ein riesiges Dankeschön aussprechen! Dank seiner professionellen und geduldigen Art habe ich die Prüfung erfolgreich bestanden. Er erklärt alles sehr verständlich und gibt viele hilfreiche Tipps, um sicher und selbstbewusst zu fahren. Besonders schätze ich seine Ruhe und sein Einfühlungsvermögen, was mir sehr geholfen hat, meine Nervosität zu überwinden. Ich kann ihn jedem empfehlen, der eine gründliche und angenehme Fahrausbildung sucht. Vielen Dank für die tolle Unterstützung Besnik",
+    "stars": 5,
+    "image": "/profile2.png",
+    "googleimg": "/google.png"
+  },
+  {
+    "name": "Avdyl Rexha",
+    "date": "Oktober 10, 2024",
+    "text": "Der Fahrlehrer Besnik erklärt die Themen einfach und verständlich. Man merkt, dass ihm sein Beruf Spass macht, weil er mit viel Engagement unterrichtet. Auch bei schwierigen Fragen nimmt er sich Zeit, alles genau zu erklären. Die Fahrschulautos sind sehr angenehm und leicht fahrbar. Der Unterricht ist abwechslungsreich und gut strukturiert. Insgesamt sehr empfehlenswert.",
+    "stars": 5,
+    "image": "/profile13.png",
+    "googleimg": "/google.png"
+  },
+  {
+    "name": "Sabrina Huder",
+    "date": "Januar 28, 2025",
+    "text": "Alles top, Besnik ist ein sehr guter und professioneller Fahrlehrer. Habe mich stets wohl gefühlt und vor allem sehr gut und viel gelernt! Kann es nur jedem empfehlen, bei Besnik die Fahrstunden zu nehmen!",
+    "stars": 5,
+    "image": "/profile11.png",
+    "googleimg": "/google.png"
+  },
+  {
+    "name": "Albulena Arifi",
+    "date": "Oktober 14, 2024",
+    "text": "Ich hatte eine grossartige Erfahrung mit Besnik als meinem Fahrlehrer! Er ist nicht nur sehr kompetent und geduldig, sondern auch äusserst motivierend. Seine Erklärungen sind klar und hilfreich, und er hat mir das Fahren schnell beigebracht. Dank seiner Unterstützung habe ich meine Fahrprüfung erfolgreich bestanden! Ich kann Besnik jedem wärmstens empfehlen, der das Fahren lernen möchte.",
+    "stars": 5,
+    "image": "/profile8.png",
+    "googleimg": "/google.png"
+  },
+  
+    {
+      "name": "sent",
+      "date": "Februar 5, 2025",
+      "text": "Besnik hat mich in kürzester Zeit auf die Autoprüfung vorbereitet. Ich habe privat etwas Erfahrung gesammelt und bei der Fahrschule Loyal alles Relevante für das Autofahren gelernt. Ich habe nun die Prüfung beim ersten Versuch bestanden. Danke Besnik!",
+      "stars": 5,
+      "image": "/profile11.png",
+      "googleimg": "/google.png"
+    },
+    {
+      "name": "Atakhlti Berekhet",
+      "date": "Januar 25, 2025",
+      "text": "Ich möchte mich herzlich bei meinem Fahrlehrer bedanken, der mich bestens auf die Fahrprüfung vorbereitet hat. Mit seiner geduldigen, professionellen und freundlichen Art hat er mir nicht nur das Fahren beigebracht, sondern mir auch die nötige Sicherheit und Selbstvertrauen vermittelt. Besonders seine Tipps für schwierige Situationen waren Gold wert. Ich kann ihn jedem wärmstens empfehlen, der eine erfolgreiche und angenehme Fahrausbildung sucht.",
+      "stars": 5,
+      "image": "/profile14.png",
+      "googleimg": "/google.png"
+    },
+    {
+      "name": "Unathi Fawer",
+      "date": "Dezember 12, 2024",
+      "text": "Herr Aslani hat mich wunderbar auf die praktische Fahrprüfung vorbereitet, sodass ich nach kurzer Zeit bestanden habe. Alle Fragen wurden stets ausführlich beantwortet und jeder Fehler wurde bestens auskorrigiert. Ich rate wirklich jedem, der den Führerschein machen möchte, dies mit der Fahrschule Loyal und Herrn Aslani zu tun.",
+      "stars": 5,
+      "image": "/profile6.png",
+      "googleimg": "/google.png"
+    },
+    {
+      "name": "Adan Ade",
+      "date": "November 28, 2024",
+      "text": "Ich habe die Fahrschule Loyal kennengelernt, nachdem ich bei einem anderen Lehrer viele Fahrstunden hatte und die erste Prüfung nicht bestanden habe. Besnik ist der beste Fahrlehrer – er erklärt alles so einfach und verständlich, dass es jeder begreift. Das Lernen mit ihm hat wirklich Spass gemacht. Ich kann die Fahrschule Loyal nur weiterempfehlen.",
+      "stars": 5,
+      "image": "/profile9.png",
+      "googleimg": "/google.png"
+    },
+    {
+      "name": "Babai AHMAD",
+      "date": "November 10, 2024",
+      "text": "Ich möchte mich bei meinem Fahrlehrer Besnik ganz herzlich bedanken! Dank seiner geduldigen und professionellen Art habe ich es geschafft, meine Fahrprüfung erfolgreich zu bestehen. Besonders wertvoll war, dass er genau auf meine individuellen Stärken und Schwächen eingegangen ist und mir hilfreiche Tipps für den Alltag im Strassenverkehr gegeben hat.",
+      "stars": 5,
+      "image": "/profile14.png",
+      "googleimg": "/google.png"
+    },
+    {
+      "name": "Menaf Serifi",
+      "date": "Oktober 20, 2024",
+      "text": "Dankeschön für die Unterstützung! Ich möchte mich ganz herzlich bei Besnik und der Fahrschule Loyal bedanken. Dank seiner Geduld, seinem Engagement und seiner klaren Erklärung habe ich die Busprüfung erfolgreich bestanden. Es war eine grossartige Erfahrung, mit ihm zu lernen.",
+      "stars": 5,
+      "image": "/profile7.png",
+      "googleimg": "/google.png"
+    },
+    {
+      "name": "Andizzle",
+      "date": "Januar 15, 2025",
+      "text": "Sehr freundlicher Fahrlehrer, der sich Zeit nimmt für seine Schüler. Sein Feedback ist immer konstruktiv und führt dazu, dass man sehr schnell und einfach sein Fahrverhalten verbessern kann. Diese Fahrschule würde ich jedem empfehlen!",
+      "stars": 5,
+      "image": "/profile9.png",
+      "googleimg": "/google.png"
+    }
+  ,
+    {
+      "name": "Amar Schlecken",
+      "date": "Dezember 8, 2024",
+      "text": "Ich habe meine Schulung für die Kategorie CE Lastwagen und Anhänger bei Besnik (Fahrschule Loyal) absolviert und könnte nicht zufriedener sein! Die Lektionen waren gut strukturiert und praxisnah gestaltet, sodass ich schnell Vertrauen in den Umgang mit grösseren Fahrzeugen und Anhängern gewinnen konnte. Besonders hilfreich war, dass er jede Fahrstunde an meine Bedürfnisse angepasst hat und immer ein offenes Ohr für Fragen und Unsicherheiten hatte.",
+      "stars": 5,
+      "image": "/profile5.png",
+      "googleimg": "/google.png"
+    },
+    {
+      "name": "Teklezghi Yohannes",
+      "date": "März 22, 2025",
+      "text": "Sehr guter Fahrlehrer ist Besnik. Ich habe viel gelernt und die Fahrprüfung in kurzer Zeit bestanden. Ich empfehle ihn sehr gerne weiter!",
+      "stars": 5,
+      "image": "/profile15.png",
+      "googleimg": "/google.png"
+    },
+    {
+      "name": "Oliver S",
+      "date": "September 17, 2024",
+      "text": "Sehr gute Fahrschule mit einem tollen Fahrlehrer, kann sie nur weiterempfehlen. Sie waren geduldig mit mir und erklärten alles klar und verständlich. Das Auto ist modern und toll für Fahranfänger!",
+      "stars": 5,
+      "image": "/profile11.png",
+      "googleimg": "/google.png"
+    },
+    {
+      "name": "Latha Ravi",
+      "date": "Januar 30, 2025",
+      "text": "Mein Fahrlehrer Besnik ist sehr lieb, sympathisch und professionell. Ich hatte Angst vor der Kontrollfahrt, aber dank seiner Hilfe und Geduld habe ich sie bestanden. Er hat sich sehr viel Zeit genommen, mir die Regeln verständlich zu erklären – trotz meiner Sprachschwierigkeiten. Jetzt habe ich meinen Schweizer Führerschein und bin sehr stolz!",
+      "stars": 5,
+      "image": "/profile10.png",
+      "googleimg": "/google.png"
+    },
+    {
+      "name": "Salvatore Mastroianni",
+      "date": "Dezember 1, 2024",
+      "text": "Der Fahrlehrer war super, hat mir alles erklärt und gezeigt, wie man fährt. Ich empfehle euch, zur Fahrschule Loyal zu gehen. Herr Besnik ist der Beste!",
+      "stars": 5,
+      "image": "/profile16.png",
+      "googleimg": "/google.png"
+    },
+    {
+      "name": "Eneida Qehaja",
+      "date": "September 6, 2024",
+      "text": "Die Fahrstunden waren sehr angenehm. Alles wurde besprochen, mehrmals wiederholt, und man konnte immer Fragen stellen. Der Fahrlehrer ist super, hört einem zu und erklärt sehr deutlich. Fahrschule Loyal kann ich nur weiterempfehlen.",
+      "stars": 5,
+      "image": "/profile12.png",
+      "googleimg": "/google.png"
+    },
+    {
+      "name": "Azhin Rasool",
+      "date": "August 12, 2024",
+      "text": "Sehr guter Fahrlehrer! Besnik ist sympathisch, zuverlässig und erklärt alles sehr präzise. Dank ihm habe ich die Prüfung beim ersten Mal bestanden.",
+      "stars": 5,
+      "image": "/profile13.png",
+      "googleimg": "/google.png"
+    },
+    {
+      "name": "Erblina Bauta",
+      "date": "Januar 20, 2025",
+      "text": "Besnik ist der beste Fahrlehrer, den ich kenne. Er ist sehr geduldig, ruhig und ein wunderbarer Mensch. Er erklärt alles klar und wiederholt es oft, bis man es versteht. Ich kann ihn nur weiterempfehlen!",
+      "stars": 5,
+      "image": "/profile12.png",
+      "googleimg": "/google.png"
+    }
+    ,
+      {
+        "name": "Besmira Jahija",
+        "date": "August 15, 2024",
+        "text": "Dank Besnik habe ich die Fahrprüfung erfolgreich bestanden. Jede Fahrstunde war wertvoll, da er sich stets Zeit nahm und alles genau erklärte. Seine Lernmethoden sind effizient und ermöglichen schnelles Lernen. Besnik ist immer freundlich und motivierend.",
+        "stars": 5,
+        "image": "/profile14.png",
+        "googleimg": "/google.png"
+      },
+      {
+        "name": "Daniel S",
+        "date": "Dezember 1, 2024",
+        "text": "Besnik ist ein super Fahrlehrer. Seine Tipps und die Art, wie er lehrt, haben dazu geführt, dass ich die Prüfung beim ersten Mal bestanden habe. Danke dafür 🙏🏽🙏🏽",
+        "stars": 5,
+        "image": "/profile11.png",
+        "googleimg": "/google.png"
+      },
+      {
+        "name": "Tes Habtezghi",
+        "date": "Januar 22, 2025",
+        "text": "Besnik ist ein sehr guter Fahrlehrer. Vielen Dank, dass du mich so weit gebracht hast, die Fahrprüfung in kurzer Zeit zu bestehen. Wenn es um Unterricht geht, bist du top – die Erklärungen sind einfach und klar.",
+        "stars": 5,
+        "image": "/profile15.png",
+        "googleimg": "/google.png"
+      },
+      {
+        "name": "Abdel Mahin",
+        "date": "August 8, 2024",
+        "text": "Ich habe die Fahrprüfung bestanden – dank Besnik, dem besten Fahrlehrer. Er ist super sympathisch und will nur das Beste für seine Schüler. Ich bin sehr glücklich und hoffe, dass alle bei der Fahrschule Loyal die Prüfung bestehen.",
+        "stars": 5,
+        "image": "/profile7.png",
+        "googleimg": "/google.png"
+      },
+      {
+        "name": "Khaled Mussa",
+        "date": "August 10, 2024",
+        "text": "Besnik ist ein sehr geduldiger, ruhiger und freundlicher Fahrlehrer. Ich wusste jederzeit, wo ich stehe und wo ich mich verbessern muss. Auch wenn ich etwas mehrmals fragte, erklärte er es immer geduldig erneut.",
+        "stars": 5,
+        "image": "/profile16.png",
+        "googleimg": "/google.png"
+      },
+      {
+        "name": "Tesfaldet Weldense",
+        "date": "August 17, 2024",
+        "text": "Besnik ist ein sehr guter Fahrlehrer. Er erklärt die Regeln sehr gut und verständlich, sodass man sie einfach versteht. Auch wenn man etwas nicht versteht, nimmt er sich immer Zeit, es erneut zu erklären. Ich empfehle ihn sehr gerne.",
+        "stars": 5,
+        "image": "/profile15.png",
+        "googleimg": "/google.png"
+      },
+      {
+        "name": "Mhret Kesete Michael",
+        "date": "August 13, 2024",
+        "text": "Sehr, sehr guter Fahrlehrer! Besnik erklärt die Themen verständlich, ruhig und präzise. Er ist sehr nett und hilfsbereit. Dank ihm habe ich die Führerprüfung beim ersten Mal bestanden. Ich empfehle ihn auf jeden Fall weiter.",
+        "stars": 5,
+        "image": "/profile16.png",
+        "googleimg": "/google.png"
+      },
+      {
+        "name": "Mhretab Tsghanes",
+        "date": "Januar 30, 2025",
+        "text": "Mit Besnik war ich sehr zufrieden. Vielen Dank – du hast mich sehr gut auf die Fahrprüfung vorbereitet, und heute habe ich bestanden. Er ist korrekt, pünktlich, zielorientiert, zuverlässig, sympathisch und freundlich. Sehr zu empfehlen!",
+        "stars": 5,
+        "image": "/profile7.png",
+        "googleimg": "/google.png"
+      }
+        ,
+  {
+    "name": "Samir Nasra",
+    "date": "September 12, 2023",
+    "text": "Ich bin sehr sehr zufrieden. Mein Fahrlehrer er ist sehr Nett und nimmt sich viel Zeit. ich konnte immer wieder Fragen stellen ohne Grenzen. Er ermutigt die Fahrschüler und motiviert sie immer weiter dran zu bleiben. Ich bedanke mich herzlich nochmals😊",
+    "stars": 5,
+    "image": "/profile5.png",
+    "googleimg": "/google.png"
+  },
+  {
+    "name": "Seeds Misini",
+    "date": "September 12, 2023",
+    "text": "Sehr guter und geduldiger Fahrlehrer!! Hat sehr gute Erklärungen gegeben und alles gezeigt. Tolle Arbeit!! Habe mich sehr wohl gefühlt beim Fahren wie auch bei der Praktischen Prüfung. Würde ein zweites mal in diese Fahrschule gehen.",
+    "stars": 5,
+    "image": "/profile2.png",
+    "googleimg": "/google.png"
+  },
+  {
+    "name": "Aicha Abdeldayem",
+    "date": "September 12, 2023",
+    "text": "Ich Bin mit Besnik sehr zuefrieden, erklärt die sachen ganz genau und präzise und sehr ruhig. Eine sehr angenehme Person und seine Leistung wieder. Bester Fahrlehrer. Danke dir für deine Unterstützung!!",
+    "stars": 5,
+    "image": "/profile8.png",
+    "googleimg": "/google.png"
+  }
+]
+}

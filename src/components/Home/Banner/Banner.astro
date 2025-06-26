@@ -1,0 +1,30 @@
+---
+import { Image } from 'astro:assets';
+interface Props {
+  image: {
+    image_path: string;
+    alt_text: string;
+  };
+}
+const { image } = Astro.props;
+---
+<div class="Bannersection">
+  <Image
+    src={image.image_path}
+    alt={image.alt_text}
+    class="main_banner_img h-[450px]"
+    width={650}
+    height={450}
+  />
+</div>
+<style>
+  .Bannersection {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+  }
+  .main_banner_img {
+    width: 100%;
+    object-fit: cover;
+  }
+</style>
