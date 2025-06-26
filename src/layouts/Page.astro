@@ -1,5 +1,7 @@
 ---
 import PageHelper from "../shared/astro/page.astro";
+import PreisePage from '../shared/astro/preise.astro';
+import ImpressumPage from '../shared/astro/impressum.astro';
 // import HeroBlock from "src/shared/astro/hero-block.astro";
 import Layout, { type SEOProps } from "./Layout.astro";
 
@@ -13,39 +15,18 @@ type Props = {
 };
 
 const props = Astro.props.frontmatter;
-const getContainerClass = () => {
-  if (props.title == "Impressum Page") {
-    return "privacycontainer";
-  }
-};
 ---
 
 <Layout {...props}>
   <!-- <HeroBlock bookshop:live heroBlock={props.hero_block} /> -->
-  <div class=`${getContainerClass()}`>
-    <PageHelper bookshop:live contentBlocks={props.content_blocks} />
-  </div>
+   {
+     props.title == "Preise Page" && <PreisePage bookshop:live contentBlocks={props.content_blocks} />
+   }
+   {
+     props.title == "ueber-uns" && <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+   }
+   { props.title == "Taxi Bpt" && <PageHelper bookshop:live contentBlocks={props.content_blocks} /> }
+   { props.title == "Kontrolfahrt" && <PageHelper bookshop:live contentBlocks={props.content_blocks} /> }
+   { props.title == "Contact Form" && <PageHelper bookshop:live contentBlocks={props.content_blocks} /> }
+   { props.title == "Impressum Page" && <ImpressumPage bookshop:live contentBlocks={props.content_blocks} /> }
 </Layout>
-<style>
-  .privacycontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 17rem 3rem 3rem 3rem;
-    margin-top: -100px;
-    color: #3d3d3d;
-  }
-  .privacycontainer div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-  @media screen and (max-width: 1024px) {
-    .privacycontainer {
-      margin: 4rem 0 1rem 0;
-      padding: 0 0.8rem;
-    }
-  }
-</style>

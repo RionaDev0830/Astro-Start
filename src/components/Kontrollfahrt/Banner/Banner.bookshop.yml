@@ -1,0 +1,30 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Kontrollfahrt Banner
+  description: Kontrollfahrt Banner
+  icon: 'cottage'
+  tags:
+    - Image
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  h1: Kontrollfahrt Schweiz \n mit Fahrschule Loyal
+  cards: [bookshop:structure:WhatWeDoCard]
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  h1:
+    type: text
+    label: heading
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: h1
+        subtext:
+          - 'Update Heading'

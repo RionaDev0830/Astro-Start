@@ -1,0 +1,82 @@
+---
+import Wrapper from "../../components/Common/Wrapper.astro";
+export interface Props {
+  contentBlocks: any[];
+}
+
+const components: Record<string, Function> = {};
+const componentImports = import.meta.glob("../../components/**/*.{jsx,astro}", {
+  eager: true,
+});
+Object.entries(componentImports).forEach(([path, obj]) => {
+  const parts = path.replace("../../components/", "").split(".")[0].split("/");
+  if (parts.length > 1 && parts[parts.length - 1] === parts[parts.length - 2]) {
+    parts.pop();
+  }
+  const bookshopName = parts.join("/");
+  components[bookshopName] = (obj as any).default;
+});
+
+const { contentBlocks } = Astro.props;
+---
+
+<div class={"privacycontainer"}>
+  <br />
+  {
+    contentBlocks?.map((block, i) => {
+      const Component = components[block._bookshop_name];
+      return (
+        <Component
+          {...block}
+          key={i}
+          content_blocks_length={contentBlocks.length}
+        />
+      );
+    })
+  }
+  <div>
+    <p class="privacyparagraph">Quelle: SwissAnwalt</p>
+  </div>
+</div>
+<style is:global>
+  .privacycontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 17rem 3rem 3rem 3rem;
+    margin-top: -100px;
+    color: #3d3d3d;
+  }
+  .privacycontainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  @media screen and (max-width: 1024px) {
+    .privacycontainer {
+      margin: 4rem 0 1rem 0;
+      padding: 0 0.8rem;
+    }
+  }
+  .privacytitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .privacyparagraph {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 1.8rem;
+  }
+  @media screen and (max-width: 1024px) {
+    .privacyparagraph {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+</style>

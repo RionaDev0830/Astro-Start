@@ -1,0 +1,48 @@
+---
+import Wrapper from '../../Common/Wrapper.astro';
+import WhatWeDoCard, { WhatWeDoCardProps } from '../../Common/WhatWeDoCard/WhatWeDoCard.astro'
+interface Props {
+  h1: string;
+  cards: [WhatWeDoCardProps];
+}
+const { h1, cards } = Astro.props;
+---
+<div class={"KontrollfahrtBanner_section"}>
+  <h1 style={{ fontSize: "43px" }}>
+    {
+      h1.split('\\n').map((line, index) => <>
+      {line}<br/>
+      </>)
+    }
+  </h1>
+  <Wrapper>
+    <div class={"whatwedocard_section"}>
+      {cards.map((item) => {
+        return <WhatWeDoCard {...item} />;
+      })}
+    </div>
+  </Wrapper>
+</div>
+<style>
+.KontrollfahrtBanner_section {
+  background-color: #f6f6f6;
+  padding: 5rem 0;
+  font-family: var(--font-clash-display);
+  font-size: 43px;
+  font-weight: 600;
+  line-height: 45.76px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.whatwedocard_section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+</style>

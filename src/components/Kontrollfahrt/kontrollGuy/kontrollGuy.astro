@@ -1,0 +1,213 @@
+---
+import Wrapper from '../../Common/Wrapper.astro';
+import { Image } from 'astro:assets';
+interface Props {
+  guyimg: {
+    image_path: string;
+    guyimgAlt: string;
+  };
+  title: string;
+  description1: string;
+  description2: string;
+}
+const { guyimg, title, description1, description2} = Astro.props;
+
+---
+<div class={"maindiv"}>
+  <Wrapper>
+    <div class={"imagediv"}>
+      <div class={"imgwrap"}>
+        <Image
+          src={guyimg.image_path}
+          alt={guyimg.guyimgAlt}
+          width={400}
+          height={500}
+          class={"guyimg"}
+        />
+      </div>
+      <div class={"textdiv"}>
+        <h2 class={"title"}>
+          {title}
+        </h2>
+
+        <p class={"description1"}>
+          {description1}
+        </p>
+
+        <p class={"description2"}>
+          {description2}
+        </p>
+      </div>
+    </div>
+  </Wrapper>
+</div>
+<style>
+.imagediv {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.imgwrap {
+  position: absolute;
+  top: 24%;
+  left: 0;
+  width: 40%;
+  height: 450px;
+  z-index: 1;
+  border-radius: 10px;
+}
+.guyimg {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.responsiveImage {
+  width: 100%;
+  height: auto;
+}
+
+.textdiv {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  padding: 30px 30px 30px 120px;
+  color: white;
+  border-radius: 10px;
+  background-color: #0697db;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: var(--font-clash-display);
+}
+
+.description1,
+.description2 {
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-dm-Sans);
+}
+
+@media (max-width: 1156px) {
+  .title {
+    /* font-size: 25px; */
+    font-weight: 600;
+    font-family: var(--font-clash-display);
+  }
+
+  .description1,
+  .description2 {
+    margin-top: 1rem;
+    /* font-size: 15px; */
+    font-weight: 500;
+    font-family: var(--font-dm-Sans);
+  }
+}
+
+@media (max-width: 1156px) {
+  .title {
+    /* font-size: 20px; */
+    font-weight: 600;
+    font-family: var(--font-clash-display);
+  }
+
+  .description1,
+  .description2 {
+    margin-top: 5px;
+    /* font-size: 12px; */
+    font-weight: 500;
+    font-family: var(--font-dm-Sans);
+  }
+}
+
+@media (max-width: 733px) {
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font-clash-display);
+  }
+
+  .description1,
+  .description2 {
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--font-dm-Sans);
+  }
+  .imgwrap {
+    top: 10px;
+    width: 80%;
+    height: 40%;
+  }
+  .textdiv {
+    bottom: 10%;
+    top: unset;
+    padding: 100px 20px 20px 20px;
+    height: unset;
+    width: 90%;
+  }
+  .imagediv {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 565px) {
+  .title {
+    /* font-size: 14px; */
+    font-weight: 600;
+    font-family: var(--font-clash-display);
+  }
+
+  .description1,
+  .description2 {
+    margin-top: 5px;
+    /* font-size: 8px; */
+    font-weight: 500;
+    font-family: var(--font-dm-Sans);
+  }
+}
+
+@media (max-width: 465px) {
+  .title {
+    /* font-size: 12px; */
+    font-weight: 600;
+    font-family: var(--font-clash-display);
+  }
+
+  .description1,
+  .description2 {
+    margin-top: 5px;
+    /* font-size: 6px; */
+    font-weight: 500;
+    font-family: var(--font-dm-Sans);
+  }
+}
+
+@media (max-width: 390px) {
+  .title {
+    /* font-size: 9px; */
+    font-weight: 600;
+    font-family: var(--font-clash-display);
+  }
+
+  .description1,
+  .description2 {
+    margin-top: 5px;
+    /* font-size: 6px; */
+    font-weight: 500;
+    font-family: var(--font-dm-Sans);
+  }
+}
+</style>

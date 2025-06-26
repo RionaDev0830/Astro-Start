@@ -1,0 +1,66 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Kontroll Guy
+  description: Kontroll Guy
+  icon: 'cottage'
+  tags:
+    - Image
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  guyimg: 
+    image_path: /customer-enjoying-with-his-new-car.webp
+    guyimgAlt: guy enjoying new car
+  title: Ausländischer Führerausweis in einen schweizerischen Führerausweis umtauschen
+  description1: "Notwendige Unterlagen: Ausländischer Führerausweis, Gesuchsformular und ein Sehtest nicht älter als zwei Jahre"
+  description2: "Die Kontrollfahrt ist eine PRÜFUNG! Wir empfehlen Dir dringend, die nötigen Fahrstunden zu nehmen, um mit der Fahrpraxis auf dem aktuellen Stand zu sein."
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  title:
+    type: text
+    label: title
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: title
+        subtext:
+          - 'Update title'
+  guyimg:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - key: guyimgAlt
+          - 'Image'
+        subtext:
+          - key: image_path
+          - 'Update image'
+        image:
+          - key: image_path
+  description1:
+    type: textarea
+    label: body
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: description1
+        subtext:
+          - 'Update description1'
+  description2:
+    type: textarea
+    label: body
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: description2
+        subtext:
+          - 'Update description2'

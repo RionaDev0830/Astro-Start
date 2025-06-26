@@ -1,0 +1,304 @@
+---
+import { Image } from 'astro:assets';
+interface Props {
+  icon: string;
+  title: string;
+  description: string;
+}
+export { Props as SequenceTimeProps };
+const { icon, title, description } = Astro.props;
+
+---
+<div class={"timelineitem"}>
+  <div class={"orangedot"}></div>
+  <div class={"iconcontainer"}>
+    <Image
+      src={icon}
+      alt={`${title} icon`}
+      width={20}
+      height={30}
+    />
+  </div>
+  <div class={"timelinecontent"}>
+    <p class={"timelinetitle"}>{title}</p>
+    <p class={"timelinedescription"}>
+      {description}
+    </p>
+  </div>
+</div>
+<style>
+.main {
+  background-color: #002e69;
+  color: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.body {
+  display: flex;
+  gap: 20px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: var(--font-clash-display);
+  margin-bottom: 20px;
+  color: white;
+}
+
+.left {
+  width: 60%;
+  float: left;
+  display: flex;
+  padding-right: 40px;
+  position: relative;
+  margin-top: 20px;
+  /* justify-content: space-between; */
+}
+
+/* Timeline vertical line */
+.left .listleft::before {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 0;
+  bottom: 20px;
+  width: 2px;
+  background-color: #c5c5c9;
+}
+
+/* Horizontal line between the left and right sections */
+.timelineitem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  min-width: 320px;
+  padding-right: 10px;
+  position: relative;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* Add the horizontal line connecting both sides */
+.timelineitem::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  /* right: 23rem; */
+  width: 8%;
+  height: 2px;
+  background-color: #c5c5c9;
+  z-index: 0;
+}
+
+.orangedot {
+  background-color: #002e69;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  left: 12px;
+  z-index: 1; /* Make sure the dot is on top of the line */
+  margin-right: 15px;
+}
+
+.listright {
+  position: relative;
+  padding-left: 30px;
+}
+
+/* Timeline vertical line for .listright */
+.left .listright::before {
+  content: "";
+  position: absolute;
+  left: 43px;
+  top: 0;
+  bottom: 20px;
+  /* height: 60%; */
+  width: 2px;
+  background-color: #c5c9c5;
+}
+
+.iconcontainer {
+  background-color: white;
+  color: #4a79fa;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  position: relative;
+  z-index: 1;
+  border: 2px solid #dee1e3;
+}
+
+.timelinecontent {
+  color: white;
+  padding-top: 5px;
+  width: 75%;
+}
+
+.timelinetitle {
+  font-size: 20px;
+  font-family: var(--font-dm-Sans);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.timelinedescription {
+  font-size: 15px;
+  font-family: var(--font-dm-Sans);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Right side */
+.right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 16px;
+  font-family: var(--font-dm-Sans);
+  font-weight: 400;
+  line-height: 25px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #0697db;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 16px;
+  font-family: var(--font-dm-Sans);
+  width: 50%;
+}
+
+.button:hover {
+  background-color: #3080cb;
+}
+
+.kfContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.kfBadgeImage {
+  display: flex;
+  flex-direction: column; /* Stack number and currency */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+  color: #0697db;
+  font-family: var(--font-clash-display);
+  font-weight: 500;
+  font-size: xx-large;
+  line-height: 15px;
+  width: 120px;
+  height: 120px;
+  background: url('/white_badge_512_w-shadow.png') no-repeat center center;
+  background-size: cover;
+}
+
+.kfBadgeText {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.kfBadge {
+  display: flex;
+  align-items: center; /* Center the content */
+}
+
+.kfBadgeValue {
+  font-size: 1.3em; /* Adjust size as needed */
+  font-weight: bold; /* Make the number bold */
+}
+
+.kfBadgeCurrency {
+  font-size: 0.7em; /* Adjust size as needed */
+  color: #003553; /* Change color as needed */
+}
+
+@media (max-width: 1490px) {
+  .left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .listright {
+    padding-left: 1px;
+  }
+
+  .left .listright::before {
+    display: none;
+  }
+  .timelineitem::after {
+    width: 4%;
+    left: 2%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .button {
+    width: 200px;
+  }
+  .timelineitem::after {
+    width: 6%;
+    left: 3%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .timelinecontent {
+    width: 85%;
+  }
+  .left {
+    padding-right: 0;
+  }
+  .timelineitem {
+    margin-bottom: 12px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 760px) {
+  .left {
+    width: 100%;
+  }
+  .timelineitem {
+    min-width: unset;
+  }
+}
+
+@media (max-width: 410px) {
+  .timelineitem::after {
+    left: 5%;
+  }
+}
+
+</style>

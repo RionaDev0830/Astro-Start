@@ -1,0 +1,67 @@
+---
+import { Image } from 'astro:assets';
+interface Props {
+  image: string;
+  heading: string;
+  body: string;
+}
+export { Props as WhatWeDoCardProps };
+const { image, heading, body } = Astro.props;
+---
+<div class={"whatwedocard_section"}>
+  <div class="flex flex-row justify-center">
+    {/* <img class={whatwedoimage} src={item.image} alt="whatwedo"/> */}
+    <Image
+      width={80}
+      height={80}
+      class={"whatwedoimage"}
+      src={image}
+      alt="whatwedo"
+    />
+  </div>
+  <p class={"card_header"}>{heading}</p>
+  <p class={"card_body_text"}>{body}</p>
+</div>
+<style>
+.whatwedocard_section {
+  width: 30%;
+  text-align: center;
+}
+
+.card_header {
+  font-family: var(--font-clash-display);
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 27.8px;
+  letter-spacing: 0.01em;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100px;
+}
+
+.card_body_text {
+  font-family: var(--font-dm-Sans);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: justify;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .whatwedocard_section {
+    width: 47%;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 678px) {
+  .whatwedocard_section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+</style>

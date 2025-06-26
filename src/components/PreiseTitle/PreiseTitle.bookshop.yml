@@ -1,0 +1,24 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Preise Title
+  description: Preise Title
+  icon: 'cottage'
+  tags:
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: "Unsere Preise und Abos \n bei Fahrschule Loyal"
+
+_inputs:
+  title:
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: title
+          - 'Header Text'
+        subtext:
+          - 'Update title text'

@@ -1,0 +1,42 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+<div class={"preise_section"}>
+  <h1 style={"font-size: '40px' "}>
+    {title.split("\\n").map(line => <>
+      {line}<br />
+    </>)}
+  </h1>
+</div>
+<style>
+.preise_section {
+  padding: 5rem 0;
+  font-family: var(--font-clash-display);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 45.76px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+@media (max-width: 982px) {
+  .preise_section {
+    padding: 2rem 0;
+    font-size: 30px;
+    line-height: 36.76px;
+  }
+}
+@media (max-width: 630px) {
+  .preise_section {
+    padding: 1rem 0;
+    font-size: 25px;
+  }
+}
+@media (max-width: 475px) {
+  .preise_section {
+    font-size: 22px;
+  }
+}
+</style>

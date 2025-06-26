@@ -1,0 +1,70 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Sequence
+  description: Sequence Information
+  icon: 'cottage'
+  tags:
+    - Image
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  heading: Ablauf
+  left_timeline: [bookshop:structure:SequenceTime]
+  right_timeline: [bookshop:structure:SequenceTime]
+  sidebar_text: |
+    Nach dem Einreichen der Unterlagen erhältst du ein Rückantwortblatt vom Strassenverkehrsamt, auf dem du die umzutauschenden Kategorien, das Wunsch-Strassenverkehrsamt und den Wunsch-Wochentag für die Kontrollfahrt angeben kannst.
+
+    Die Kontrollfahrt findet in Zürich Albisgütli oder Winterthur statt. Nach der Rückantwort bekommst du eine Einladung zur Kontrollfahrt mit einer dreimonatigen Frist. In dieser Zeit bereiten wir dich optimal vor, denn wenn du die Kontrollfahrt nicht bestehst, wird der Führerausweis entzogen oder der ausländische Führerausweis aberkannt.
+
+    **Die Kontrollfahrt kann gesetzlich nicht wiederholt werden.**
+  button_text: Jetzt anmelden
+  button_link: "#kontakt"
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  heading:
+    type: text
+    label: heading
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: heading
+        subtext:
+          - 'Update Heading'
+  sidebar_text:
+    type: textarea
+    label: sidebar_text
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: sidebar_text
+        subtext:
+          - 'Update sidebar_text'
+  button_text:
+    type: text
+    label: button text
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: button_text
+        subtext:
+          - 'Update button text'
+  button_link:
+    type: text
+    label: heading
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: button_link
+        subtext:
+          - 'Update button link'
+  
