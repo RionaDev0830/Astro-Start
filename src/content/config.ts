@@ -84,13 +84,30 @@ const seoPageCollection = defineCollection({
         text: z.string()
       }))
     }),
-    seo: pageSeo
+    seo: pageSeo,
+    contact_block: z.object({
+      questionText: z.string(),
+      welcomeText: z.string(),
+      phone: z.string(),
+      mail: z.string()
+    })
   })
+});
+const FahrschuleSchema = z.object({
+  title: z.string(),
+  content_blocks: z.array(z.any()),
+  seo: pageSeo,
+  contact_form: z.object({
+      questionText: z.string(),
+      welcomeText: z.string(),
+      phone: z.string(),
+      mail: z.string()
+    })
 });
 export const collections = {
   blog: blogCollection,
   pages: pagesCollection,
-  Fahrschule: pageSchema,
+  Fahrschule: FahrschuleSchema,
   Kurse: KurseCollection,
   seoPage: seoPageCollection
 };

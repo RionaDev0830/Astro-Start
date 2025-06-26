@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-buelach
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-buelach
 seo_blocks:
-  category: "fahrschule-buelach"
+  category: "Fahrschule Bülach"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,5 +32,9 @@ seo_blocks:
       text: "Unsere Fahrschule in Bülach bietet dir eine flexible und individuelle Ausbildung, die perfekt auf deine Bedürfnisse abgestimmt ist. Neben klassischen Fahrstunden unterstützen wir dich auch mit Verkehrskunde- und Nothelferkursen. Mit unserer geduldigen und kompetenten Begleitung bist du bestens für die Fahrprüfung vorbereitet."
     - title: "Jetzt in Bülach starten!"
       text: "Melde dich jetzt online oder telefonisch bei uns an und mache den ersten Schritt zu deinem Führerausweis. Unser erfahrenes Team hilft dir bei allen Fragen und begleitet dich sicher durch deine Fahrausbildung. Starte noch heute mit der Fahrschule Loyal in Bülach!"
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

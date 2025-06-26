@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/verkehrskunde-schlieren
   metadatabase: https://www.fahrschuleloyal.ch/verkehrskunde-schlieren
 seo_blocks:
-  category: "verkehrskunde-schlieren"
+  category: "VKU Schlieren"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,5 +32,9 @@ seo_blocks:
       text: "Der Kurs behandelt alle relevanten Themen, die du für eine verantwortungsvolle Verkehrsteilnahme benötigst. Du lernst, Verkehrssituationen zu analysieren und korrekt zu reagieren, um sicher unterwegs zu sein. Anschauliche Beispiele und interaktive Übungen machen den Unterricht spannend und praxisnah. Unsere kompetenten Ausbilder:innen stehen dir bei Fragen jederzeit zur Seite. So verlässt du den Kurs mit fundiertem Wissen und viel Selbstvertrauen."
     - title: "Melde dich für die Verkehrskunde in Schlieren an!"
       text: "Nutze unser Online-Formular oder kontaktiere uns telefonisch, um deinen Platz im Verkehrskunde-Kurs in Schlieren zu sichern. Unsere flexiblen Zeiten ermöglichen dir, den Kurs einfach in deinen Alltag zu integrieren. Starte jetzt mit der Fahrschule Loyal und lege den Grundstein für deine sichere Teilnahme am Strassenverkehr. Wir freuen uns darauf, dich in unserem Kurs willkommen zu heissen. Gemeinsam machen wir dich fit für die Praxis!"
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

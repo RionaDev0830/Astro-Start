@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-bassersdorf
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-bassersdorf
 seo_blocks:
-  category: "fahrschule-bassersdorf"
+  category: "Fahrschule Bassersdorf"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,5 +32,9 @@ seo_blocks:
       text: "Unsere Fahrschule in Bassersdorf bietet dir eine fundierte und flexible Fahrausbildung. Wir unterstützen dich nicht nur bei Fahrstunden, sondern auch mit ergänzenden Kursen wie Verkehrskunde und Nothelfer. So bist du rundum gut vorbereitet."
     - title: "Jetzt in Bassersdorf durchstarten!"
       text: "Melde dich noch heute bei der Fahrschule Loyal in Bassersdorf an und beginne deine Reise zum Führerausweis. Unser erfahrenes Team steht dir mit Rat und Tat zur Seite und begleitet dich sicher durch deine Fahrausbildung. Jetzt Termin vereinbaren und loslegen!"
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

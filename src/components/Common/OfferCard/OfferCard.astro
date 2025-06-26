@@ -34,7 +34,7 @@ const { fahrschule, image, category, link, about, span1 } = Astro.props;
       width="150"
       height="200"
     />
-    {image.image_path.alt_text && (
+    {image.alt_text && (
       <h3
         class={
           fahrschule
@@ -42,11 +42,10 @@ const { fahrschule, image, category, link, about, span1 } = Astro.props;
             : "image_title"
         }
       >
-        {image.image_path.alt_text}
+        {image.alt_text}<br/>
         {fahrschule && (
           <span class="card_category">
-            <br></br>
-            {category}
+            {category} 
           </span>
         )}
       </h3>

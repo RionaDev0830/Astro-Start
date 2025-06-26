@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 interface Props {
+  headingGp: string;
   heading: string;
   description: string;
   button_text: string;
@@ -25,7 +26,7 @@ function getLastDayInTwoMonths() {
   return `${day}. ${monthName} ${lastYear}`;
 }
 
-const { heading, description, button_text, button_link, image } = Astro.props;
+const { heading, headingGp, description, button_text, button_link, image } = Astro.props;
 console.log('description', description);
 const descriptionWithDate = description.replace(
   "[Datum]",
@@ -36,6 +37,7 @@ const descriptionWithDate = description.replace(
   {/* Left text */}
   <div class="leftdiv">
     <div class="heading">
+      <p class="headingp">{headingGp}</p>
       {heading}
     </div>
     <p class="description">

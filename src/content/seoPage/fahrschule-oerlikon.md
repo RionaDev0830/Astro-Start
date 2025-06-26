@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-oerlikon
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-oerlikon
 seo_blocks:
-  category: "fahrschule-oerlikon"
+  category: "Fahrschule Oerlikon"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,4 +32,9 @@ seo_blocks:
       text: "Neben praktischen Fahrstunden bieten wir auch alle wichtigen Kurse wie Verkehrskundeunterricht (VKU) und Nothelferkurse an – direkt in deiner Nähe in Oerlikon. So wirst du umfassend auf Theorie- und Praxisprüfungen vorbereitet. Unsere strukturierte Ausbildung unterstützt dich dabei, stressfrei und effizient deinen Führerausweis zu erlangen."
     - title: "Jetzt anmelden und losfahren!"
       text: "Die Anmeldung bei der Fahrschule Loyal in Oerlikon ist schnell und einfach – online oder telefonisch. Gemeinsam erstellen wir deinen persönlichen Ausbildungsplan, abgestimmt auf deine Zeit und deine Ziele. Worauf wartest du noch? Starte jetzt durch und beginne deine Fahrausbildung mit uns!"
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

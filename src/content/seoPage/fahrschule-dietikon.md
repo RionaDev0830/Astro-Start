@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-dietikon
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-dietikon
 seo_blocks:
-  category: "fahrschule-dietikon"
+  category: "Fahrschule Dietikon"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,5 +32,9 @@ seo_blocks:
       text: "Von den ersten Fahrstunden bis zur Theorieprüfung begleiten wir dich mit einer auf dich zugeschnittenen Ausbildung. Unsere erfahrenen Fahrlehrer:innen helfen dir dabei, dein Wissen und Können im Strassenverkehr zu vertiefen. Egal, ob es um Verkehrskunde, Nothelferkurs oder praktische Fahrstunden geht – wir stehen dir mit Rat und Tat zur Seite."
     - title: "Jetzt in Dietikon durchstarten!"
       text: "Die Anmeldung ist unkompliziert und schnell – ob online oder telefonisch, wir sind für dich da. Unser engagiertes Team sorgt dafür, dass du dich bei uns gut aufgehoben fühlst und sicher ans Ziel kommst. Melde dich noch heute an und starte deine Reise zum Führerausweis mit der Fahrschule Loyal in Dietikon."
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

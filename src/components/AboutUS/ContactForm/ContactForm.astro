@@ -23,7 +23,7 @@ const { left_text, button_link, button_text, address, opening_days, opening_hour
         ))}
         <a
           href={button_link}
-          class={"btnsubmitButton btnfitbtn"}
+          class={"submitButton fitbtn"}
         >
           {button_text}
       </a>
@@ -69,6 +69,38 @@ const { left_text, button_link, button_text, address, opening_days, opening_hour
     <hr />
   </Staggeranimstylethree>
 </Wrapper>
+<style>
+.submitButton {
+  background-color: #0697db;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--font-dm-Sans);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 26.04px;
+}
+
+.submitButton:hover {
+  background-color: #407fbb;
+}
+
+.fitbtn {
+  width: fit-content;
+  height: fit-content;
+}
+
+@media (max-width: 600px) {
+  .submitButton {
+    padding: 8px;
+    font-size: 18px;
+    line-height: 23.04px;
+  }
+}
+</style>
 <style is:global>
 .contact-form-container {
   background-image: url("/background1_shrink.webp");

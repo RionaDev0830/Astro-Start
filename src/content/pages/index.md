@@ -56,7 +56,8 @@ content_blocks:
         about: "Motorwagen zum Personentransport mit mehr als acht Sitzplätzen ausser dem Führersitz"
         span1: "CHF 190"
   - _bookshop_name: Home/Upperpart
-    heading: "Die ersten fünf Fahrstunden für CHF 59.-/Lektion"
+    headingGp: "Die ersten fünf"
+    heading: "Fahrstunden für CHF 59.-/Lektion"
     description: "Du erhältst die ersten 5 Fahrstunden für nur CHF 59.- pro Lektion! Melde dich jetzt an und spare dadurch CHF 135.- (Aktion gültig bis [Datum])"
     button_text: "Jetzt anmelden"
     button_link: "/kontakt"

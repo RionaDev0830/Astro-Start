@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-regensdorf
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-regensdorf
 seo_blocks:
-  category: "fahrschule-regensdorf"
+  category: "Fahrschule Regensdorf"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,4 +32,9 @@ seo_blocks:
       text: "Unser Team aus erfahrenen Fahrlehrer:innen bietet dir eine Ausbildung, die perfekt in deinen Alltag passt. Ob du Unterstützung in der Theorie benötigst oder deine Fahrpraxis verbessern möchtest – wir begleiten dich auf jedem Schritt. Mit uns erreichst du dein Ziel stressfrei und in deinem eigenen Tempo."
     - title: "Jetzt in Regensdorf durchstarten!"
       text: "Melde dich noch heute online oder telefonisch an und starte deine Fahrstunden mit Fahrschule Loyal. Wir stehen dir von der ersten Fahrstunde bis zur erfolgreichen Prüfung unterstützend zur Seite. Überzeuge dich selbst von unserer professionellen und engagierten Betreuung und werde Teil unserer zufriedenen Fahrschüler:innen."
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

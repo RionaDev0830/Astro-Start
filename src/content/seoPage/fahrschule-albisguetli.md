@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-albisguetli
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-albisguetli
 seo_blocks:
-  category: "fahrschule-albisguetli"
+  category: "Fahrschule Albisgütli"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,4 +32,9 @@ seo_blocks:
       text: "Ob Verkehrskunde, Nothelferkurs oder die praktische Fahrausbildung – bei uns bekommst du alles aus einer Hand. Unsere Fahrlehrer:innen kennen das Gebiet rund um Albisgütli bestens und bereiten dich optimal auf die Prüfung vor. Mit viel Erfahrung, Einfühlungsvermögen und Struktur bringen wir dich sicher ans Ziel."
     - title: "Jetzt anmelden und losfahren!"
       text: "Melde dich ganz unkompliziert online oder telefonisch an und starte deine Fahrausbildung mit der Fahrschule Loyal in Albisgütli. Gemeinsam erstellen wir einen persönlichen Fahrplan, der dich effizient und stressfrei zur bestandenen Prüfung führt. Wir freuen uns, dich bald bei uns begrüssen zu dürfen!"
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

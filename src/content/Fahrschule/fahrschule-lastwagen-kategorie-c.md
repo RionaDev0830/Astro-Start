@@ -128,4 +128,9 @@ content_blocks:
       - amount: "CHF 140"
         proLektion: " / pro Lektion"
         title: "Kategorie C1 - Einzel Fahrstunde"
+contact_form:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

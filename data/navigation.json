@@ -8,58 +8,233 @@
     "hover_text_color": "#808080",
     "links": [
       {
-        "link": "/blog/",
-        "text": "Blog"
+        "link": "/",
+        "text": "Startseite",
+        "is_dropdown": false
       },
       {
-        "link": "https://github.com/CloudCannon/astro-starter/",
-        "text": "GitHub"
+        "text": "Fahrschule",
+        "is_dropdown": true,
+        "icon": "/arrow-down.svg",
+        "submenu": [
+          {
+            "link": "/Fahrschule/fahrschule-auto-kategorie-b",
+            "text": "Kategorie B",
+            "cName": "dropdown-link"
+          },
+          {
+            "link": "/Fahrschule/fahrschule-auto-kategorie-be",
+            "text": "Kategorie BE",
+            "cName": "dropdown-link"
+          },
+          {
+            "link": "/Fahrschule/fahrschule-lastwagen-kategorie-c",
+            "text": "Kategorie C",
+            "cName": "dropdown-link"
+          },
+          {
+            "link": "/Fahrschule/fahrschule-lastwagen-kategorie-c1",
+            "text": "Kategorie C1",
+            "cName": "dropdown-link"
+          },
+          {
+            "link": "/Fahrschule/fahrschule-lastwagen-kategorie-ce",
+            "text": "Kategorie CE",
+            "cName": "dropdown-link"
+          },
+          {
+            "link": "/Fahrschule/fahrschule-bus-kategorie-d",
+            "text": "Kategorie D",
+            "cName": "dropdown-link"
+          },
+          {
+            "link": "/Fahrschule/fahrschule-bus-kategorie-d1",
+            "text": "Kategorie D1",
+            "cName": "dropdown-link"
+          }
+        ]
       },
       {
-        "link": "https://cloudcannon.com/",
-        "text": "CloudCannon"
+        "text": "Kurse",
+        "icon": "/arrow-down.svg",
+        "is_dropdown": true,
+        "submenu": [
+          {
+            "link": "/Kurse/nothelferkurs",
+            "text": "Nothelferkurs",
+            "cName": "dropdown-link"
+          },
+          {
+            "link": "/Kurse/verkehrskunde",
+            "text": "Verkehrskunde",
+            "cName": "dropdown-link"
+          },
+          {
+            "link": "/Kurse/czv-ausbildung",
+            "text": "CZV Ausbildung",
+            "cName": "dropdown-link"
+          },
+          {
+            "link": "/Kurse/czv-weiterbildung",
+            "text": "CZV Weiterbildung",
+            "cName": "dropdown-link"
+          }
+        ]
+      },
+      {
+        "text": "Kontrollfahrt",
+        "link": "/kontrollfahrt",
+        "is_dropdown": false
+      },
+      {
+        "text": "Taxi",
+        "link": "/taxi-bpt",
+        "is_dropdown": false
+      },
+      {
+        "text": "Preise",
+        "link": "/preise",
+        "is_dropdown": false
+      },
+      {
+        "text": "Über uns",
+        "link": "/ueber-uns",
+        "is_dropdown": false
+      },
+      {
+        "text": "Kontakt",
+        "link": "/kontakt",
+        "is_dropdown": false
       }
     ]
   },
   "footer": {
-    "logo": "/images/logos/logo-wordmark-white.png",
-    "logo_alt_text": "CloudCannon logo",
-    "logo_url": "/",
-    "copyright": "MyCompany. All rights reserved.",
-    "background_color": "#333232",
-    "text_color": "#ffffff",
-    "hover_text_color": "#F2F2F2",
-    "links": [
-      {
-        "link": "/blog/",
-        "text": "Blog"
-      },
-      {
-        "link": "/feed.xml",
-        "text": "RSS Feed"
-      }
+    "logo": "/loyal.logo.cdr.svg",
+    "logo_title": "Für Fragen oder Terminvereinbarungen erreichst du uns jederzeit in Zürich und Umgebung.",
+    "socialLinks": [
+        {
+            "href": "https://facebook.com",
+            "src": "/facebook-brands-solid.svg",
+            "alt": "Facebook",
+            "width": 30,
+            "height": 30
+        },
+        {
+            "href": "https://www.instagram.com/fahrschuleloyal",
+            "src": "/square-instagram-brands-solid.svg",
+            "alt": "Instagram",
+            "width": 34,
+            "height": 34
+        },
+        {
+            "href": "https://google.com",
+            "src": "/google-brands-solid.svg",
+            "alt": "google",
+            "width": 28,
+            "height": 28
+        }
     ],
-    "social": [
-      {
-        "link": "https://www.facebook.com/mycompany",
-        "icon": "Facebook",
-        "name": "Facebook"
-      },
-      {
-        "link": "https://www.instagram.com/mycompany",
-        "icon": "Instagram",
-        "name": "Instagram"
-      },
-      {
-        "link": "https://www.github.com/mycompany",
-        "icon": "GitHub",
-        "name": "GitHub"
-      },
-      {
-        "link": "https://www.youtube.com/mycompany",
-        "icon": "Youtube",
-        "name": "Youtube"
-      }
-    ]
+    "contact_info": [
+        {
+            "icon": "/location_icon.svg",
+            "icon_alt": "location",
+            "label": "Adresse",
+            "address": "Zürcherstrasse 9, 8952 Schlieren"
+        },
+        {
+            "icon": "/mail_icon.svg",
+            "icon_alt": "mail",
+            "label": "Email",
+            "address": "info@fahrschuleloyal.ch"
+        },
+        {
+            "icon": "/phone_icon.svg",
+            "icon_alt": "phone",
+            "label": "Telefon",
+            "address": "+41 78 800 90 91"
+        }
+    ],
+    "fahrstunde_title": "Fahrstunde buchen",
+    "fahrstunde_links": [
+        {
+            "label": "Fahrschule Zürich",
+            "href": "/fahrschule-zurich"
+        },
+        {
+            "label": "Fahrschule Regensdorf",
+            "href": "/fahrschule-regensdorf"
+        },
+        {
+            "label": "Fahrschule Altstetten",
+            "href": "/fahrschule-altstetten"
+        },
+        {
+            "label": "Fahrschule Dietikon",
+            "href": "/fahrschule-dietikon"
+        },
+        {
+            "label": "Fahrschule Oerlikon",
+            "href": "/fahrschule-oerlikon"
+        }
+    ],
+    "Kurse_title": "Kurse",
+    "kurse_links": [
+        {
+            "label": "Nothelfer Altstetten",
+            "href": "/nothelferkurs-altstetten"
+        },
+        {
+            "label": "Nothelfer Zürich",
+            "href": "/nothelferkurs-zurich"
+        },
+        {
+            "label": "Nothelfer Schlieren",
+            "href": "/nothelferkurs-schlieren"
+        },
+        {
+            "label": "Verkehrskunde Schlieren",
+            "href": "/verkehrskunde-schlieren"
+        },
+        {
+            "label": "Verkehrskunde Zürich",
+            "href": "/verkehrskunde-zurich"
+        },
+        {
+            "label": "Verkehrskunde Altstetten",
+            "href": "/verkehrskunde-altstetten"
+        },
+        {
+            "label": "CZV Ausbildung",
+            "href": "/Kurse/czv-ausbildung"
+        },
+        {
+            "label": "CZV Weiterbildung",
+            "href": "/Kurse/czv-weiterbildung"
+        },
+        {
+            "label": "Refresh-Kurs Fahrschule",
+            "href": "/refresh-kurs-fahrschule"
+        }
+    ],
+    "unternehmen_title": "Unternehmen",
+    "unternehmen_links": [
+        {
+            "label": "Über uns",
+            "href": "/ueber-uns"
+        },
+        {
+            "label": "Kontakt",
+            "href": "/kontakt"
+        },
+        {
+            "label": "Impressum",
+            "href": "/impressum"
+        },
+        {
+            "label": "Datenschutz",
+            "href": "/datenschutz"
+        }
+    ],
+    "copyright": "Copyright ©{year} Fahrschule Loyal Alle Rechte vorbehalten."
   }
 }

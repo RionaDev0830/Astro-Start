@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-zurich
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-zurich
 seo_blocks:
-  category: "nothelferkurs-zurich"
+  category: "Fahrschule Zürich"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,4 +32,9 @@ seo_blocks:
       text: "Unser Kurs deckt alle relevanten Themen ab, die du für die Erste Hilfe im Strassenverkehr benötigst. Du lernst, wie du in Notsituationen ruhig und effektiv reagierst, vom Anlegen eines Verbands bis hin zur Wiederbelebung. Mit praktischen Übungen und anschaulichen Beispielen machen wir den Kurs spannend und leicht verständlich. Unser Ziel ist es, dir nicht nur Wissen zu vermitteln, sondern auch die Sicherheit, in jeder Situation richtig zu handeln. Mit unserem Nothelferkurs in Zürich bist du bestens vorbereitet – für den Strassenverkehr und darüber hinaus."
     - title: "Jetzt für den Nothelferkurs in Zürich anmelden!"
       text: "Die Anmeldung für unseren Nothelferkurs in Zürich ist schnell und einfach. Nutze unser Online-Formular oder kontaktiere uns telefonisch, um deinen Platz zu sichern. Unser Team sorgt dafür, dass du den Kurs in einer angenehmen und produktiven Atmosphäre absolvieren kannst. Mach den ersten Schritt auf dem Weg zu deinem Führerausweis und melde dich noch heute an. Wir freuen uns darauf, dich in unserem Kurs willkommen zu heissen!"
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

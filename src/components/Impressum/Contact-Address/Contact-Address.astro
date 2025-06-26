@@ -8,30 +8,23 @@ interface Props {
 }
 const { kontaktAddress, Schweiz, eMail, Telefon } = Astro.props;
 ---
-
 <div>
-  <h6 class={"privacytitle"}>{kontaktAddress}</h6>
-  <p class={"privacyparagraph"}>
-    {impressumdata.companyname}
-    <br />
-    {impressumdata.address}
-    <br />{" "}
-    {impressumdata.place}
-    <br />
-    {Schweiz}
-    <br />
-    {eMail}: {impressumdata.mail}
-    <br />
-    {Telefon}: {impressumdata.phone}
-  </p>
+<h6 class={"privacytitle"}>{kontaktAddress}</h6>
+<p class={"privacyparagraph"}>
+  {impressumdata.companyname}
+  <br />
+  {impressumdata.address}
+  <br />{" "}
+  {impressumdata.place}
+  <br />
+  {Schweiz}
+  <br />
+  {eMail}: {impressumdata.mail}
+  <br />
+  {Telefon}: {impressumdata.phone}
+</p>
 </div>
 <style>
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
   .privacytitle {
     font-size: 20px;
     font-weight: bold;

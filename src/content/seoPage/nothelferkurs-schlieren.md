@@ -20,7 +20,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/nothelferkurs-schlieren
   metadatabase: https://www.fahrschuleloyal.ch/nothelferkurs-schlieren
 seo_blocks:
-  category: "nothelferkurs-schlieren"
+  category: "Nothelferkurs Schlieren"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -34,4 +34,9 @@ seo_blocks:
       text: "Im Kurs lernst du, wie du Verletzte sicher versorgst und in kritischen Situationen richtig handelst. Alle wichtigen Themen, von der Stabilen Seitenlage bis zur Wiederbelebung, werden anschaulich vermittelt. Mit realitätsnahen Übungen kannst du das Gelernte direkt anwenden und vertiefen. Unsere erfahrenen Ausbilder:innen begleiten dich Schritt für Schritt und nehmen sich Zeit für deine Fragen. Du wirst den Kurs mit einem sicheren Gefühl und fundiertem Wissen verlassen."
     - title: "Jetzt für den Nothelferkurs in Schlieren anmelden!"
       text: "Die Anmeldung ist einfach und schnell über unser Online-Formular oder telefonisch möglich. Unsere flexiblen Kurszeiten machen es dir leicht, den Kurs in deinen Zeitplan zu integrieren. Gemeinsam mit uns startest du stressfrei in die nächste Phase deiner Fahrausbildung. Sichere dir noch heute deinen Platz im Kurs und werde Teil unserer zufriedenen Teilnehmer:innen. Wir freuen uns darauf, dich im Nothelferkurs in Schlieren willkommen zu heissen!"
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

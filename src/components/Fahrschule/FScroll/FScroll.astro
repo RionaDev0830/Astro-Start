@@ -15,9 +15,9 @@ interface Props {
 const { kat, scrollrightimg, pointsData } = Astro.props;
 ---
 
-<div class={"scrollComponent"}>
-  <div class={"maindiv"}>
-    <div class={"scroll"}>
+<div class="scrollComponent">
+  <div class="maindiv">
+    <div class="scroll">
       <h2>{`Weg zur ${kat}`}</h2>
       {
         pointsData.map((point) => (
@@ -25,9 +25,9 @@ const { kat, scrollrightimg, pointsData } = Astro.props;
             key={point.number}
             class={`point ${point.highlighted ? "highlighted" : ""}`}
           >
-            <div class={"number"}>{point.number}</div>
-            <div class={"text"}>
-              <h3 set:html={point.heading} />
+            <div class="number">{point.number}</div>
+            <div class="text">
+              <h3 style="font-weight: 800;" set:html={point.heading} />
               <p>{point.description}</p>
             </div>
           </div>
@@ -36,13 +36,13 @@ const { kat, scrollrightimg, pointsData } = Astro.props;
     </div>
 
     {/* Right Part with sticky image */}
-    <div class={"imagediv"}>
+    <div class="imagediv">
       <Image
         src={scrollrightimg}
         alt="Car Image"
         height={100}
         width={800}
-        class={"image"}
+        class="image"
       />
     </div>
   </div>
@@ -116,6 +116,7 @@ const { kat, scrollrightimg, pointsData } = Astro.props;
   .scroll h2 {
     font-size: 30px;
     font-family: var(--font-clash-display);
+    font-weight: 900;
   }
 
   .point {
@@ -150,6 +151,7 @@ const { kat, scrollrightimg, pointsData } = Astro.props;
     background-color: #0697db;
     color: white;
   }
+
 
   .point h3,
   .point p {

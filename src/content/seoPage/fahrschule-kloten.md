@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-kloten
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-kloten
 seo_blocks:
-  category: "fahrschule-kloten"
+  category: "Fahrschule Kloten"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,5 +32,9 @@ seo_blocks:
       text: "Unsere Fahrschule in Kloten bietet dir eine individuelle Betreuung, flexible Terminvereinbarungen und umfassende Unterstützung – von der ersten Fahrstunde bis zur Prüfung. Mit Kursen wie Verkehrskunde und Nothelfer wirst du perfekt vorbereitet. Erlebe eine Ausbildung, die Spass macht und dir Sicherheit gibt."
     - title: "Jetzt in Kloten loslegen!"
       text: "Kontaktiere uns online oder telefonisch und beginne deine Ausbildung bei der Fahrschule Loyal in Kloten. Wir begleiten dich mit Erfahrung und Geduld und sorgen dafür, dass du dein Ziel sicher erreichst. Lass uns gemeinsam an deinem Führerausweis arbeiten!"
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

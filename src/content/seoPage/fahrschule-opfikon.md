@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-opfikon
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-opfikon
 seo_blocks:
-  category: ""
+  category: "Fahrschule Opfikon"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,4 +32,9 @@ seo_blocks:
       text: "Unsere Fahrstunden sind flexibel gestaltet, damit sie perfekt in deinen Alltag passen. Wir bieten sowohl Unterstützung in der Theorie als auch in der Praxis und stellen sicher, dass du optimal auf deine Fahrprüfung vorbereitet bist. Mit unserer individuellen Betreuung gehen wir auf deine Bedürfnisse ein, um deinen Lernerfolg zu maximieren."
     - title: "Jetzt durchstarten in Opfikon!"
       text: "Melde dich noch heute online oder telefonisch an und beginne deine Fahrausbildung bei der Fahrschule Loyal in Opfikon. Unser engagiertes Team begleitet dich Schritt für Schritt auf deinem Weg zum Führerausweis und steht dir bei Fragen jederzeit zur Seite. Überzeuge dich selbst von unserer professionellen und unterstützenden Ausbildung und werde Teil unserer erfolgreichen Fahrschüler:innen."
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

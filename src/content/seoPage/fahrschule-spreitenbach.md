@@ -17,7 +17,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-spreitenbach
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-spreitenbach
 seo_blocks:
-  category: "fahrschule-spreitenbach"
+  category: "Fahrschule Spreitenbach"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car.webp"
@@ -31,5 +31,9 @@ seo_blocks:
       text: "Neben Fahrstunden bieten wir dir auch wichtige Kurse wie Verkehrskunde oder Nothelfer an, um dich umfassend auf deine Fahrprüfung vorzubereiten. Unsere modernen Schulungsräume und praxisnahen Inhalte helfen dir, das notwendige Wissen sicher zu verinnerlichen. So bist du bestens gerüstet, um sowohl theoretische als auch praktische Prüfungen erfolgreich zu meistern."
     - title: "Einfach anmelden und losfahren"
       text: "Die Anmeldung ist unkompliziert und flexibel – ob online oder telefonisch, wir machen es dir einfach. Unser engagiertes Team steht dir bei allen Fragen zur Verfügung und hilft dir, deinen individuellen Ausbildungsplan zu erstellen. Starte noch heute mit deiner Fahrausbildung und erlebe, wie wir dich sicher und stressfrei ans Ziel bringen."
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

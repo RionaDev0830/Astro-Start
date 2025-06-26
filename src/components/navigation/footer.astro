@@ -1,67 +1,346 @@
 ---
 import { footer } from "../../../data/navigation.json";
-import Icon from "../utility/Icon";
-const linkHoverColor = footer.hover_text_color;
+import Icon from "../utility/Icon.jsx";
+import { Image } from 'astro:assets';
 ---
-
-<footer
-  style={`background-color: ${footer.background_color}; color: ${footer.text_color};`}>
-  <div class="px-8">
-    <div
-      class="footer grid grid-cols-1 sm:grid-cols-3 justify-between items-center gap-8 py-[48px]">
-      <a
-        class="flex justify-center sm:justify-start items-center"
-        href={footer.logo_url}>
-        <img
-          class="footer__logo-image"
-          src={footer.logo}
-          alt={footer.logo_alt_text}
-        />
-      </a>
-      <ul class="flex gap-4 items-center justify-center">
-        {
-          footer.social.map((link) => {
-            return (
-              <li class="w-[2rem]">
-                <a href={link.link} aria-label={link.name}>
-                  <Icon icon={link.icon} />
-                </a>
-              </li>
-            );
-          })
-        }
-      </ul>
-
-      <ul class="footer-links flex flex-col text-center sm:text-end gap-4">
-        {
-          footer.links.map((link) => {
-            return (
-              <li>
-                <a href={link.link}>{link.text}</a>
-              </li>
-            );
-          })
-        }
-      </ul>
+<div class="mainfooter">
+  <div class="footer">
+    {/* Left div */}
+    <div class="footerleft">
+      <div class="logo">
+        {footer.logo && (
+          <Image
+            src={footer.logo}
+            alt="Fahrschule Loyal"
+            height={50}
+            width={140}
+          />
+        )}
+      </div>
+      <div class="socialSection">
+        <p class="socialSectionp">{footer.logo_title}</p>
+        <div class="socialIcons">
+          { footer.socialLinks.map((link) => 
+            <a href={link.href} target="_blank">
+              <Image
+                src={link.src}
+                alt={link.alt}
+                width={link.width}
+                height={link.height}
+                class="allclass"
+              />
+            </a>
+          )}
+        </div>
+      </div>
     </div>
 
-    <p class="text-center py-8">
-      &#169; {new Date().getFullYear()}
-      {footer.copyright}
+    {/* Contact Info */}
+    <div class="linksSection" style="gap: '15px'">
+      {footer.contact_info.map((info, i) => (
+        <div class="middlecontactItem">
+          <Image
+            src={info.icon}
+            alt={info.icon_alt}
+            width={20}
+            height={20}
+            class="icon"
+          />
+          <div>
+            <span class="contactspan">{info.label}</span>
+            <div class="contactp">
+              <p>{info.address}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* Middle div: Fahrstunde buchen */}
+    <div class="footermiddle">
+      <div class="linksSection">
+        <h3 class="title">{footer.fahrstunde_title}</h3>
+        <div class="list">
+          {footer.fahrstunde_links.map((l, i) => 
+            <div>
+              <a href={l.href}>{l.label}</a>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Middle div: Kurse */}
+    <div class="footermiddle">
+      <div class="linksSection">
+        <h3 class="title">{footer.kurse_title}</h3>
+        <div class="list">
+          {footer.kurse_links.map((l, i) => 
+            <div>
+              <a href={l.href}>{l.label}</a>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Right div: Unternehmen */}
+    <div class="footeright">
+      <div class="companySection">
+        <h3 class="title">{footer.unternehmen_title}</h3>
+        <div class="list">
+          {footer.unternehmen_links.map((l, i) => 
+            <div>
+              <a href={l.href}>{l.label}</a>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerBottom">
+    <p class="footerBottomp">
+      {footer.copyright
+        ? footer.copyright.replace("{year}", new Date().getFullYear())
+        : (
+          <>
+            Copyright ©{new Date().getFullYear()} <b>Fahrschule Loyal</b> Alle Rechte vorbehalten.
+          </>
+        )}
     </p>
   </div>
-</footer>
+</div>
 
-<style define:vars={{ linkHoverColor }}>
+<style>
+  .mainfooter {
+  padding: 3rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  position: relative;
+  z-index: 7;
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: auto;
+  width: 130px;
+}
+
+.middle {
+  display: flex;
+  gap: 4rem;
+}
+
+.middlecontactItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.phonemiddlecontactItem {
+  display: none;
+}
+
+.rightcontactItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.linksSection {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-top: 40px;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.socialSectionp {
+  font-size: 20px;
+  font-family: var(--font-dm-Sans);
+  width: 15rem;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+.companySection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.allclass {
+  font-size: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #0697db;
+  color: white;
+  padding: 8px;
+}
+
+.contactspan {
+  font-size: 16px;
+  font-family: var(--font-dm-Sans);
+}
+
+.contactp {
+  font-size: 16px;
+  font-family: var(--font-dm-Sans);
+  font-weight: bold;
+}
+
+.title {
+  font-size: 20px;
+  font-family: var(--font-dm-Sans);
+  font-weight: 600;
+}
+
+.list {
+  font-family: var(--font-dm-Sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 10px 0;
+}
+
+.footerBottom {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footerBottomp {
+  font-size: 16px;
+  font-family: var(--font-dm-Sans);
+}
+
+@media (max-width: 1360px) {
+  .mainfooter {
+    padding: 3rem 3rem 1.5rem 3rem;
+  }
+}
+
+@media (max-width: 1220px) {
+  .middle {
+    gap: 2rem;
+  }
+  .middlecontactItem {
+    gap: 8px;
+  }
+
+  .rightcontactItem {
+    gap: 8px;
+  }
+  .socialSectionp {
+    font-size: 16px;
+    width: 10rem;
+  }
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+  .contactspan {
+    font-size: 13px;
+  }
+  .contactp {
+    font-size: 13px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .list {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 927px) {
+  .logo img {
+    /* width: 90px; */
+  }
+  .socialSectionp {
+    font-size: 13px;
+    width: 8rem;
+  }
+  .list {
+    font-size: 11px;
+    line-height: 18px;
+    padding: 3px 0;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .contactspan {
+    font-size: 11px;
+  }
+  .contactp {
+    font-size: 11px;
+  }
+  .mainfooter {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 968px) {
   .footer {
-    max-width: var(--pageContainer);
-    margin: 0 auto;
+    flex-direction: column;
+    row-gap: 20px;
   }
-  .footer__logo-image {
-    display: block;
-    max-width: min(200px, 80%);
+  .phonemiddlecontactItem {
+    display: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
-  .footer-links li:hover {
-    color: var(--linkHoverColor);
+  .linksSection {
+    align-items: flex-start;
   }
+  .socialSectionp {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .mainfooter {
+    padding: 1rem;
+  }
+  .contactspan {
+    font-size: 16px;
+  }
+  .contactp {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .list {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 610px) {
+  .middle {
+    flex-wrap: wrap;
+  }
+  .mainfooter {
+    padding: 1rem 1.5rem;
+  }
+}
 </style>

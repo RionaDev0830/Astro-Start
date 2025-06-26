@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-glattpark
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-glattpark
 seo_blocks:
-  category: "fahrschule-glattpark"
+  category: "Fahrschule Glattpark"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,5 +32,9 @@ seo_blocks:
       text: "Unsere individuell gestalteten Kurse und flexible Betreuung passen sich deinen Bedürfnissen an, um dir den Lernprozess zu erleichtern. Ob Verkehrskunde, Nothelferkurs oder praktische Fahrstunden – wir begleiten dich auf jedem Schritt deiner Ausbildung. Mit unserer Erfahrung und Geduld sorgen wir dafür, dass du bestens auf die Theorie- und Praxisprüfung vorbereitet bist."
     - title: "Jetzt anmelden und durchstarten!"
       text: "Melde dich noch heute online oder telefonisch an und beginne deine Fahrausbildung mit der Fahrschule Loyal im Glattpark. Unser engagiertes Team steht dir bei allen Fragen zur Seite und sorgt dafür, dass du deine Fahrprüfung erfolgreich bestehst. Erlebe, wie wir dich mit einer professionellen und stressfreien Ausbildung unterstützen, sicher und selbstbewusst ans Ziel zu kommen."
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-wallisellen
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-wallisellen
 seo_blocks:
-  category: "fahrschule-wallisellen"
+  category: "Fahrschule Wallisellen"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,5 +32,9 @@ seo_blocks:
       text: "Unsere ganzheitliche Ausbildung in Wallisellen umfasst neben den praktischen Fahrstunden auch alle wichtigen Vorbereitungskurse wie Nothelfer und Verkehrskunde. So bist du bestens gerüstet für die Theorie- und Praxisprüfung. Durch unsere strukturierte und flexible Ausbildung lernst du effizient und mit Freude das sichere Fahren im Alltag."
     - title: "Jetzt anmelden und durchstarten!"
       text: "Die Anmeldung zur Fahrschule Loyal in Wallisellen ist schnell und einfach. Du kannst dich bequem online anmelden oder uns telefonisch kontaktieren. Gemeinsam erstellen wir deinen individuellen Fahrplan und unterstützen dich auf jedem Schritt deiner Fahrausbildung. Starte noch heute – wir freuen uns auf dich!"
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

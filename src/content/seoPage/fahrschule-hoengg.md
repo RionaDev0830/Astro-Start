@@ -20,7 +20,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-hoengg
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-hoengg
 seo_blocks:
-  category: "fahrschule-hoengg"
+  category: "Fahrschule Höngg"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -34,5 +34,9 @@ seo_blocks:
       text: "Unsere Fahrschule in Höngg bietet dir massgeschneiderte Fahrstunden, die perfekt auf deine Bedürfnisse abgestimmt sind. Zusätzlich bieten wir dir wichtige Kurse wie Verkehrskunde und Nothelfer an, damit du rundum gut vorbereitet bist. Egal, ob du Theorie oder Praxis vertiefen möchtest – wir sorgen dafür, dass du mit einem guten Gefühl zur Prüfung gehst."
     - title: "Jetzt anmelden und losfahren!"
       text: "Nutze unser Online-Formular oder kontaktiere uns direkt, um deine Fahrausbildung in Höngg zu starten. Unser Team begleitet dich auf jedem Schritt, von der ersten Fahrstunde bis zur erfolgreichen Prüfung. Erlebe, wie wir dich mit unserer Erfahrung und unserem Engagement sicher ans Ziel bringen."
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

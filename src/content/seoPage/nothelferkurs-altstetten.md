@@ -20,7 +20,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/nothelferkurs-altstetten
   metadatabase: https://www.fahrschuleloyal.ch/nothelferkurs-altstetten
 seo_blocks:
-  category: "nothelferkurs-altstetten"
+  category: "Nothelferkurs Altstetten"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -34,5 +34,9 @@ seo_blocks:
       text: "In unserem Kurs lernst du alles, was du über Erste Hilfe im Strassenverkehr wissen musst. Von der sicheren Versorgung von Verletzungen bis zur Stabilen Seitenlage – alle wichtigen Themen werden abgedeckt. Mit praktischen Übungen und realitätsnahen Szenarien vertiefst du dein Wissen direkt vor Ort. Unsere freundlichen Ausbilder:innen stehen dir bei Fragen jederzeit zur Seite. So bist du bestens auf mögliche Notsituationen vorbereitet – im Strassenverkehr und darüber hinaus."
     - title: "Melde dich für den Nothelferkurs in Altstetten an!"
       text: "Die Anmeldung ist unkompliziert und schnell – nutze unser Online-Formular oder ruf uns direkt an. Unsere Kurse sind flexibel gestaltet und passen perfekt in deinen Zeitplan. Mit uns startest du stressfrei und optimal vorbereitet in deine Fahrausbildung. Sichere dir jetzt deinen Platz und profitiere von einer erstklassigen Betreuung in Altstetten. Wir freuen uns darauf, dich im Kurs zu begrüssen!"
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

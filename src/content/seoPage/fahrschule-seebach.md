@@ -20,7 +20,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-seebach
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-seebach
 seo_blocks:
-  category: "fahrschule-seebach"
+  category: "Fahrschule Seebach"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -34,5 +34,9 @@ seo_blocks:
       text: "Unsere Fahrschule bietet dir flexible und individuell abgestimmte Kurse, die sich perfekt in deinen Alltag integrieren lassen. Ob Nothelferkurs, Verkehrskunde oder praktische Fahrstunden – wir stehen dir bei jedem Schritt unterstützend zur Seite. Unsere modernen Lehrmethoden und die persönliche Betreuung helfen dir, sicher und selbstbewusst auf die Strasse zu gehen."
     - title: "Dein Weg zum Führerschein in Seebach"
       text: "Melde dich noch heute online oder telefonisch an und starte deine Reise zum Führerausweis mit uns. Unser engagiertes Team begleitet dich von der ersten Fahrstunde bis zur erfolgreichen Prüfung. Überzeuge dich selbst von unserer professionellen und individuellen Fahrausbildung und werde Teil unserer zufriedenen Fahrschüler:innen."
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

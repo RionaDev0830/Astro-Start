@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-horgen
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-horgen
 seo_blocks:
-  category: "fahrschule-horgen"
+  category: "Fahrschule Horgen"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,5 +32,9 @@ seo_blocks:
       text: "Unsere Fahrschule bietet dir eine individuelle und flexible Ausbildung, die genau auf deine Bedürfnisse zugeschnitten ist. Neben Fahrstunden unterstützen wir dich auch mit Kursen wie Verkehrskunde und Nothelfer, um dich optimal auf die Prüfung vorzubereiten. Mit unserem erfahrenen Team erlebst du eine professionelle Fahrausbildung, die Spass macht und dich sicher ans Ziel bringt."
     - title: "Jetzt in Horgen loslegen!"
       text: "Melde dich ganz einfach online oder telefonisch an und starte deine Reise zum Führerausweis mit der Fahrschule Loyal in Horgen. Unser engagiertes Team steht dir bei allen Fragen zur Seite und sorgt dafür, dass du optimal vorbereitet bist. Erlebe, wie wir dich mit Geduld und Fachwissen sicher durch deine Fahrausbildung begleiten."
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

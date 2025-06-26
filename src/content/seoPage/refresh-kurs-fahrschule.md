@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-zurich
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-zurich
 seo_blocks:
-  category: "refresh-kurs-fahrschule"
+  category: "Refresh-Kurs Fahrschule"
   data:
     image:
       image_path: "/413537083-3face024-ff40-4350-9834-481b9a7d811c.jpg"
@@ -31,5 +31,10 @@ seo_blocks:
     - title: "Warum ein Refresh-Kurs bei Fahrschule Loyal?"
       text: "Unsere Fahrschule bietet praxisnahe und flexible Auffrischungskurse, die sich perfekt in deinen Alltag integrieren lassen. Ob Parkieren, Autobahnfahrten oder Stadtverkehr – wir helfen dir, deine Fahrpraxis gezielt zu verbessern."
     - title: "Jetzt Fahrkenntnisse auffrischen!"
-      text: "Melde dich online oder telefonisch an und starte deinen Refresh-Kurs. Wir begleiten dich mit Geduld, Fachwissen und individuellen Fahrstunden, damit du wieder sicher unterwegs bist!"    
+      text: "Melde dich online oder telefonisch an und starte deinen Refresh-Kurs. Wir begleiten dich mit Geduld, Fachwissen und individuellen Fahrstunden, damit du wieder sicher unterwegs bist!"
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

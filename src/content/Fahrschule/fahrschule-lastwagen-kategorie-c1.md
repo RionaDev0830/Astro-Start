@@ -127,4 +127,9 @@ content_blocks:
       - amount: "CHF 200"
         proLektion: ""
         title: "Versicherungsbeitrag"
+contact_form:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

@@ -8,7 +8,7 @@ interface Props {
 const { h1, cards } = Astro.props;
 ---
 <div class={"KontrollfahrtBanner_section"}>
-  <h1 style={{ fontSize: "43px" }}>
+  <h1 style={{ fontSize: "43px", fontWeight: 'bold' }}>
     {
       h1.split('\\n').map((line, index) => <>
       {line}<br/>
@@ -33,7 +33,6 @@ const { h1, cards } = Astro.props;
   line-height: 45.76px;
   letter-spacing: 0.01em;
   text-align: center;
-  margin-top: 5rem;
 }
 
 .whatwedocard_section {

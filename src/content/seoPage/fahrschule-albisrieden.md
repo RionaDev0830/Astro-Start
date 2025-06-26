@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-albisrieden/
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-albisrieden/
 seo_blocks:
-  category: "fahrschule-albisrieden"
+  category: "Fahrschule Albisrieden"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,5 +32,9 @@ seo_blocks:
       text: "Ob Stadtverkehr, Berganfahren oder Autobahn – in Albisrieden und Umgebung lernst du alles, was du für den Alltag am Steuer brauchst. Unsere Fahrschule bietet dir zusätzlich Verkehrskunde- und Nothelferkurse an, damit du rundum vorbereitet in die Theorie- und Praxisprüfung gehst. Bei uns lernst du effizient und mit Freude – ganz ohne Prüfungsangst."
     - title: "Jetzt anmelden und in Albisrieden losfahren!"
       text: "Melde dich jetzt bei der Fahrschule Loyal in Albisrieden an – schnell und unkompliziert über unser Online-Formular oder telefonisch. Gemeinsam planen wir deine Fahrausbildung und gehen auf deine persönlichen Ziele und deinen Zeitplan ein. Starte jetzt durch und werde bald sicher und selbstständig unterwegs – wir freuen uns auf dich!"
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

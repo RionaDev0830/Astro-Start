@@ -17,7 +17,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-waedenswil
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-waedenswil
 seo_blocks:
-  category: "fahrschule-waedenswil"
+  category: "Fahrschule Wädenswil"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -31,5 +31,9 @@ seo_blocks:
       text: "Unsere Fahrschule bietet dir nicht nur praktische Fahrstunden, sondern auch wichtige Kurse wie Verkehrskunde und Nothelfer. Diese ergänzen deine Ausbildung und bereiten dich optimal auf die Theorie- und Praxisprüfungen vor. Mit uns an deiner Seite erlernst du das Fahren sicher und selbstbewusst in einer entspannten Atmosphäre."
     - title: "Jetzt anmelden und losfahren!"
       text: "Die Anmeldung bei der Fahrschule Loyal in Wädenswil ist ganz unkompliziert – online oder telefonisch. Unser engagiertes Team hilft dir bei allen Fragen und erstellt mit dir gemeinsam deinen individuellen Ausbildungsplan. Starte noch heute und mache den ersten Schritt auf deinem Weg zum Führerausweis!"
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

@@ -19,6 +19,28 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/kontrollfahrt
   metadatabase: https://www.fahrschuleloyal.ch/kontrollfahrt
 content_blocks:
+  - _bookshop_name: Kontrollfahrt/Banner
+    h1: Kontrollfahrt Schweiz \n mit Fahrschule Loyal
+    cards:
+      - image: /w1.png
+        heading: Wir bereiten Dich auf Deine Kontrollfahrt vor
+        body: >
+          Eine seriöse Vorbereitung mit einem erfahrenen Fahrlehrer/-in ist sinnvoll, denn eine nicht bestandene Kontrollfahrt bzw. Kontrollprüfung kann nicht wiederholt werden. Somit müsstest du mit der gesamten Prüfung von vorne beginnen. Jedes Jahr kommen viele Besitzer ausländischer Führerausweise zu uns, damit ihr Ausweis in einen Schweizerischen umgetauscht werden kann. Melde dich bei uns, wir helfen dir gerne weiter.
+      - image: /w2.png
+        heading: Wir sorgen für einen reibungslosen Ablauf
+        body: >
+          Wir bereiten dich seriös auf die Kontrollfahrt/Kontrollprüfung vor. Du lernst das sichere Lenken auf Schweizer Strassen in einem modernen neuster Generation mit Automatikgetriebe. Nach bestandener Prüfung darfst du auch Fahrzeuge mit Handschaltung fahren.
+      - image: /w3.png
+        heading: Ausländischen Führerausweis umschreiben
+        body: >
+          Inhaber eines ausländischen Führerausweises der Kat. A, B dürfen bis 12 Monate nach Einreise in die Schweiz ein entsprechendes Fahrzeug lenken. Nach Ablauf dieser Frist ist der ausländische Ausweis ungültig. Personen, die berufsmässig Fahrzeuge der Kat. C, C1, D, D1 oder für den Personentransport führen möchten, müssen vor der ersten beruflichen Fahrt den Schweizer Führerausweis erwerben.
+  - _bookshop_name: Kontrollfahrt/kontrollGuy
+    guyimg: 
+      image_path: /customer-enjoying-with-his-new-car.webp
+      guyimgAlt: guy enjoying new car
+    title: Ausländischer Führerausweis in einen schweizerischen Führerausweis umtauschen
+    description1: "Notwendige Unterlagen: Ausländischer Führerausweis, Gesuchsformular und ein Sehtest nicht älter als zwei Jahre"
+    description2: "Die Kontrollfahrt ist eine PRÜFUNG! Wir empfehlen Dir dringend, die nötigen Fahrstunden zu nehmen, um mit der Fahrpraxis auf dem aktuellen Stand zu sein."
   - _bookshop_name: Kontrollfahrt/Sequence
     heading: Ablauf
     left_timeline:
@@ -46,28 +68,8 @@ content_blocks:
       **Die Kontrollfahrt kann gesetzlich nicht wiederholt werden.**
     button_text: Jetzt anmelden
     button_link: "#kontakt"
-  - _bookshop_name: Kontrollfahrt/kontrollGuy
-    guyimg: 
-      image_path: /customer-enjoying-with-his-new-car.webp
-      guyimgAlt: guy enjoying new car
-    title: Ausländischer Führerausweis in einen schweizerischen Führerausweis umtauschen
-    description1: "Notwendige Unterlagen: Ausländischer Führerausweis, Gesuchsformular und ein Sehtest nicht älter als zwei Jahre"
-    description2: "Die Kontrollfahrt ist eine PRÜFUNG! Wir empfehlen Dir dringend, die nötigen Fahrstunden zu nehmen, um mit der Fahrpraxis auf dem aktuellen Stand zu sein."
-  - _bookshop_name: Kontrollfahrt/Banner
-    h1: Kontrollfahrt Schweiz \n mit Fahrschule Loyal
-    cards:
-      - image: /w1.png
-        heading: Wir bereiten Dich auf Deine Kontrollfahrt vor
-        body: >
-          Eine seriöse Vorbereitung mit einem erfahrenen Fahrlehrer/-in ist sinnvoll, denn eine nicht bestandene Kontrollfahrt bzw. Kontrollprüfung kann nicht wiederholt werden. Somit müsstest du mit der gesamten Prüfung von vorne beginnen. Jedes Jahr kommen viele Besitzer ausländischer Führerausweise zu uns, damit ihr Ausweis in einen Schweizerischen umgetauscht werden kann. Melde dich bei uns, wir helfen dir gerne weiter.
-      - image: /w2.png
-        heading: Wir sorgen für einen reibungslosen Ablauf
-        body: >
-          Wir bereiten dich seriös auf die Kontrollfahrt/Kontrollprüfung vor. Du lernst das sichere Lenken auf Schweizer Strassen in einem modernen neuster Generation mit Automatikgetriebe. Nach bestandener Prüfung darfst du auch Fahrzeuge mit Handschaltung fahren.
-      - image: /w3.png
-        heading: Ausländischen Führerausweis umschreiben
-        body: >
-          Inhaber eines ausländischen Führerausweises der Kat. A, B dürfen bis 12 Monate nach Einreise in die Schweiz ein entsprechendes Fahrzeug lenken. Nach Ablauf dieser Frist ist der ausländische Ausweis ungültig. Personen, die berufsmässig Fahrzeuge der Kat. C, C1, D, D1 oder für den Personentransport führen möchten, müssen vor der ersten beruflichen Fahrt den Schweizer Führerausweis erwerben.
+  - _bookshop_name: Fahrschule/PCategory
+    kat: "Kontrollfahrt"
   - _bookshop_name: Common/Contact
     questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
     welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."

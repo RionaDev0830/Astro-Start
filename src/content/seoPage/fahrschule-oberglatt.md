@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-oberglatt
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-oberglatt
 seo_blocks:
-  category: "fahrschule-oberglatt"
+  category: "Fahrschule Oberglatt"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,5 +32,9 @@ seo_blocks:
       text: "Unsere Ausbildung ist flexibel und wird individuell auf deine Bedürfnisse zugeschnitten, um dir die bestmögliche Lernerfahrung zu bieten. Wir unterstützen dich bei der Theorie und Praxis und bereiten dich optimal auf die Fahrprüfung vor. Mit modernen Methoden und einer persönlichen Betreuung sorgen wir dafür, dass du sicher und selbstbewusst auf den Strassen unterwegs bist."
     - title: "Jetzt deine Fahrausbildung starten!"
       text: "Melde dich noch heute online oder telefonisch an und beginne deine Reise zum Führerschein mit der Fahrschule Loyal in Oberglatt. Unser engagiertes Team steht dir bei allen Fragen zur Verfügung und unterstützt dich auf jedem Schritt deiner Ausbildung. Erlebe, wie wir dir mit unserer Erfahrung und Leidenschaft helfen, deine Fahrprüfung erfolgreich zu meistern."
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

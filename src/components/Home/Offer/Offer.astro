@@ -23,8 +23,11 @@ const { offer_title, offer_card } = Astro.props;
   <div class="header_area">
     <div class="heading_bar"></div>
     <h1 class="section_heading">
-      {offer_title}
-      <!-- {offer_title.split('\\n').map((line) => <p>{line}<br/></p>)} -->
+      <!-- {offer_title} -->
+      {offer_title.split('\n').map((line) => 
+        <p>
+          {line}
+        </p>)}
     </h1>
   </div>
   <Wrapper>

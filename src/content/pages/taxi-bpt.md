@@ -21,7 +21,7 @@ seo:
   metadatabase: https://www.fahrschuleloyal.ch/taxi-bpt
 content_blocks:
   - _bookshop_name: Taxi/Banner
-    h1: Berufsmässiger <br /> Personentransport <br /> (BPT 21)
+    h1: Taxi Fahrschule Loyal | BPT | Code 121 Führerschein
     data:
       upperparagraph: >
         Suchst du eine moderne, innovative Fahrschule, die dich professionell und effizient durch die Ausbildung zum berufsmässigen Personentransport BPT 121 (auch Taxiprüfung genannt) begleitet, dann bist du bei der Fahrschule Loyal genau richtig.

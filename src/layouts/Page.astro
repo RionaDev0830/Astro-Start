@@ -1,4 +1,7 @@
 ---
+import Wrapper from "../components/Common/Wrapper.astro";
+import PreiseComponent from "../components/PreiseComponent/index.jsx";
+
 import PageHelper from "../shared/astro/page.astro";
 import PreisePage from "../shared/astro/preise.astro";
 import ImpressumPage from "../shared/astro/impressum.astro";
@@ -24,30 +27,41 @@ const props = Astro.props.frontmatter;
   <!-- <HeroBlock bookshop:live heroBlock={props.hero_block} /> -->
   {
     props.title == "Home Page" && (
-      <>
+      <div class="all_page">
         <PageHelper bookshop:live contentBlocks={props.content_blocks} />
         <FloatBtn />
-      </>
+      </div>
     )
   }
   {
     props.title == "Preise Page" && (
-      <PreisePage bookshop:live contentBlocks={props.content_blocks} />
+      <div class={"all_page"}>
+        <Wrapper>
+          <PreisePage bookshop:live contentBlocks={props.content_blocks} />
+          <PreiseComponent client:visible />
+        </Wrapper>
+      </div>
     )
   }
   {
     props.title == "ueber-uns" && (
-      <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+      <div class={"all_page"}>
+        <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+      </div>
     )
   }
   {
     props.title == "Taxi Bpt" && (
-      <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+      <div class={"all_page"}>
+        <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+      </div>
     )
   }
   {
     props.title == "Kontrolfahrt" && (
-      <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+      <div class={"all_page"}>
+        <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+      </div>
     )
   }
   {
@@ -57,7 +71,13 @@ const props = Astro.props.frontmatter;
   }
   {
     props.title == "Impressum Page" && (
-      <ImpressumPage bookshop:live contentBlocks={props.content_blocks} />
+      <div class={"privacycontainer-i"}>
+        <br />
+        <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+        <div>
+          <p class="privacyparagraph">Quelle: SwissAnwalt</p>
+        </div>
+      </div>
     )
   }
   {
@@ -66,3 +86,45 @@ const props = Astro.props.frontmatter;
     )
   }
 </Layout>
+<style is:global>
+  .privacycontainer-i {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 17rem 3rem 3rem 3rem;
+    /* margin-top: -100px; */
+    color: #3d3d3d;
+  }
+  .privacycontainer-i div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  @media screen and (max-width: 1024px) {
+    .privacycontainer-i {
+      margin: 4rem 0 1rem 0;
+      padding: 0 0.8rem;
+    }
+  }
+  .privacytitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .privacyparagraph {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 1.8rem;
+  }
+  @media screen and (max-width: 1024px) {
+    .privacyparagraph {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+</style>

@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-duebendorf
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-duebendorf
 seo_blocks:
-  category: "fahrschule-duebendorf"
+  category: "Fahrschule Dübendorf"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,5 +32,9 @@ seo_blocks:
       text: "Neben den praktischen Fahrstunden bieten wir dir in Dübendorf auch alle wichtigen Zusatzkurse an – wie den Nothelferkurs und die Verkehrskunde (VKU). Diese Kurse bereiten dich optimal auf die Prüfungen vor und runden deine Fahrausbildung ab. Unser Ziel ist es, dich kompetent und mit Freude ans Ziel zu bringen: den Führerschein!"
     - title: "Jetzt Fahrstunden in Dübendorf buchen"
       text: "Du kannst dich ganz einfach online oder telefonisch anmelden. Unser freundliches Team hilft dir gerne weiter und erstellt einen individuellen Lernplan, der zu deinem Alltag passt. Starte noch heute deine Fahrausbildung mit der Fahrschule Loyal in Dübendorf – wir freuen uns auf dich!"
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

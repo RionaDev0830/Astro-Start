@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-dietlikon
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-dietlikon
 seo_blocks:
-  category: "fahrschule-dietlikon"
+  category: "Fahrschule Dietlikon"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,4 +32,9 @@ seo_blocks:
       text: "Neben den regulären Fahrstunden bieten wir dir auch umfassende Unterstützung bei der Theorieprüfung sowie Kurse wie Nothelfer und Verkehrskunde. Unser strukturiertes Ausbildungskonzept sorgt dafür, dass du optimal vorbereitet in die Prüfung gehst – ganz gleich ob du Einsteiger:in bist oder bereits etwas Erfahrung mitbringst."
     - title: "Melde dich jetzt bei der Fahrschule Loyal Dietlikon an!"
       text: "Die Anmeldung bei uns ist schnell und unkompliziert. Ob telefonisch oder online – wir beraten dich persönlich und stellen dir einen passenden Ausbildungsplan zusammen. Starte jetzt deinen Weg zum Führerschein mit der Fahrschule Loyal Dietlikon und profitiere von unserer Erfahrung, Geduld und Motivation!"
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

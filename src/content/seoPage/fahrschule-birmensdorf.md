@@ -18,7 +18,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-birmensdorf
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-birmensdorf
 seo_blocks:
-  category: "fahrschule-birmensdorf"
+  category: "Fahrschule Birmensdorf"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -32,5 +32,9 @@ seo_blocks:
       text: "Ob Nothelferkurs, Verkehrskundeunterricht oder Fahrstunden – wir bieten dir alles aus einer Hand. Unsere erfahrenen Fahrlehrer:innen bringen dir nicht nur das Fahren bei, sondern stärken auch dein Selbstvertrauen hinter dem Steuer. Wir passen die Ausbildung deinem Tempo an und bereiten dich gezielt auf die Theorie- und Praxisprüfung vor."
     - title: "Jetzt unverbindlich anmelden"
       text: "Die Anmeldung bei der Fahrschule Loyal in Birmensdorf ist schnell erledigt. Du erreichst uns online oder telefonisch, und wir klären mit dir alle offenen Fragen. Gemeinsam erstellen wir deinen persönlichen Ausbildungsplan – flexibel, transparent und auf deine Bedürfnisse zugeschnitten. Melde dich noch heute und fahre schon bald los!"
-
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

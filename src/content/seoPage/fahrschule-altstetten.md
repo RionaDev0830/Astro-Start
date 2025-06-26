@@ -20,7 +20,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/fahrschule-altstetten
   metadatabase: https://www.fahrschuleloyal.ch/fahrschule-altstetten
 seo_blocks:
-  category: "fahrschule-altstetten"
+  category: "Fahrschule Altstetten"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -34,4 +34,9 @@ seo_blocks:
       text: "Wir bieten dir eine flexible und individuelle Ausbildung, die perfekt in deinen Alltag passt. Unsere Fahrstunden sind so gestaltet, dass sie sowohl für Fahranfänger:innen als auch für Fortgeschrittene geeignet sind. Von Theorie bis Praxis – wir unterstützen dich auf jedem Schritt deines Weges zum Führerausweis."
     - title: "Jetzt in Altstetten durchstarten!"
       text: "Melde dich ganz einfach online oder telefonisch an und starte deine Fahrausbildung noch heute. Unser engagiertes Team freut sich darauf, dich bei deinem Ziel, den Führerschein zu erlangen, zu unterstützen. Erlebe, wie wir dir mit Geduld und Kompetenz den Weg zu einer erfolgreichen Fahrprüfung ebnen."
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

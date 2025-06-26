@@ -20,7 +20,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/verkehrskunde-zuerich
   metadatabase: https://www.fahrschuleloyal.ch/verkehrskunde-zuerich
 seo_blocks:
-  category: "verkehrskunde-zurich"
+  category: "VKU Zürich"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -34,4 +34,9 @@ seo_blocks:
       text: "Unser Verkehrskunde-Kurs behandelt alle wichtigen Themen, die du für eine sichere Verkehrsteilnahme benötigst. Du lernst, gefährliche Situationen rechtzeitig zu erkennen und souverän zu meistern. Anschauliche Beispiele und interaktive Übungen machen den Kurs spannend und leicht verständlich. Unsere Ausbilder:innen sind darauf spezialisiert, dir das notwendige Wissen effektiv zu vermitteln. Mit unserem Kurs legst du eine solide Grundlage für deine Fahrausbildung."
     - title: "Jetzt für die Verkehrskunde in Zürich anmelden!"
       text: "Melde dich noch heute für unseren Verkehrskunde-Kurs in Zürich an und mache den nächsten Schritt in deiner Fahrausbildung. Die Anmeldung ist einfach über unser Online-Formular oder telefonisch möglich. Unsere flexiblen Kurszeiten passen sich perfekt deinem Alltag an. Erlebe eine stressfreie und professionelle Ausbildung mit der Fahrschule Loyal. Wir freuen uns darauf, dich in unserem Kurs willkommen zu heissen!"
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---

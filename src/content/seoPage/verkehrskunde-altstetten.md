@@ -20,7 +20,7 @@ seo:
   canonical: https://www.fahrschuleloyal.ch/verkehrskunde-altstetten
   metadatabase: https://www.fahrschuleloyal.ch/verkehrskunde-altstetten
 seo_blocks:
-  category: "verkehrskunde-altstetten"
+  category: "VKU Altstetten"
   data:
     image:
       image_path: "/close-up-view-driving-instructor-holding-checklist-while-background-female-student-steering-driving-car_shrink.webp"
@@ -34,4 +34,9 @@ seo_blocks:
       text: "Unser Verkehrskundeunterricht umfasst alle wesentlichen Themen, die du für eine sichere und verantwortungsvolle Teilnahme am Strassenverkehr benötigst. Du lernst, Verkehrssituationen zu analysieren und vorausschauend zu reagieren. Durch interaktive Übungen und anschauliche Beispiele wird der Kurs spannend und leicht verständlich. Unsere erfahrenen Ausbilder:innen stehen dir bei Fragen jederzeit zur Seite. So erhältst du nicht nur theoretisches Wissen, sondern auch das nötige Selbstvertrauen für die Praxis."
     - title: "Jetzt für die Verkehrskunde in Altstetten anmelden!"
       text: "Die Anmeldung für unseren Verkehrskunde-Kurs in Altstetten ist unkompliziert und schnell. Nutze unser Online-Formular oder kontaktiere uns telefonisch, um deinen Platz zu sichern. Unsere flexiblen Kurszeiten ermöglichen es dir, den Unterricht problemlos in deinen Alltag zu integrieren. Starte noch heute und mache den nächsten Schritt auf dem Weg zu deinem Führerausweis. Wir freuen uns darauf, dich in unserem Kurs zu begrüssen!"
+contact_block:
+  questionText: "Hast du Fragen oder benötigst du weitere Informationen?"
+  welcomeText: "Wir freuen uns auf deine Kontaktaufnahme."
+  phone: "+41 78 800 90 91"
+  mail: "info@fahrschuleloyal.ch"
 ---
