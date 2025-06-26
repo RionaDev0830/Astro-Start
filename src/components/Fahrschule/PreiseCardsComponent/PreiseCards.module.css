@@ -1,0 +1,217 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 10px;
+  font-family: var(--font-clash-display);
+  width: 100%;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 2px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  position: relative;
+  font-family: var(--font-clash-display);
+  width: 320px;
+  padding: 30px;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 4px solid #e3e3e3;
+  box-shadow: #003553 0px 1px 3px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: #003553 0px 0px 10px;
+}
+
+.light {
+  background-color: #f0f7fc;
+}
+
+.dark {
+  background-color: #003553;
+  color: white;
+}
+
+.primary {
+  background-color: #0697db;
+  color: white;
+}
+
+.multiplier {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: url('/white_badge_512_w-shadow.png') no-repeat center center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #003553;
+}
+
+.carImage {
+  margin: 20px 0;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  /* width: auto;
+  height: auto;*/
+  object-fit: contain; 
+}
+
+.content {
+  width: 100%;
+}
+
+.type {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.priceContainer {
+  margin-bottom: 30px;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.currency {
+  font-size: 20px;
+}
+
+.originalPrice {
+  font-size: 28px;
+  text-decoration: line-through;
+  color: #ff0000;
+  opacity: 0.9;
+}
+
+.suffix {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.details {
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.button {
+  background-color: #0697db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.light .type{
+  color: #0697db;
+}
+
+.light .price{
+  color: #003553;
+}
+
+.dark .type{
+  color: #0697db;
+}
+
+.primary .type{
+  color: #003553;
+}
+
+.dark .button,
+.primary .button {
+  background-color: white;
+  color: #003553;
+}
+
+.button:hover {
+  background-color: #0576ad;
+}
+
+.dark .button:hover,
+.primary .button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Swiper Styles */
+.cardsContainer :global(.swiper) {
+  padding: 20px 10px 40px;
+}
+
+.cardsContainer :global(.swiper-slide) {
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.cardsContainer :global(.swiper-button-next),
+.cardsContainer :global(.swiper-button-prev) {
+  color: #0697db;
+}
+
+.cardsContainer :global(.swiper-pagination-bullet-active) {
+  background: #0697db;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    gap: 15px;
+  }
+
+  .card {
+    width: 280px;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .cardsContainer :global(.swiper-button-next),
+  .cardsContainer :global(.swiper-button-prev) {
+    display: none;
+  }
+}
+

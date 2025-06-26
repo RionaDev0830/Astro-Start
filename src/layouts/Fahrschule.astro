@@ -1,0 +1,65 @@
+---
+import PageHelper from "../shared/astro/page.astro";
+import Layout, { type SEOProps } from "./Layout.astro";
+
+type Props = {
+  frontmatter: {
+    title: string;
+    content_blocks: any[];
+    seo?: SEOProps;
+  };
+};
+
+const props = Astro.props.frontmatter;
+---
+
+<Layout {...props}>
+  <div class={"all_page"}>
+    <div class={"wrapper"}>
+      <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+    </div>
+  </div>
+</Layout>
+<style>
+  <style > .wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  .scrollComponent {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    height: 20rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .scrollComponent {
+      height: 48rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .scrollComponent {
+      width: 100%;
+      padding: 0;
+      height: auto;
+    }
+
+    .newSection {
+      flex-direction: column;
+
+      & .heroImage img {
+        max-width: 50%;
+      }
+    }
+  }
+</style>

@@ -1,0 +1,74 @@
+---
+import { Cardsanim, Slidefromleft } from '../../Common/Transition/Cardsanim.jsx';
+interface Props {
+  othercontainers: [{
+    title: string;
+    paragraph: string;
+  }]
+};
+const { othercontainers } = Astro.props;
+---
+<Cardsanim klass={"fmiddle-container"} client:visible>
+  {othercontainers.map((el, ind) => (
+    <Slidefromleft klass={"upper"} key={ind} client:visible>
+      <h2 class={"title"}>{el.title}</h2>
+
+      <p
+        class={"description"}
+        set:html={el.paragraph}
+      ></p>
+    </Slidefromleft>
+  ))}
+</Cardsanim>
+<style is:global>
+.fmiddle-container {
+  margin: 6rem auto 0 auto;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.upper {
+  background-color: #e4f0ff;
+  padding: 50px;
+  border-radius: 20px;
+  position: relative;
+}
+</style>
+<style>
+
+
+.title {
+  font-size: 30px;
+  font-family: var(--font-clash-display);
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: absolute;
+  top: -17px;
+}
+
+.description {
+  font-size: 18px;
+  font-family: var(--font-dm-Sans);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 78%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .description {
+    margin-top: 1rem;
+  }
+}
+
+</style>

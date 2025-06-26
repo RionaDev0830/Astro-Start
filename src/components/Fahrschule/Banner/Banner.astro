@@ -1,0 +1,110 @@
+---
+import Wrapper from "../../Common/Wrapper.astro";
+interface Props {
+  h1: string;
+  desc: string;
+}
+export { Props as FBannerProps };
+const { h1, desc } = Astro.props;
+---
+
+<div class="banner-conatiner">
+  <div class="banner">
+    <Wrapper>
+      <div class={"div"}>
+        <h1 class={"title"}>{h1}</h1>
+        <p class={"description"}>{desc}</p>
+      </div>
+    </Wrapper>
+  </div>
+</div>
+<style>
+  .banner-conatiner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner {
+    background-color: #0697db;
+    height: 40rem;
+  }
+
+  .div {
+    width: 40rem;
+    padding-top: 70px;
+  }
+
+  .title {
+    font-family: var(--font-clash-display);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1;
+    padding-bottom: 20px;
+    color: white;
+  }
+
+  .description {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: var(--font-dm-Sans);
+  }
+
+  @media (max-width: 768px) {
+    .banner {
+      height: 35rem;
+    }
+    .div {
+      width: 35rem;
+      padding-top: 70px;
+    }
+
+    .title {
+      font-family: var(--font-clash-display);
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 36px;
+      color: white;
+    }
+
+    .description {
+      font-size: 18px;
+      color: white;
+      font-weight: 400;
+      line-height: 36px;
+      font-family: var(--font-dm-Sans);
+    }
+  }
+
+  @media (max-width: 577px) {
+    .div {
+      width: 23rem;
+      padding-top: 70px;
+    }
+
+    .title {
+      font-family: var(--font-clash-display);
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 36px;
+      color: white;
+    }
+
+    .description {
+      font-size: 16px;
+      color: white;
+      font-weight: 400;
+      line-height: 36px;
+      font-family: var(--font-dm-Sans);
+    }
+  }
+
+  @media (max-width: 400px) {
+    .div {
+      width: 19rem;
+    }
+  }
+</style>

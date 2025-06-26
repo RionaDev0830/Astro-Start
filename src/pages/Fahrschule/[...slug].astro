@@ -1,0 +1,21 @@
+---
+import PageLayout from "../../layouts/Fahrschule.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+export interface Props {
+  page: CollectionEntry<"Fahrschule">;
+}
+
+export async function getStaticPaths() {
+  const pages = await getCollection("Fahrschule");
+  return pages.map((page) => {
+    const slug = page.slug.replace(/index$/, "");
+    if (slug.length === 0)
+      return { params: { slug: undefined }, props: { page } };
+    return { params: { slug }, props: { page } };
+  });
+}
+
+const { page } = Astro.props;
+---
+<PageLayout frontmatter={page.data} />

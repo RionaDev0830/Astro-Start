@@ -1,0 +1,43 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Car Section
+  description: Car Section
+  icon: 'cottage'
+  tags:
+    - Image
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  carselection: 
+    - img: "/vw-tiguan-schaltung.png"
+      car: "VW Tiguan - Schaltung"
+    - img: "/mercedes_gla.png"
+      car: "Mercedes GLA - Automatik"
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  carselection:
+    type: list
+    label: Car list
+    item:
+      type: group
+      label: Car Item
+      fields:
+        img:
+          options:
+            preview:
+              icon: 'image'
+              text:
+                - key: car
+                - 'car'
+              subtext:
+                - key: img
+                - 'Update Car Image'
+              image:
+                - key: car

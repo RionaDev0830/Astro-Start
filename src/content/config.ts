@@ -63,4 +63,5 @@ const pagesCollection = defineCollection({
 export const collections = {
   blog: blogCollection,
   pages: pagesCollection,
+  Fahrschule: pageSchema,
 };

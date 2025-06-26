@@ -1,0 +1,116 @@
+---
+import PricingCards from "../PreiseCardsComponent/index.jsx";
+import {
+  basicCourses,
+  pricingData,
+} from "../../../../data/pricing&Courses.json";
+interface Props {
+  kat: string;
+}
+const getBasicCourse = (category) => {
+  if (category == "Kategorie B") {
+    return basicCourses.filter(
+      (course) =>
+        ["Versicherungsbeitrag"].includes(course.type) &&
+        course.categroy === "B",
+    );
+  } else if (category == "Kategorie BE") {
+    return basicCourses.filter(
+      (course) =>
+        ["Versicherungsbeitrag"].includes(course.type) &&
+        course.categroy === "B",
+    );
+  } else if (category == "Kategorie C") {
+    return [
+      ...basicCourses.filter((course) =>
+        [
+          "CZV-Grundausbildung",
+          "CZV-Weiterbildung",
+          "Vorbereitungskurs Theorieprüfung",
+        ].includes(course.type),
+      ),
+      ...basicCourses.filter(
+        (course) =>
+          ["Versicherungsbeitrag"].includes(course.type) &&
+          course.categroy === "C&D",
+      ),
+    ];
+  } else if (category == "Kategorie C1") {
+    return [
+      ...basicCourses.filter((course) =>
+        [
+          "CZV-Grundausbildung",
+          "CZV-Weiterbildung",
+          "Vorbereitungskurs Theorieprüfung",
+        ].includes(course.type),
+      ),
+      ...basicCourses.filter(
+        (course) =>
+          ["Versicherungsbeitrag"].includes(course.type) &&
+          course.categroy === "C&D",
+      ),
+    ];
+  } else if (category == "Kategorie CE") {
+    return [
+      ...basicCourses.filter((course) =>
+        [
+          "CZV-Grundausbildung",
+          "CZV-Weiterbildung",
+          "Vorbereitungskurs Theorieprüfung",
+        ].includes(course.type),
+      ),
+      ...basicCourses.filter(
+        (course) =>
+          ["Versicherungsbeitrag"].includes(course.type) &&
+          course.categroy === "C&D",
+      ),
+    ];
+  } else if (category == "Kategorie D") {
+    return [
+      ...basicCourses.filter((course) =>
+        [
+          "CZV-Grundausbildung",
+          "CZV-Weiterbildung",
+          "Vorbereitungskurs Theorieprüfung",
+        ].includes(course.type),
+      ),
+      ...basicCourses.filter(
+        (course) =>
+          ["Versicherungsbeitrag"].includes(course.type) &&
+          course.categroy === "C&D",
+      ),
+    ];
+  } else if (category == "Kategorie D1") {
+    return [
+      ...basicCourses.filter((course) =>
+        [
+          "CZV-Grundausbildung",
+          "CZV-Weiterbildung",
+          "Vorbereitungskurs Theorieprüfung",
+        ].includes(course.type),
+      ),
+      ...basicCourses.filter(
+        (course) =>
+          ["Versicherungsbeitrag"].includes(course.type) &&
+          course.categroy === "C&D",
+      ),
+    ];
+  }
+};
+const getPricingDataPerCategory = (category) => {
+  const categoryPricing = pricingData[category];
+  const mainCourses = categoryPricing.mainCourses || [];
+  const basicCourses = getBasicCourse(category) || [];
+  return {
+    ...categoryPricing,
+    cards: [...mainCourses, ...basicCourses],
+  };
+};
+
+const { kat } = Astro.props;
+---
+
+<PricingCards
+  pricingData={getPricingDataPerCategory(kat)}
+  client:visible
+/>

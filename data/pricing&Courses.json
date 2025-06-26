@@ -1,0 +1,337 @@
+{
+  "basicCourses" : [
+  {
+    "type": "Nothelferkurs",
+    "price": 99,
+    "details": "",
+    "multiplier": "",
+    "actionTitle": "Jetzt anmelden",
+    "actionLink": "#kontakt",
+    "variant": "light",
+    "image_data": {
+      "path": "/more1.png"
+    },
+    "width": 120,
+    "height": 80
+  },
+  {
+    "type": "Verkehrskunde",
+    "price": 150,
+    "originalprice": 180,
+    "details": "",
+    "multiplier": "",
+    "actionTitle": "Jetzt anmelden",
+    "actionLink": "#kontakt",
+    "variant": "light",
+    "image_data": {
+      "path": "/more2.png"
+    },
+    "width": 120,
+    "height": 80
+  },
+  {
+    "type": "Vorbereitungskurs Theorieprüfung",
+    "price": 700,
+    "suffix": "pro Lektion",
+    "details": "",
+    "multiplier": "",
+    "actionTitle": "Jetzt anmelden",
+    "actionLink": "#kontakt",
+    "variant": "light",
+    "image_data": { "path": "/basic-training-course.jpg"},
+    "width": 120,
+    "height": 90
+  },
+  {
+    "type": "CZV-Weiterbildung",
+    "price": 230,
+    "suffix": "pro Lektion",
+    "details": "(für gewerbsmässigen Personen- und Gütertransport)",
+    "multiplier": "",
+    "actionTitle": "Jetzt anmelden",
+    "actionLink": "#kontakt",
+    "variant": "light",
+    "image_data": { "path" : "/more4.png"},
+    "width": 120,
+    "height": 90
+  },
+  {
+    "type": "CZV-Grundausbildung",
+    "price": 1900,
+    "suffix": "pro Lektion",
+    "details": "(für gewerbsmässigen Personen- und Gütertransport)",
+    "multiplier": "",
+    "actionTitle": "Jetzt anmelden",
+    "actionLink": "#kontakt",
+    "variant": "light",
+    "image_data": { "path": "/continuous_training.svg"},
+    "width": 160,
+    "height": 90
+  },
+  {
+    "type": "Versicherungsbeitrag",
+    "categroy":"B",
+    "price": 90,
+    "suffix": "pro Lektion",
+    "details": "",
+    "multiplier": "",
+    "actionTitle": "Jetzt anmelden",
+    "actionLink": "#kontakt",
+    "variant": "light",
+    "image_data": {"path": "/insurance_icon_1.svg"},
+    "width": 180,
+    "height": 120
+  },
+  {
+    "type": "Versicherungsbeitrag",
+    "categroy":"C&D",
+    "price": 200,
+    "suffix": "pro Lektion",
+    "details": "",
+    "multiplier": "",
+    "actionTitle": "Jetzt anmelden",
+    "actionLink": "#kontakt",
+    "variant": "light",
+    "image_data": {"path": "/insurance_icon_1.svg"},
+    "width": 180,
+    "height": 120
+  }
+],
+"pricingData": {
+  "Kategorie B": {
+    "title": "Kategorie B",
+    "subtitle": "",
+    "category": "B",
+    "mainCourses": [
+      {
+        "type": "Aktion 5er Abo - B",
+        "price": 59,
+        "originalPrice": "",
+        "suffix": "pro Lektion",
+        "details": "(Schaltgetriebe und Automat)",
+        "multiplier": "5x",
+        "actionTitle": "Jetzt anmelden",
+        "actionLink": "#kontakt",
+        "variant": "dark",
+        "image_data": {"path": "/uebermich-removebg-preview.png"},
+        "width": 180,
+        "height": 100
+      },
+      {
+        "type": "Aktion 10er Abo - B",
+        "price": 78,
+        "originalPrice": "",
+        "suffix": "pro Lektion",
+        "details": "(Schaltgetriebe und Automat)",
+        "multiplier": "10x",
+        "actionTitle": "Jetzt anmelden",
+        "actionLink": "#kontakt",
+        "variant": "primary",
+        "image_data": {"path": "/uebermich-removebg-preview.png"},
+        "width": 180,
+        "height": 100
+      },
+      {
+        "type": "Einzellektion - B",
+        "price": 92,
+        "suffix": "pro Lektion",
+        "details": "(Schaltgetriebe und Automat)",
+        "multiplier": "1x",
+        "actionTitle": "Jetzt anmelden",
+        "actionLink": "#kontakt",
+        "variant": "light",
+        "image_data": {"path": "/uebermich-removebg-preview.png"},
+        "width": 180,
+        "height": 100
+      },
+      {
+        "type": "5er Abo - B",
+        "price": 86,
+        "originalPrice": 92,
+        "suffix": "pro Lektion",
+        "details": "(Schaltgetriebe und Automat)",
+        "multiplier": "5x",
+        "actionTitle": "Jetzt anmelden",
+        "actionLink": "#kontakt",
+        "variant": "dark",
+        "image_data": {"path": "/uebermich-removebg-preview.png"},
+        "width": 180,
+        "height": 100
+      },
+      {
+        "type": "10er Abo - B",
+        "price": 82,
+        "suffix": "pro Lektion",
+        "details": "(Schaltgetriebe und Automat)",
+        "multiplier": "10x",
+        "actionTitle": "Jetzt anmelden",
+        "actionLink": "#kontakt",
+        "variant": "primary",
+        "image_data": {"path": "/uebermich-removebg-preview.png"},
+        "width": 180,
+        "height": 100
+      }
+    ]
+  },
+  "Kategorie BE": {
+    "title": "Kategorie BE",
+    "subtitle": "",
+    "category": "B",
+    "mainCourses": [
+      {
+        "type": "Einzel Fahrstunde - BE",
+        "price": 120,
+        "suffix": "pro Lektion",
+        "details": "",
+        "multiplier": "1x",
+        "actionTitle": "Jetzt anmelden",
+        "actionLink": "#kontakt",
+        "variant": "primary",
+        "image_data": {"path": "/uebermich-removebg-preview.png"},
+        "width": 180,
+        "height": 100
+      }
+    ]
+  },
+  "Kategorie C": {
+    "title": "Kategorie C",
+    "subtitle": "",
+    "category": "C",
+    "mainCourses": [
+      {
+        "type": "Einzel Fahrstunde - C",
+        "price": 160,
+        "suffix": "pro Lektion",
+        "details": "",
+        "multiplier": "1x",
+        "actionTitle": "Jetzt anmelden",
+        "actionLink": "#kontakt",
+        "variant": "light",
+        "image_data": {"path": "/lastwagen-removebg-preview.png"},
+        "width": 128,
+        "height": 128
+      }
+    ]
+  },
+  "Kategorie C1": {
+    "title": "Kategorie C1",
+    "subtitle": "",
+    "category": "C",
+    "mainCourses": [
+      {
+        "type": "Einzel Fahrstunde - C1",
+        "price": 140,
+        "suffix": "pro Lektion",
+        "details": "",
+        "multiplier": "1x",
+        "actionTitle": "Jetzt anmelden",
+        "actionLink": "#kontakt",
+        "variant": "primary",
+        "image_data": {"path": "/lastwagen-removebg-preview.png"},
+        "width": 124,
+        "height": 90
+      }
+    ]
+  },
+  "Kategorie CE": {
+    "title": "Kategorie CE",
+    "subtitle": "",
+    "category": "C",
+    "mainCourses": [
+      {
+        "type": "Einzel Fahrstunde - CE",
+        "price": 190,
+        "suffix": "pro Lektion",
+        "details": "",
+        "multiplier": "1x",
+        "actionTitle": "Jetzt anmelden",
+        "actionLink": "#kontakt",
+        "variant": "light",
+        "image_data": {"path": "/fahrschule_loyal_truck_01.png"},
+        "width": 200,
+        "height": 130
+      }
+    ]
+  },
+  "Kategorie D": {
+    "title": "Kategorie D",
+    "subtitle": "",
+    "category": "D",
+    "mainCourses": [
+      {
+        "type": "Einzel Fahrstunde - D",
+        "price": 190,
+        "suffix": "pro Lektion",
+        "details": "",
+        "multiplier": "1x",
+        "actionTitle": "Jetzt anmelden",
+        "actionLink": "#kontakt",
+        "variant": "light",
+        "image_data": {"path": "/whitebus-removebg-preview.png"},
+        "width": 150,
+        "height": 150
+      }
+    ]
+  },
+  "Kategorie D1": {
+    "title": "Kategorie D1",
+    "subtitle": "",
+    "category": "D",
+    "mainCourses": [
+      {
+        "type": "Einzel Fahrstunde - D1",
+        "price": 140,
+        "suffix": "pro Lektion",
+        "details": "",
+        "multiplier": "1x",
+        "actionTitle": "Jetzt anmelden",
+        "actionLink": "#kontakt",
+        "variant": "primary",
+        "image_data": {"path": "/whitebus-removebg-preview.png"},
+        "width": 150,
+        "height": 150
+      }
+    ]
+  },
+  "Taxi": {
+    "title": "Taxi",
+    "subtitle": "",
+    "category": "Taxi",
+    "mainCourses": [
+      {
+        "type": "Taxi",
+        "price": 85,
+        "suffix": "pro Lektion",
+        "details": "",
+        "multiplier": "1x",
+        "actionTitle": "Jetzt anmelden",
+        "actionLink": "#kontakt",
+        "variant": "light",
+        "image_data": {"path": "/taxi_00.png"},
+        "width": 150,
+        "height": 150
+      }
+    ]
+  },
+  "Kontrollfahrt" : {
+    "title": "Kontrollfahrt",
+    "subtitle": "",
+    "category": "Kontrollfahrt",
+    "mainCourses": [
+      {
+        "type": "Kontrollfahrt",
+        "price": "90",
+        "suffix": "pro Stunde",
+        "details": "(Schaltgetriebe und Automat)",
+        "multiplier": "1x",
+        "actionTitle": "Jetzt anmelden",
+        "actionLink": "#kontakt",
+        "variant": "light",
+        "image_data": {"path": "/uebermich-removebg-preview.png"},
+        "width": 150,
+        "height": 150
+      }
+    ]
+  }
+}
+}

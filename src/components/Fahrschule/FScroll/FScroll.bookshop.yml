@@ -1,0 +1,103 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: F Scroll
+  description: F SCroll
+  icon: 'cottage'
+  tags:
+    - Image
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  kat: "Kategorie B"
+  scrollrightimg: "/mercedes2.jpeg"
+  pointsData: 
+    - number: 1
+      heading: "Gesuch"
+      description:
+        "Nach dem erfolgreichen Abschluss des Nothelferkurses stellst du mithilfe eines Formulars einen Lernfahrausweis-Antrag beim Strassenverkehrsamt deines Wohnsitzkantons. Dieses Formular erhältst du bei uns, direkt beim Strassenverkehrsamt oder als Download auf deren Website."
+    - number: 2
+      heading: "Theorieprüfung"
+      description:
+        "Du erhältst per Post eine Zulassungsbestätigung zur obligatorischen Theorieprüfung, die du beim Strassenverkehrsamt deines Wohnsitzkantons ablegst."
+    - number: 3
+      heading: "Erhalt des Lernfahrausweises"
+      description:
+        "Nach Bestehen der Theorieprüfung wird dir der Lernfahrausweis direkt vom Strassenverkehrsamt deines Wohnsitzkantons per Post zugeschickt. Dieser ist 24 Monate gültig."
+      highlighted: true
+    - number: 4
+      heading: "VKU und Fahrlektionen/ Lernfahrten"
+      description:
+        "Wir bereiten dich mit Fahrlektionen auf die praktische Prüfung vor. Zeitgleich ist die Teilnahme am Verkehrskundeunterricht (VKU) obligatorisch. Für private Lernfahrten sind ein Lernfahrausweis und eine Begleitperson erforderlich. Lernfahrten dürfen nur mit einer Begleitperson unternommen werden, die das 23. Lebensjahr vollendet hat, seit mindestens 3 Jahren den Führerausweis der Kategorie B besitzt und diesen nicht mehr auf Probe hat. Zudem muss die Handbremse jederzeit von der Begleitperson betätigt werden können."
+    - number: 5
+      heading: "Praktische Prüfung"
+      description:
+        "Nach erfolgreichem Abschluss des Verkehrskundeunterrichts (VKU) absolvierst du beim Strassenverkehrsamt die praktische Prüfung und erhältst nach Bestehen deinen Führerausweis der Kategorie B auf Probe."
+    - number: 6
+      heading: "WAB-Kurs"
+      description:
+        "Um den unbefristeten Führerausweis zu erhalten, ist es erforderlich, innerhalb der ersten 12 Monate einen Fahrerschulungskurs (WAB) zu absolvieren. Nach Ablauf der Probezeit (3 Jahre) erhältst du den definitive Führerausweis direkt per Post zugestellt."
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  kat:
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: kat
+          - 'Category'
+        subtext:
+          - 'Update Category text'
+  scrollrightimg:
+    options:
+      preview:
+        icon: 'image'
+        text:
+          - 'Category Image'
+        subtext:
+          - key: scrollrightimg
+          - 'Update Category Image'
+        image:
+          - key: scrollrightimg
+  pointsData:
+    type: list
+    label: Point Data List
+    item:
+      type: group
+      label: Point Data
+      fields:
+        number:
+          type: number
+          label: number
+          options:
+            preview:
+              icon: 'number'
+              text:
+                - key: number
+              subtext:
+                - 'Number'
+        heading:
+          type: text
+          label: Heading
+          options:
+            preview:
+              icon: 'text'
+              text:
+                - key: heading
+              subtext:
+                - 'Heading Text'
+        description:
+          type: textarea
+          label: Description
+          options:
+            preview:
+              icon: 'textarea'
+              text:
+                - key: description
+              subtext:
+                - 'Member description'

@@ -1,0 +1,10 @@
+---
+import CrewSection from "./index.jsx";
+interface Props {
+  kat: string;
+  newSection: any;
+}
+
+const { kat, newSection } = Astro.props;
+---
+<CrewSection data={{kat, newSection}}/>
