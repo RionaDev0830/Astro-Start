@@ -59,9 +59,16 @@ const paginatedCollectionSchema = z.object({
 const pagesCollection = defineCollection({
   schema: z.union([paginatedCollectionSchema, pageSchema]),
 });
-
+const KurseCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    kurse_block: z.any(),
+    seo: pageSeo
+  })
+});
 export const collections = {
   blog: blogCollection,
   pages: pagesCollection,
   Fahrschule: pageSchema,
+  Kurse: KurseCollection
 };

@@ -21,7 +21,7 @@ const props = Astro.props.frontmatter;
   </div>
 </Layout>
 <style>
-  <style > .wrapper {
+  .wrapper {
     position: relative;
     width: 100%;
     height: auto;
@@ -56,10 +56,10 @@ const props = Astro.props.frontmatter;
 
     .newSection {
       flex-direction: column;
-
-      & .heroImage img {
-        max-width: 50%;
-      }
+    }
+    .newSection .heroImage img {
+      flex-direction: column;
+      max-width: 50%;
     }
   }
 </style>
