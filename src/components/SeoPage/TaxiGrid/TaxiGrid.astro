@@ -1,0 +1,285 @@
+---
+import Wrapper from '../../Common/Wrapper.astro';
+import { Image } from 'astro:assets';
+interface Props {
+  title: string;
+  text: string;
+  hideimg: boolean;
+  gridtitle: string;
+  grid_subheading: string;
+  grid_img1: string;
+  grid_img2: string;
+  grid_img3: string;
+  grid_img4: string;
+  grid_img5: string;
+  grid_img6: string;
+  grid_img7: string;
+  grid_img8: string;
+  grid_img9: string;
+}
+const { title, text, hideimg, gridtitle, grid_subheading, grid_img1, grid_img2, grid_img3, grid_img4, grid_img5, grid_img6, grid_img7, grid_img8, grid_img9} = Astro.props;
+---
+<Wrapper>
+  <div class={"grid_section"}>
+    <h2 style="font-size: '32px'">{gridtitle || title}</h2>
+    <p
+      class={"grid_sub_heading"}
+      set:html={grid_subheading || text }
+    ></p>
+    {!hideimg && (
+      <div class={"grid_gallery"}>
+        <div class={"image_section1"}>
+          <Image
+            src={grid_img1}
+            alt={grid_img1.split(".")[0]}
+            width={100}
+            height={180}
+            class={"taxi_image"}
+          />
+        </div>
+        <div class={"image_section2"}>
+          <Image
+            src={grid_img2}
+            alt={grid_img2.split(".")[0]}
+            width={100}
+            height={100}
+            class={"taxi_image1"}
+          />
+          <Image
+            src={grid_img3}
+            alt={grid_img3.split(".")[0]}
+            width={100}
+            height={150}
+            class={"taxi_image"}
+          />
+          <Image
+            src={grid_img4}
+            alt={grid_img4.split(".")[0]}
+            width={100}
+            height={150}
+            class={"taxi_image"}
+          />
+        </div>
+        <div class={"image_section3"}>
+          <Image
+            src={grid_img5}
+            alt={grid_img5.split(".")[0]}
+            width={150}
+            height={250}
+            class={"taxi_image"}
+            style={{ height: "100%" }}
+          />
+        </div>
+        <div class={"image_section2"}>
+          <Image
+            src={grid_img6}
+            alt={grid_img6.split(".")[0]}
+            width={50}
+            height={200}
+            class={"taxi_image1"}
+          />
+          <Image
+            src={grid_img7}
+            alt={grid_img7.split(".")[0]}
+            width={100}
+            height={150}
+            class={"taxi_image"}
+          />
+          <Image
+            src={grid_img8}
+            alt={grid_img8.split(".")[0]}
+            width={100}
+            height={150}
+            class={"taxi_image"}
+          />
+        </div>
+        <div class={"image_section1"}>
+          <Image
+            src={grid_img9}
+            alt={grid_img9.split(".")[0]}
+            width={100}
+            height={180}
+            class={"taxi_image"}
+          />
+        </div>
+      </div>
+    )}
+    {!!!hideimg && (
+      <div class={"grid_galleryMobile"}>
+        <div class={"image_section1"}>
+          <Image
+            src={grid_img1}
+            alt={grid_img1.split(".")[0]}
+            width={50}
+            height={50}
+            class={"taxi_image"}
+          />
+        </div>
+        <div class={"image_section2"}>
+          <Image
+            src={grid_img2}
+            alt={grid_img2.split(".")[0]}
+            width={100}
+            height={150}
+            class={"taxi_image1"}
+          />
+          <Image
+            src={grid_img3}
+            alt={grid_img3.split(".")[0]}
+            width={100}
+            height={150}
+            class={"taxi_image"}
+          />
+          <Image
+            src={grid_img4}
+            alt={grid_img4.split(".")[0]}
+            width={100}
+            height={150}
+            class={"taxi_image"}
+          />
+          <Image
+            src={grid_img6}
+            alt={grid_img2.split(".")[0]}
+            width={100}
+            height={150}
+            class={"taxi_image1"}
+          />
+        </div>
+        <div class={"image_section2"}>
+          <Image
+            src={grid_img5}
+            alt={grid_img5.split(".")[0]}
+            width={100}
+            height={150}
+            class={"taxi_image"}
+            style="height: '48%'"
+          />
+          <Image
+            src={grid_img7}
+            alt={grid_img7.split(".")[0]}
+            width={100}
+            height={150}
+            class={"taxi_image"}
+          />
+          <Image
+            src={grid_img8}
+            alt={grid_img8.split(".")[0]}
+            width={100}
+            height={150}
+            class={"taxi_image"}
+          />
+        </div>
+        <div class={"image_section1"}>
+          <Image
+            src={grid_img9}
+            alt={grid_img9.split(".")[0]}
+            width={50}
+            height={50}
+            class={"taxi_image"}
+          />
+        </div>
+      </div>
+    )}
+  </div>
+</Wrapper>
+<style>
+.grid_section {
+  font-family: var(--font-clash-display);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45.76px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.grid_sub_heading {
+  font-family: var(--font-dm-Sans);
+  font-size: 18.03px;
+  font-weight: 400;
+  line-height: 27.04px;
+  padding: 20px 0;
+}
+
+.grid_gallery {
+  /* height: 550px; */
+  display: flex;
+  gap: 15px;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.grid_galleryMobile {
+  display: none;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.taxi_image {
+  /* height: 100%; */
+  width: 100%;
+  height: 180px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.taxi_image1 {
+  width: 100%;
+  display: none;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.image_section1 {
+  display: flex;
+  align-items: center;
+}
+.image_section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .grid_section {
+    font-size: 25px;
+    line-height: 36px;
+  }
+  .grid_sub_heading {
+    font-size: 16px;
+    line-height: 22.04px;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid_gallery {
+    gap: 8px;
+  }
+
+  .image_section2 {
+    gap: 8px;
+  }
+  /* .grid_sub_heading {
+        font-size: 11.03px;
+        line-height: 26.04px;
+    } */
+}
+
+@media (max-width: 800px) {
+  .image_section1 {
+    display: none;
+  }
+  .taxi_image1 {
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  .grid_galleryMobile {
+    display: flex;
+  }
+  .grid_gallery {
+    display: none;
+  }
+}
+
+</style>

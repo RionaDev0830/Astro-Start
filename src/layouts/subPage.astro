@@ -1,0 +1,44 @@
+---
+import Layout, { type SEOProps } from "./Layout.astro";
+import Contact from '../components/SeoPage/Contact/Contact.astro';
+import TaxiBanner from '../components/SeoPage/TaxiBanner/TaxiBanner.astro';
+import TaxiGrid from '../components/SeoPage/TaxiGrid/TaxiGrid.astro';
+import { getCollection, type CollectionEntry, getEntry } from "astro:content";
+type Props = {
+  frontmatter: {
+    title: string;
+    seo?: SEOProps;
+    seo_blocks: object;
+  };
+};
+
+const props = Astro.props.frontmatter;
+// const contact_page = await getEntry('pages', 'contact');
+// const contact_data = contact_page.data.content_blocks;
+const { data, sections, h1 } = props.seo_blocks;
+---
+
+<Layout {...props}>
+  <div class={"all_page"}>
+    <TaxiBanner data={data} h1={h1} />
+    <br />
+    <br />
+    {sections.map((obj, ind) => (
+      <TaxiGrid
+        key={ind}
+        hideimg={true}
+        title={obj.title}
+        text={obj.text}
+      />
+    ))}
+    <br />
+    <br />
+    <br />
+    <!-- { contact_data.length && <Contact {...contact_data[0]} />} -->
+  </div>
+</Layout>
+<style>
+.all_page {
+  padding: 100px 0 0 0;
+}
+</style>

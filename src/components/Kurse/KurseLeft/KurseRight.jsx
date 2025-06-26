@@ -144,7 +144,6 @@ const KurseRight = ({ data }) => {
               height={80}
               width={100}
               className={styles.courseImage}
-              unoptimized
             />
             <div className={styles.courseText}>
               <h3>Nothelferkurs</h3>

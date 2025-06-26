@@ -66,9 +66,31 @@ const KurseCollection = defineCollection({
     seo: pageSeo
   })
 });
+const seoPageCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    seo_blocks: z.object({
+      category: z.string(),
+      data: z.object({
+        image: z.object({
+          image_path: z.string(),
+          alt_text: z.string()
+        }),
+        upperparagraph: z.string(),
+        lowerparagraph: z.string(),
+      }),
+      sections: z.array(z.object({
+        title: z.string(),
+        text: z.string()
+      }))
+    }),
+    seo: pageSeo
+  })
+});
 export const collections = {
   blog: blogCollection,
   pages: pagesCollection,
   Fahrschule: pageSchema,
-  Kurse: KurseCollection
+  Kurse: KurseCollection,
+  seoPage: seoPageCollection
 };

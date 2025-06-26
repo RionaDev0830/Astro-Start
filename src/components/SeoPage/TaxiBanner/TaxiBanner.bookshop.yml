@@ -1,0 +1,66 @@
+spec:
+  structures:
+    - content_blocks
+  label: Taxi Banner
+  description: Taxi Banner of this page
+  icon: 'cottage'
+  tage:
+    - Image
+    - Text
+blueprint:
+  h1: Berufsmässiger <br /> Personentransport <br /> (BPT 21)
+  data:
+    upperparagraph: >
+      Suchst du eine moderne, innovative Fahrschule, die dich professionell und effizient durch die Ausbildung zum berufsmässigen Personentransport BPT 121 (auch Taxiprüfung genannt) begleitet, dann bist du bei der Fahrschule Loyal genau richtig.
+    lowerparagraph: >
+      Die Ausbildung umfasst neben dem praktischen Teil auch eine spezielle theoretische Prüfung, die sich von der Theorie bei der normalen Führerprüfung wesentlich unterscheidet. So geht es hier beispielsweise auch um Fragen zu Themen wie gesetzlich vorgegebene Ruhe- und Arbeitszeiten etc. - Selbstverständlich bieten dir unsere Ausbildungsprofis auch in diesem Bereich jede erdenkliche Unterstützung.
+    image:
+      image_path: /taximg1_shrink.webp
+      alt_text: taxi banner
+_inputs:
+  h1:
+    options:
+      preview:
+        icon: 'text'
+        text:
+          - key: h1
+          - 'heading'
+        subtext:
+          - 'Set Heading text'
+  data:
+    type: group
+    fields:
+      upperparagraph:
+        options:
+          preview:
+            icon: 'text'
+            type: textarea
+            label: Upper Paragraph
+            text:
+              - key: upperparagraph
+              - 'Upper Paragraph'
+            subtext:
+              - 'Update paragraph'
+      lowerparagraph:
+        options:
+          preview:
+            icon: 'text'
+            type: textarea
+            label: Lower Paragraph
+            text:
+              - key: lowerparagraph
+              - 'Lower Paragraph'
+            subtext:
+              - 'Update paragraph'
+      image:
+        options:
+          preview:
+            icon: 'image'
+            text:
+              - key: alt_text
+              - 'Banner Image'
+            subtext:
+              - key: image_path
+              - 'Update Banner Image'
+            image:
+              - key: image_path
