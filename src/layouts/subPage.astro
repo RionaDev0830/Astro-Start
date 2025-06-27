@@ -22,7 +22,7 @@ const { contact_block } = props;
 
 <Layout {...props}>
   <div class={"all_page"}>
-    <TaxiBanner data={data} h1={category} />
+    <TaxiBanner bookshop:live data={data} h1={category} />
     <br />
     <br />
     {sections.map((obj, ind) => (
@@ -31,12 +31,13 @@ const { contact_block } = props;
         hideimg={true}
         title={obj.title}
         text={obj.text}
+        bookshop:live
       />
     ))}
     <br />
     <br />
     <br />
-    <Contact {...contact_block} />
+    <Contact bookshop:live {...contact_block} />
   </div>
 </Layout>
 <style>
