@@ -26,6 +26,7 @@ const { contentBlocks } = Astro.props;
       <Component
         {...block}
         key={i}
+        bookshop:live
         content_blocks_length={contentBlocks.length}
       />
     );
