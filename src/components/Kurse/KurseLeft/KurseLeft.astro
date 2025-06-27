@@ -8,26 +8,10 @@ interface Props {
   Kurzbeschreibung: string;
   Kursfoto: string;
   Fotoalttag: string;
-  CourseId: number;
-  EventId: number;
-  Teilnehmer: string;
-  Dauer: string;
-  Beschreibung: string;
-  Kursort: string;
-  Verfuegbarkeit: string;
-  Inhalt: [string];
 };
 
 const { Titel, Kurzbeschreibung, Kursfoto,
-  Fotoalttag,
-  CourseId,
-  EventId,
-  Teilnehmer,
-  Dauer,
-  Beschreibung,
-  Kursort,
-  Verfuegbarkeit,
-  Inhalt} = Astro.props;
+  Fotoalttag } = Astro.props;
   
 ---
 <div class={"left_scroll_area"}>
